@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<project name="teste1" width=1024 height=1024>
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<!--file>..\3dsmodels\cow.obj</file-->
+				<!--file>..\ntg-bench\bench.obj</file-->
+				<file>..\3dsmodels\largoCamoes.cbo</file>--
+				<!--file>..\3dsmodels\pl3dsecXXI-octreeByMat-test.cbo</file-->
+				<!--file>..\ntg-bin-pl3d-secxxi-other\avPlatanosArvoresII.mesh.xml</file-->
+				<!--file>..\3dsmodels\jeep1.3ds</file-->
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="Viewport" fixed="true">
+				<geometry x="0" y="0" width="1.0" height="1.0" />
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>Viewport</viewport>
+				<perspective fov="60.0" near="0.3" far="1000.0" />
+				<!--position x="0.0" y="0.0" z="15.0" /-->
+				<position x="7.42" y="18.61" z="-38.62" />
+				<view x="0.31" y="-0.36" z="0.87" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-52" y="77.0" z="-27.0" />
+				<direction x="0.597" y="-0.390" z="0.700" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		<materialLibs>
+			<mlib filename="..\mlibs\optixTest.mlib"/>
+			<mlib filename="..\mlibs\DeferredRenderTargets.mlib"/>
+		</materialLibs>
+	</assets>
+
+
+
+
+	<pipelines>
+
+		<pipeline name="fixedfunction" default="true" defaultCamera="MainCamera">
+			<pass class="default" name="pass1">
+				<viewport>Viewport</viewport>
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="deferred" fromLibrary="Deferred Render Targets" />
+					</map>	
+				</injectionMaps>
+			</pass>
+			
+		</pipeline>
+	</pipelines>
+</project>

@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<materiallib name="Default">
+		
+	<textures>
+		<texture name="dummy" filename="../Texturas/dummy.jpg" />		
+	</textures>
+	<shaders>
+		<shader name="dirLightDifAmbPix" 	ps="../shaders/dirlightdiffambpix.frag" 
+												vs="../shaders/dirlightdiffambpix.vert" />
+		<shader name="dirLightDifAmbPixTex" 	ps="../shaders/dirlightdiffambpixtex.frag" 
+												vs="../shaders/dirlightdiffambpixtex.vert" />
+	</shaders>
+	
+	<states>
+		<state name="No Render">
+			<order value="-1" />
+		</state>	
+	</states>
+
+	<materials>
+		<material name="dirLightDifAmbPixTex">
+			<shader>
+				<name>dirLightDifAmbPixTex</name>
+				<values>
+					<valueof uniform="PVM" 			  type="CURRENT" context="MATRIX" 
+															component="PROJECTION_VIEW_MODEL" />
+					<valueof uniform="NormalMatrix"   type="CURRENT" context="MATRIX" component="NORMAL" />
+					<valueof uniform="textureUnit" 	  type="CURRENT" context="TEXTURE" 
+														id=0 component="UNIT" />
+					<valueof uniform="lightDirection" type="CURRENT" context="LIGHT" 
+														id=0 component="DIRECTION" /> 
+					<valueof uniform="lightColor"     type="CURRENT" context="LIGHT" 
+														id=0 component="DIFFUSE" />
+					<valueof uniform="enabled"		  type="CURRENT" context="LIGHT" 
+														id=0 component="ENABLED" />
+					<valueof uniform="diffuse" 		  type="CURRENT" context="COLOR" component="DIFFUSE" />
+					<valueof uniform="ambient" 		  type="CURRENT" context="COLOR" component="AMBIENT" />
+			</values>
+			</shader>
+			<textures>
+				<texture name="dummy" unit="0" />
+			</textures>
+		</material>
+		
+		<material name="dirLightDifAmbPix">
+			<shader>
+				<name>dirLightDifAmbPix</name>
+				<values>
+					<valueof uniform="PVM" 			  type="CURRENT" context="MATRIX" 
+															component="PROJECTION_VIEW_MODEL" />
+					<valueof uniform="NormalMatrix"   type="CURRENT" context="MATRIX" component="NORMAL" />
+					<valueof uniform="textureUnit" 	  type="CURRENT" context="TEXTURE" 
+														id=0 component="UNIT" />
+					<valueof uniform="lightDirection" type="CURRENT" context="LIGHT" 
+														id=0 component="DIRECTION" /> 
+					<valueof uniform="lightColor"     type="CURRENT" context="LIGHT" 
+														id=0 component="DIFFUSE" />
+					<valueof uniform="enabled"		  type="CURRENT" context="LIGHT" 
+														id=0 component="ENABLED" />
+					<valueof uniform="diffuse" 		  type="CURRENT" context="COLOR" component="DIFFUSE" />
+					<valueof uniform="ambient" 		  type="CURRENT" context="COLOR" component="AMBIENT" />
+				</values>
+			</shader>
+		</material>
+		
+		<material name="Light Grey">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+		</material>
+		
+		<material name="Emission White">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="1.0" g="1.0" b="1.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+		</material>
+		
+		<material name="Emission Red">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="0.0" b="0.0" a="1.0"  />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="1.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+		</material>
+
+		<material name="Emission Green">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.0" g="1.0" b="0.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="1.0" b="0.0" a="1.0" />
+			</color>
+		</material>
+
+		<material name="Emission Blue">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.0" g="0.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="1.0" a="1.0" />
+			</color>
+		</material>
+
+		<material name="Black">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.0" g="0.0" b="0.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+			</color>
+		</material>
+
+		<material name="No Render">
+			<state name = "No Render"/>
+		</material>
+
+		<material name="quad">
+		</material>
+		
+	</materials>	
+</materiallib>

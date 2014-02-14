@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<project name="aula 1" width="1024" height="1024">
+	<assets>
+	
+		<scenes>
+			<scene name="Al" scaleY=1.00 scaleX=1 scaleZ=1 type="OctreeByMat">
+			<!--scene name="Al" scaleY=1.00 scaleX=1 scaleZ=1-->
+				<!--file>..\3dsmodels\pl3dsecXXI-octreeByMat-test.cbo</file-->
+				<file>..\3dsmodels\al.obj</file>
+				<!--file>..\3dsmodels\bench.obj</file-->
+				<!--file>..\3dsmodels\bench-octreebymat.cbo</file-->
+			</scene>
+		</scenes>
+		
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="1.0" g="1.0" b="1.0" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1" far="10000.0" />
+				<position x="0" y="-0.5" z="7.5" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0" y="1" z="0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="1.0" y="-0.5" z="-2" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materialLibs>
+			<mlib filename = "..\mlibs\aulas.mlib"/>
+		</materialLibs> 
+	</assets>
+	
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>Al</scene>
+
+				</scenes>
+				<camera>MainCamera</camera>
+				<!--viewport>MainViewport</viewport-->
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<!--materialMaps>
+					<map fromMaterial="*" toLibrary="Aulas" toMaterial="grey" />
+					<!--map fromMaterial="band" toMaterial="face" />
+				</materialMaps-->
+			</pass>
+			
+		</pipeline>
+	</pipelines>
+</project>

@@ -1,0 +1,49 @@
+<project name="Venice">
+	<assets>
+		<scenes>
+			<scene name="VeniceScene">
+				<file>venice-scene.dae</file>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="VeniceViewport" fixed="false">
+				<geometry x="0.0" y="0.0" width="800.0" height="600.0" />
+				<bgcolor r="0.0" g="0.0" b="0.0" />				
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="VeniceCamera" type="perspective">
+				<perspective fov="70.0" near="0.1" far="100.0" />
+				<viewport>VeniceViewport</viewport>
+				<position x="-1.170" y="3.280" z="3.650" />
+				<view x="0.83" y="-0.390" z="-0.390" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="RoomLight" type="directional">
+				<position x="0.0" y="2.0" z="0.0" />
+				<direction x="0.0" y="-2.0" z="0.0" />
+				<color r="0.7" g="0.7" b="0.7" />
+			</light>
+		</lights>
+		<materiallibs>
+			<mlib filename="venice.mlib" />
+		</materiallibs>
+	</assets>
+	<pipelines>
+		<pipeline name="VeniceFixedFunction" default="true">
+			<pass class="default" name="SingleFixedPass">
+				<scenes>
+					<scene>VeniceScene</scene>
+				</scenes>
+				<camera>VeniceCamera</camera>
+				<viewport>VeniceViewport</viewport>
+				<materialmaps>
+					<map toLibrary="VeniceMaterials"/>
+				</materialmaps>
+				
+			</pass>
+		</pipeline>
+	</pipelines>
+</project>

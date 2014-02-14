@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<project name="teste1">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>C:\PL3D_Curitiba\ntg-bin-strip</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="1000.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="1.0" y="0.0" z="1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="-1.0" y="1.0" z="0.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+	</assets>
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<clearcolor>true</clearcolor>
+				<cleardepth>true</cleardepth>
+				
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+		</pipeline>
+	</pipelines>
+</project>

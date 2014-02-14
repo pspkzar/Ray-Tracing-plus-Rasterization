@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<materiallib name="Aulas">
+	<states>
+		<state name="CountPixelTest">
+			<depthTest value="0" />
+			<blend src="ONE" dst="ONE" />
+		</state>	
+		<state name="CountPixelDraw"> 
+			<blend src="ONE" dst="ONE" />
+		</state>			
+	</states>
+	<materials>
+		<material name="grey">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="0.7" g="0.7" b="0.7" a="1.0" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+		</material>
+		<material name="fivePerCentTest">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.05" g="0.05" b="0.05" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="CountPixelTest" />
+		</material>
+		<material name="fivePerCentDraw">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.05" g="0.05" b="0.05" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="CountPixelDraw" />
+		</material>
+	</materials>
+</materiallib>

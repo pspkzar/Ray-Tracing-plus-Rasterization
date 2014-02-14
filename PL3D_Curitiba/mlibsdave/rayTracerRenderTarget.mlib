@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<materiallib name="Ray Tracer Render Target">
+	<rendertargets>
+		<rendertarget name ="test">
+			<size width="256" height="256" />
+			<colors>
+				<color name="RayTracer" format="RGBA" 
+												internalFormat="RGBA8" 
+												type="UNSIGNED_BYTE" />
+        <color name="RayTracer2" format="RGBA"
+												internalFormat="RGBA8"
+												type="UNSIGNED_BYTE" />
+      </colors>
+		</rendertarget>
+	</rendertargets>
+
+	<materials>
+		<material name="quadpass2">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="RayTracer" />
+			</textures>			
+		</material>
+	</materials>
+</materiallib>

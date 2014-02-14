@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<project name="teste1-shadows">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>..\ntg-bin-pl3dxiv</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true">
+				<geometry x="0" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true">
+				<geometry x="200" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true">
+				<geometry x="400" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport4" fixed="true">
+				<geometry x="600" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>			
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.5" far="10000.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-52" y="-77.0" z="-27.0" />
+				<direction x="0.78" y="-1" z="-0.22" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materialLibs>
+			<mlib filename="../mlibs/shadowMaterials.mlib"/>
+		</materialLibs>
+		
+	</assets>
+	
+	<pipelines>
+		<pipeline name="shadow" default="true">
+		
+			<pass class="depthmap" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<params>
+					<param name = "To" float="5" />
+				</params>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<rendertarget name="shadowMap1" fromLibrary="Shadow Materials"/>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			
+			<pass class="depthmap" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<params>
+					<param name = "From" float="5" />
+					<param name = "To" float="15" />
+				</params>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<rendertarget name="shadowMap2" fromLibrary="Shadow Materials"/>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			
+			<pass class="depthmap" name="pass3">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<params>
+					<param name = "From" float="15" />
+					<param name = "To" float="50" />
+				</params>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<rendertarget name="shadowMap3" fromLibrary="Shadow Materials"/>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			
+			<pass class="depthmap" name="pass4">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<params>
+					<param name = "From" float="50" />
+					<param name = "To" float="150" />
+				</params>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<rendertarget name="shadowMap4" fromLibrary="Shadow Materials"/>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			
+			<pass class="default" name="pass5">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<rendertarget name="simple" fromLibrary="Shadow Materials"/>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="flat-with-shadow-4-depths" />
+				</materialMaps>
+			</pass>
+			
+			<pass class="quad" name="pass6">
+				<viewport>MainViewport</viewport>
+				<texture name ="offscreenrender" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+			<pass class="quad" name="pass7">
+				<viewport>SmallViewport1</viewport>
+				<texture name ="shadowMap1" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+ 			<pass class="quad" name="pass8">
+				<viewport>SmallViewport2</viewport>
+				<texture name ="shadowMap2" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+ 			<pass class="quad" name="pass9">
+				<viewport>SmallViewport3</viewport>
+				<texture name ="shadowMap3" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+ 			<pass class="quad" name="pass10">
+				<viewport>SmallViewport4</viewport>
+				<texture name ="shadowMap4" fromLibrary="Shadow Materials"/>
+			</pass>
+	 		
+		</pipeline>
+	</pipelines>
+</project>

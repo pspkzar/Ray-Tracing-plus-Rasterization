@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<materiallib name="Dam Materials">
+
+  <rendertargets>
+
+    <rendertarget name ="shadowMapRGBA32F">
+      <size width="2048" height="2048" />
+      <colors>
+        <color name="shadowMapRGBA32F"
+									internalFormat="RGBA32F"
+									format="RGB"
+									type="FLOAT"  />
+      </colors>
+    </rendertarget>
+
+    <rendertarget name="depth">
+      <size width="1024" height="1024" />
+      <depth name="shadowMap" noreadandwrite="true"
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT"
+									type="FLOAT"  />
+    </rendertarget>
+    
+    <rendertarget name="simple">
+      <size width="1024" height="1024" />
+      <clear r="0.0" g = "0.0" b = "0.0" a = "0.0"/>
+      <colors>
+        <color name="offscreenrender" format="RGBA"
+												internalFormat="RGBA8"
+												type="UNSIGNED_BYTE" />
+      </colors>
+    </rendertarget>
+
+  </rendertargets>
+
+  <shaders>
+    <shader name="BaseShader" ps="../shadersDam/BaseShader.frag" vs="../shadersDam/BaseShader.vert" />
+    <shader name="perpixel-color-shadow" ps="../shadersDam/perpixel-color-shadow.frag" vs="../shadersDam/perpixel-color-shadow.vert" />
+    <!--<shader name="perpixel-color-shadow-4-depths" ps="../shaders/perpixel-color-shadow-4-depths.frag" vs="../shaders/perpixel-color-shadow-4-depths.vert" />-->
+    <!--<shader name="perpixel-color-shadow-rgba32f" ps="../shaders/perpixel-color-shadow-rgba32f.frag" vs="../shaders/perpixel-color-shadow-rgba32f.vert" />-->
+    <shader name="depthOnly" ps="../shadersDam/depthOnly.frag" vs="../shadersDam/depthOnly.vert" />
+  </shaders>
+
+  <states>
+    <state name="frontCull">
+      <cull value="1" face="FRONT" />
+    </state>
+    <state name ="NegativeOrder">
+      <order value="-1" />
+    </state>
+  </states>
+
+  <materials>
+
+    <material  name="BaseMaterial" >
+      <color>
+        <ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+        <diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+        <specular r="0.0" g="0.0" b="0.0" a="1.0" />
+        <emission r="0.0" g="0.0" b="0.0" a="1.0" />
+        <shininess value="0.0" />
+      </color>
+      <shader>
+        <name>BaseShader</name>
+      </shader>
+      <state name="frontCull"/>
+    </material>
+
+    <material name="flat-with-shadow">
+      
+      <color>
+        <ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+        <diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+        <specular r="0.0" g="0.0" b="0.0" a="1.0" />
+        <emission r="0.0" g="0.0" b="0.0" a="1.0" />
+        <shininess value="0.0" />
+      </color>
+
+      
+      <shader>
+        <name>perpixel-color-shadow</name>
+        <values>
+          <valueof uniform="lightDirection"  type="CAMERA"
+														context="shadow#getShadowMap-LightCam"
+														component="VIEW" />
+
+          <valueof uniform="lightColor" 	type="LIGHT"
+													context="Sun"
+													component="DIFFUSE" />
+
+          <valueof uniform="lightSpaceMat" 	type="CAMERA"
+														context="shadow#getShadowMap-LightCam"
+														component="TS05_PVM_MATRIX" />
+          <!--valueof uniform="shadowMap" type="TEXTURE" context="shadowMap" component="UNIT" /-->
+          <valueof uniform="shadowMap" 		type="CURRENT"
+														context="TEXTURE" id="0"
+														component="UNIT" />
+        </values>
+      </shader>
+      
+      <textures>
+        <texture unit="0" name="shadowMap" >
+          <depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+          <filtering min="LINEAR" mag="LINEAR" />
+        </texture>
+      </textures>
+      
+    </material>
+
+    <material  name="depthOnly" >
+      <color>
+        <ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+        <diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+        <specular r="0.0" g="0.0" b="0.0" a="1.0" />
+        <emission r="0.0" g="0.0" b="0.0" a="1.0" />
+        <shininess value="0.0" />
+      </color>
+      <shader>
+        <name>depthOnly</name>
+      </shader>
+      <state name="frontCull" />
+    </material>
+
+    <material  name="depthOnlyNoCull" >
+      <color>
+        <ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+        <diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+        <specular r="0.0" g="0.0" b="0.0" a="1.0" />
+        <emission r="0.0" g="0.0" b="0.0" a="1.0" />
+        <shininess value="0.0" />
+      </color>
+      <shader>
+        <name>depthOnly</name>
+      </shader>
+    </material>
+
+    <material  name="NoRender" >
+      <color>
+        <ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+        <diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+        <specular r="0.0" g="0.0" b="0.0" a="1.0" />
+        <emission r="0.0" g="0.0" b="0.0" a="1.0" />
+        <shininess value="0.0" />
+      </color>
+      <state name="NegativeOrder"/>
+    </material>
+
+  </materials>
+
+</materiallib>

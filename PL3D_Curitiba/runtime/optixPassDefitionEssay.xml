@@ -1,0 +1,61 @@
+			<pass class="optix" name="pass1">
+				<!-- defines the geometry for the pass -->
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<!-- defines the camera for the pass, the camera data will be available to Optix (optional) -->
+				<camera>MainCamera</camera>
+				<!-- defines the output -->
+				<rendertarget name="test" fromLibrary="Optix Ray Tracer Render Target" />
+				<!-- light data that will be available to optix (optional)-->
+				<lights>
+					<light>Sun</light>
+				</lights>
+				
+				<!-- entry points  for this pass (optional); 
+				if not specified then a default pinhole camera and exception program will be used -->
+				<optixEntryPoint>
+					<optixProgram type="RayGen" file="optix/common.ptx" proc="pinhole_camera"/> 
+					<optixProgram type="Exception" file="optix/common.ptx" proc="exception"/> 
+				</optixEntryPoint>
+				
+				<!-- defines which attributes per vertex to send to optix (optional) -->
+				<optixVertexAttributes>
+					<optixAttr type="position"/>
+					<optixAttr type="normal"/> 
+					<!-- if texCoords are not used, textures will not be sent to optix -->
+					<optixAttr type="texCoord0"/>
+				</optixVertexAttributes>
+				
+				<!-- for global optix settings (optional) -->
+				<optixSettings>
+					<optixSetting name="chacheSize" value="2048"/>
+				</optixSettings>
+				
+				<!-- global variables passed to optix (optional) -->
+				<optixUserVariables>
+					<optixUserVariable name="epsilon" type="float" value="0.000001"/>
+					<optixUserVariable name="myvar" type= "vec3" valueX="1.0" valueY="2.0" valueZ="3.0"/>
+				</optixUserVariables>
+
+				<!-- this are the default settings and programs to be applied per material (optional);
+				standard phong shading will be used by default -->
+				<optixDefaultMaterial useTextures="true">
+					<optixProgram type="Closest_Hit" ray="Phong" file="optix/common.ptx" proc="shade"/> 
+					<optixProgram type="Miss" ray="Phong" file="optix/common.ptx" proc="background"/> 
+
+					<optixProgram type="Any_Hit" ray="Shadow" file="optix/common.ptx" proc="shadows"/> 
+				</optixDefaultMaterial>
+				
+				<!-- allows the override of the default material programs for specific materials (optional) -->
+				<optixMaterialMap>
+					<optixMap to="Vidro">
+						<optixProgram type="Any_Hit" ray="Phong" file="optix/common.ptx" proc="keepGoing"/> 
+						<optixProgram type="Any_Hit" ray="Shadow" file="optix/common.ptx" proc="keepGoing"/> 
+					</optixMap>	
+					<optixMap to="Grades*">
+						<optixProgram type="Any_Hit" ray="Phong" file="optix/common.ptx" proc="alphaTest"/> 
+						<optixProgram type="Any_Hit" ray="Shadows" file="optix/common.ptx" proc="alphaTest"/> 
+					</optixMap>	
+				</optixMaterialMap>
+			</pass>

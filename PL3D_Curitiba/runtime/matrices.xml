@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<project name="depth buffer" width=1200 height=400 useTriangleIDs="true">
+	<assets>
+		<scenes>
+			<!--scene name="MainScene">
+				<folder>..\ntg-bin-pl3dxiv</folder>
+				<folder>..\ntg-bin-terrain</folder>
+			</scene-->
+			<!--scene name="CubeLand" scaleY = 0.5 scaleX=1.0 scaleZ=1.0>
+				<geometry name = "box1" type = "Box"  
+												transX=2.0 transY=0 transZ=0 
+												scale=2 material="crateBox"/>
+			</scene-->
+			<scene name="CubeLand">
+				<file>..\3dsmodels\bench.obj</file>
+			</scene>	
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true" ratio="1">
+				<geometry x="0" y="0" width=".33"  />
+				<bgcolor  r="0.2" g="0.2" b="0.4" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true" ratio ="1">
+				<geometry x=".33" y="0" width=".33"  />
+				<bgcolor  r="0.2" g="0.2" b="0.4" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true" ratio ="1">
+				<geometry x=".66" y="0" width=".33"  />
+				<bgcolor  r="0.2" g="0.2" b="0.4" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="GodCamera" type="perspective" >
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-3.127" y="-0.06" z="4.301" />
+				<view x="0.936" y="-0.03" z="-0.35" />
+				<up x="0.028" y="0.995" z="-0.01" />
+			</camera>
+			<camera name="GodCamera2" type="perspective" >
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-1.49" y="28.41" z="-58-17" />
+				<view x="0.15" y="-0.37" z="0.91" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="UserCamera" type="perspective" >
+				<viewport>SmallViewport1</viewport>
+				<perspective fov="60.0" near="10.0" far="40.0" />
+				<position x="-18.734" y="6.51" z="-3.13" />
+				<view x="0.934" y="-0.189" z="0.3" />
+				<up x="0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-52" y="77.0" z="-27.0" />
+				<direction x="-1" y="1" z="1" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materialLibs>
+			<mlib filename="..\mlibs\matricesDemoMaterials.mlib"/>
+			<mlib filename="..\mlibs\shaderGL3.mlib"/>
+		</materialLibs>
+	</assets>
+	
+	<pipelines>
+		<pipeline name="shadow" default="true" defaultCamera="UserCamera">
+		
+			<!--pass class="default" name="pass1">
+				<scenes>
+					<scene>CubeLand</scene>
+					<scene>UserCamera</scene>
+				</scenes>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<camera>GodCamera</camera>
+				<viewport>SmallViewport1</viewport>	
+				<map toMaterial="*">
+					<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+				</map>
+			</pass-->
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>CubeLand</scene>
+				</scenes>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<camera>UserCamera</camera>
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+					</map>
+				</injectionMaps>
+			</pass>
+			
+			<pass class="default" name="pass2">
+				<scenes>
+					<scene>CubeLand</scene>
+					<scene>UserCamera</scene>
+				</scenes>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<camera>GodCamera2</camera>
+				<rendertarget name="color" fromLibrary="Matrices Demo Materials"/>
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+					</map>
+				</injectionMaps>
+			</pass>
+			<pass class="quad" name="pass2a">
+				<viewport>SmallViewport2</viewport>				
+				<texture name="color1" fromLibrary="Matrices Demo Materials"/>
+				<!--map toMaterial="__Quad">
+					<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+				</map-->
+			</pass>
+			
+			<!--pass class="default" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>MainViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass-->
+			
+			<pass class="default" name="pass3">
+				<scenes>
+					<scene>CubeLand</scene>
+					<scene>UserCamera</scene>
+				</scenes>
+				<camera>GodCamera</camera>
+				<viewport>SmallViewport3</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="imageSpace" fromLibrary="Matrices Demo Materials" />
+					</map>
+				</injectionMaps>
+			</pass>
+			
+			
+
+		</pipeline>
+	</pipelines>
+</project>

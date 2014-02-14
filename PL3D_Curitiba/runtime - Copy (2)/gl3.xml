@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<project name="aula 1">
+	<assets>
+	
+		<scenes>
+			<scene name="Main" param="NO_SWAP">
+				<!--file>..\3dsmodels\al.obj</file-->
+				<file>..\ntg-bench\bench.obj</file>
+			</scene>
+			<!--scene name="Main" >
+				<geometry name = "box1" type = "Sphere" slices=10 stacks=10 
+												transX=-2.5 transY=0 transZ=0 
+												scale=2 material="crateBox"/>
+				<geometry name = "box2" type = "Box" transX= 2.5 transY = 0 transZ=0 
+													 scaleX= 2 scaleY = 4 scaleZ =2 
+													 material="crateBox" />
+				<geometry name = "axis" type = "Axis" scale = 5 />
+			</scene>
+			<!--scene name="Other" type="Scene">
+				<folder>..\ntg-bin-pl3d-secxxi-other</folder>
+			</scene>
+			<scene name="Arvores" type="Octree" 
+				   filename="..\ntg-bin-pl3d-secxxi\avPlatanosArvoresIII.cbo" />
+			<scene name="Main" type="Octree" 
+				   filename="..\ntg-bin-pl3d-secxxi\ponteLimaSecXX_with_octreeVI.cbo" /-->
+
+		</scenes>
+		
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="1.0" g="1.0" b="1.0" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1" far="1000.0" />
+				<position x="-17.356" y="15.980" z="-14.920" />
+				<view x="0.29" y="-0.44" z="0.84" />
+				<up x="0" y="1" z="0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="1.0" y="-0.5" z="1" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materiallibs>
+			<mlib filename = "..\mlibs\shaderGL3.mlib"/>
+		</materiallibs> 
+	</assets>
+	
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<!--scene>MainScene</scene-->
+					<scene>Main</scene>
+					<!--scene>Other</scene-->
+					<!--scene>Arvores</scene-->
+				</scenes>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<map toMaterial="*">
+					<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+				</map>
+				<!--materialmaps>
+					<map fromMaterial="*" toLibrary="Shader GL3" toMaterial="dirLightDifAmbPixGeom" />
+				</materialmaps-->
+			</pass>
+			
+		</pipeline>
+	</pipelines>
+</project>

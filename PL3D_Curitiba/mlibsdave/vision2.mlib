@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<materiallib name="VisionMaterials">
+	<rendertargets>
+		<rendertarget name="depth">
+			<size width="32" height="32" />
+			<depth name="shadowMap" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+			<colors>
+        <color name="triangleIDsFromLight" 	internalFormat="RGBA32F"
+									format="RGBA"
+									type="FLOAT" />
+        <!--color name="triangleIDsFromLight" 	internalFormat="RGBA"
+									format="RGBA"
+									type="FLOAT" /-->
+			</colors>
+		</rendertarget>
+		<rendertarget name="triangleIDs">
+			<size width="256" height="256" />
+			<colors>
+				<color name="shadowedscene" internalFormat="RGBA"
+									format="RGBA" 
+									type="FLOAT"  />
+        <color name="pixelCoords" 	internalFormat="RGBA32F"
+									format="RGBA"
+									type="FLOAT" />
+				<color name="triangleIDs" 	internalFormat="RGBA32F"
+									format="RGBA"
+									type="FLOAT" />
+        <!--color name="pixelCoords" 	internalFormat="RGBA"
+									format="RGBA"
+									type="FLOAT" />
+        <color name="triangleIDs" 	internalFormat="RGBA"
+									format="RGBA"
+									type="FLOAT" /-->
+									
+			</colors>
+		</rendertarget>
+		
+		<rendertarget name="contours">
+					<size width="256" height="256" />
+					<colors>
+						<color name="contours"  internalFormat="RGBA"
+											    format="RGBA" 
+												type="FLOAT"  />
+					</colors>
+		</rendertarget>
+
+	</rendertargets>
+	
+	<states>
+		<state name ="NegativePriority">
+			<priority value="-1" />
+		</state>
+	</states>
+
+	<textures>
+		<texture name="image" filename="../Texturas/ParedePedra.jpg" />
+	</textures>
+	<shaders>
+		<shader name="contour" 
+				ps="../shaders/contour.frag" 
+				vs="../shaders/contour.vert" />
+		<shader name="depthOnly" 
+				ps="../shaders/depthOnly.frag" 
+				vs="../shaders/depthOnly.vert" />
+		<shader name="perpixel-color-shadow" 
+				ps="../shaders/perpixel-color-shadow.frag" 
+				vs="../shaders/perpixel-color-shadow.vert" />
+		<shader name="perpixel-bw-shadow" 
+				ps="../shaders/perpixel-bw-shadow.frag" 
+				vs="../shaders/perpixel-color-shadow.vert" />
+		<shader name="perpixel-bw-shadow_with_IDs" 
+				ps="../shaders/perpixel-bw-shadow_ID.frag" 
+				vs="../shaders/perpixel-color-shadow_ID.vert" />
+	</shaders>
+	<materials>
+		<material name="ContourShader">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>contour</name>
+				<values>
+					<valueof uniform="texUnit" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />
+					<!--valueof uniform="texUnit" type="TEXTURE" context="shadowedscene" component="UNIT" /--> 
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowedscene" />
+			</textures>			
+		</material>
+		
+		
+		
+		
+		<material name="ContourShaderTest">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>contour</name>
+				<values>
+					<valueof uniform="texUnit" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />					<!--valueof uniform="texUnit" 
+							 type="TEXTURE" context="image" component="UNIT" /--> 
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="image" />
+			</textures>			
+		</material>
+
+
+
+		<material name="flat-with-shadow">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow</name>
+				<values>
+          <valueof uniform="lightDirection" 
+									type="CAMERA" context="igide#shadowmap-LightCam" component="VIEW" />
+          <valueof uniform="lightColor" 
+									type="LIGHT" context="Sun" component="DIFFUSE" />
+ 					<valueof uniform="lightSpaceMat" 
+									type="CAMERA" context="igide#shadowmap-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="shadowMap" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />					<!--valueof uniform="shadowMap" 
+									type="TEXTURE" context="shadowMap" component="UNIT" /--> 
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>
+		
+		
+		
+		<material name="bw-shadows">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-bw-shadow</name>
+				<values>
+					<valueof uniform="lightDirection" 
+							 type="CAMERA" context="igide#shadowmap-LightCam" component="VIEW" /> 
+					<valueof uniform="lightColor" 
+							 type="LIGHT" context="Sun" component="DIFFUSE" />
+ 					<valueof uniform="lightSpaceMat" 
+							 type="CAMERA" context="igide#shadowmap-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="shadowMap" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />
+					<!--valueof uniform="shadowMap" 
+							 type="TEXTURE" context="shadowMap" component="UNIT" /--> 
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>		
+
+
+		
+		<material name="bw-shadows_with_IDs">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			
+			<shader>
+				<name>perpixel-bw-shadow_with_IDs</name>
+				<values>
+          <valueof uniform="lightDirection" 
+							 type="CAMERA" context="igide#shadowmap-LightCam" component="VIEW" />
+          <valueof uniform="lightColor" 
+							 type="LIGHT" context="Sun" component="DIFFUSE" />
+          <valueof uniform="lightSpaceMat" 
+							 type="CAMERA" context="igide#shadowmap-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="shadowMap" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />
+					<!--valueof uniform="shadowMap" 
+							 type="TEXTURE" context="shadowMap" component="UNIT" /--> 
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>	
+
+		<material  name="NoRender" >
+			<color>
+				<ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="NegativePriority"/>
+		</material>
+
+		<material  name="depthOnly" >
+			<color>
+				<ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>depthOnly</name>
+			</shader>		
+		</material>
+
+	</materials>
+</materiallib>

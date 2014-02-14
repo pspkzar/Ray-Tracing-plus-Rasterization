@@ -1,0 +1,71 @@
+Name                                    #c  CPU(ms)  GPU(ms)       wt
+----                              ------------------------------------
+ Main cicle                              1    32.95              0.00
+  Pipeline execute                       1    32.89              0.00
+    fixedfunction#pass1                  1     2.93              0.00
+      View Frustum Culling               1     0.06              0.00
+      Queue add                         43     0.06              0.00
+        Get material                    43     0.01              0.00
+      Process queue                      1     2.77              0.00
+        Material prepare                33     0.36              0.01
+          State                         33     0.01              0.00
+          Color                         33     0.02              0.01
+          Texture                       33     0.00              0.01
+          Shaders                       33     0.29              0.01
+            GetShader                   33     0.02              0.01
+            Set Uniforms                33     0.25              0.01
+        Geometry rendering              33     2.32              0.00
+          Set Uniforms                  43     0.23              0.01
+          Draw                          43     2.00              0.01
+            Bindings                    43     1.47              0.01
+            Draw elements               43     0.02              0.00
+    fixedfunction#pass2                  1    29.55              0.00
+    fixedfunction#pass3                  1     0.27              0.00
+      Queue add                          1     0.01              0.00
+        Get material                     1     0.00              0.00
+      Process queue                      1     0.23              0.00
+        Material prepare                 1     0.01              0.00
+          State                          1     0.00              0.00
+          Color                          1     0.00              0.00
+          Texture                        1     0.00              0.00
+          Shaders                        1     0.01              0.00
+            GetShader                    1     0.00              0.00
+            Set Uniforms                 1     0.00              0.00
+        Geometry rendering               1     0.22              0.00
+          Set Uniforms                   1     0.00              0.00
+          Draw                           1     0.22              0.00
+            Bindings                     1     0.00              0.00
+            Draw elements                1     0.01              0.00
+    fixedfunction#pass4                  1     0.05              0.00
+      Queue add                          1     0.00              0.00
+        Get material                     1     0.00              0.00
+      Process queue                      1     0.05              0.00
+        Material prepare                 1     0.00              0.00
+          State                          1     0.00              0.00
+          Color                          1     0.00              0.00
+          Texture                        1     0.00              0.00
+          Shaders                        1     0.00              0.00
+            GetShader                    1     0.00              0.00
+            Set Uniforms                 1     0.00              0.00
+        Geometry rendering               1     0.05              0.00
+          Set Uniforms                   1     0.00              0.00
+          Draw                           1     0.05              0.00
+            Bindings                     1     0.00              0.00
+            Draw elements                1     0.00              0.00
+    fixedfunction#pass5                  1     0.08              0.00
+      Queue add                          1     0.00              0.00
+        Get material                     1     0.00              0.00
+      Process queue                      1     0.08              0.00
+        Material prepare                 1     0.02              0.00
+          State                          1     0.00              0.00
+          Color                          1     0.00              0.00
+          Texture                        1     0.00              0.01
+          Shaders                        1     0.01              0.00
+            GetShader                    1     0.00              0.00
+            Set Uniforms                 1     0.00              0.00
+        Geometry rendering               1     0.06              0.00
+          Set Uniforms                   1     0.00              0.00
+          Draw                           1     0.06              0.00
+            Bindings                     1     0.01              0.00
+            Draw elements                1     0.00              0.00
+  Zi swap                                1     0.04              0.00

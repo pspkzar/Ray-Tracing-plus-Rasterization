@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<materiallib name="PL3D_Materials">
+	<textures>
+		<texture name="Grade_01_02_03" filename="../Texturas/AL01_Grade1.tif" />
+		<texture name="Agua" filename="../Texturas/water.jpg" />
+		<texture name="Sky" filename="../Texturas/sky7a.jpg" />
+		
+	</textures>
+	<states>
+		<state name="Transparent">
+			<priority value="2" />
+			<blend src="SRC_ALPHA" dst="ONE_MINUS_SRC_ALPHA" />
+		</state>	
+		<state name="Grades"> 
+			<priority value="1" />
+			<alphatest func="GREATER" ref="0.25"/>
+			<cull value="0" /> 
+		</state>			
+	</states>
+	<materials>
+		<material name="Vidro">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="0.43155" g="0.584887" b="0.685" a="0.41322" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<state name="Transparent" />
+		</material>
+		<material name="Sky">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.0" g="0.0" b="0.0" a="0.75" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="1.0" g="1.0" b="1.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="Sky" />
+			</textures>
+		</material>
+		<material name="Aqua">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="0.9" g="0.9" b="0.9" a="0.75" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<state name="Transparent" />
+			<textures>
+				<texture unit="0" name="Agua" />
+			</textures>
+		</material>
+		<material name="Grades">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.36364" g="0.36364" b="0.36364" a="1.0" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<state name="Grades" />
+			<textures>
+				<texture unit="0" name="Grade_01_02_03" />
+			</textures>
+		</material>
+	</materials>
+</materiallib>

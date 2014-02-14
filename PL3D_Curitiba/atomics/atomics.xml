@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<project name="test atomics" width=512 height=512>
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<file>..\ntg-bench\bench.obj</file>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.2" g="0.2" b="0.4" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="Camera1" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-23.277" y="18.541" z="30.143" />
+				<view x="0.397" y="-0.644774" z="-0.652" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="0.744" y="-0.408" z="0.527" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		
+		<atomics>
+			<atomic id=0 semantics="Red Pixels" />
+			<atomic id=1 semantics="Green Pixels" />
+			<atomic id=2 semantics="Blue Pixels" />
+		</atomics>	
+		
+		<materialLibs>
+			<mlib filename="atomics.mlib"/>
+		</materialLibs>
+	</assets>
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>Camera1</camera>
+				<viewport>MainViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="atomic" fromLibrary="atomics" />
+					</map>
+				</injectionMaps>
+			</pass>
+		</pipeline>
+	</pipelines>
+</project>

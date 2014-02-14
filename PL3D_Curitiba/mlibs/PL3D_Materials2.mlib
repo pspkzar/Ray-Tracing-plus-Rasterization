@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<materiallib name="PL3D_Materials">
+	<textures>
+		<texture name="Grade_01_02_03" filename="../Texturas/AL01_Grade1.tif" />
+	</textures>
+	<states>
+		<state name ="Transparent">
+			<order value="1" />
+			<blend src="SRC_ALPHA" dst="ONE_MINUS_SRC_ALPHA" />
+		</state>
+		<state name="Grades">
+			<alphaTest func="GREATER" ref="0.25" />
+			<cull enable=0 />	
+		</state>
+	</states>
+	<materials>
+		<material name="Vidro">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="0.43155" g="0.584887" b="0.685" a="0.41322" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<state>
+				<order value="1" />
+				<blend src="SRC_ALPHA" dst="ONE_MINUS_SRC_ALPHA" />
+			</state>	
+		</material>
+		<material name="Grades">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.36364" g="0.36364" b="0.36364" a="1.0" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<state name="Grades" />
+			<!-- adicionar a possibilidade de se colocar aqui um nome >
+				<alphatest func="GREATER" ref="0.25"/>
+				<cull enable="0" />
+			</state/-->	
+			<textures>
+				<texture unit="0" name="Grade_01_02_03" />
+			</textures>
+		</material>
+	</materials>
+</materiallib>

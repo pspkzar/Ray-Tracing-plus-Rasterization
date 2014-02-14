@@ -1,0 +1,2876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2012-06-30T19:43:19Z</created><keywords></keywords><modified>2012-06-30T19:43:19Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="file1-image" name="file1"><init_from>../Texturas/RebocoBranco.tif</init_from></image>
+    <image id="file12-image" name="file12"><init_from>../Texturas/telha2.tif</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="RebocoBranco" name="RebocoBranco">
+      <instance_effect url="#RebocoBranco-fx"/>
+    </material>
+    <material id="Telhas" name="Telhas">
+      <instance_effect url="#Telhas-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="RebocoBranco-fx" name="RebocoBranco">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Telhas-fx" name="Telhas">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+              <texture texture="file12-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">0.000000  0.000000 0.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="polySurface799-lib" name="polySurface799Mesh">
+      <mesh>
+        <source id="polySurface799-POSITION">
+          <float_array id="polySurface799-POSITION-array" count="30">
+-5310.566895 1133.314819 22450.609375
+-4185.554688 1133.314819 21509.023438
+-3476.860596 1326.062500 22892.888672
+-4857.918945 1133.314819 23433.708984
+-4857.918945 2036.695557 23433.708984
+-5310.566895 2036.695557 22450.609375
+-3476.860596 2036.695557 22892.888672
+-4185.554688 2036.695557 21509.023438
+-3831.207520 2686.259521 22200.957031
+-5084.243164 2670.351563 22942.160156
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface799-POSITION-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface799-Normal0">
+          <float_array id="polySurface799-Normal0-array" count="108">
+0.080947 -0.992015 0.096716
+0.099400 -0.994817 0.021428
+0.099400 -0.994817 0.021428
+0.099400 -0.994817 0.021428
+0.099400 -0.994817 0.021428
+0.117256 -0.991633 -0.053988
+-0.908342 0.000000 0.418229
+-0.908342 0.000000 0.418228
+-0.908342 0.000000 0.418229
+-0.908343 0.000000 0.418226
+-0.908342 0.000000 0.418227
+-0.908342 0.000000 0.418228
+-0.908342 0.000000 0.418227
+-0.908342 0.000000 0.418229
+-0.908342 0.000000 0.418228
+0.364638 0.000000 0.931150
+0.364638 0.000000 0.931150
+0.364638 0.000000 0.931150
+0.364638 0.000000 0.931150
+0.364638 0.000000 0.931150
+0.364638 0.000000 0.931150
+0.890074 0.000000 -0.455817
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+0.890073 0.000000 -0.455818
+-0.641821 0.000000 -0.766854
+-0.641822 0.000000 -0.766853
+-0.641822 0.000000 -0.766853
+-0.641822 0.000000 -0.766853
+-0.641822 0.000000 -0.766853
+-0.641823 0.000000 -0.766853
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface799-Normal0-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface799-UV0">
+          <float_array id="polySurface799-UV0-array" count="40">
+0.001992 0.255099
+0.304542 0.001878
+0.495132 0.374042
+0.123723 0.519485
+0.503068 0.266264
+0.503068 0.001878
+0.746015 0.001878
+0.916425 0.134071
+0.746015 0.266264
+0.503068 0.519485
+0.746015 0.519485
+0.376762 0.894885
+0.428598 0.523476
+0.619709 0.523476
+0.619709 0.894885
+0.625844 0.575312
+0.998008 0.523476
+0.998008 0.766424
+0.811926 0.941112
+0.625844 0.766424
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface799-UV0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface799-VERTEX">
+          <input semantic="POSITION" source="#polySurface799-POSITION"/>
+        </vertices>
+        <triangles count="12" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface799-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface799-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface799-UV0"/><p> 1 0 1 2 1 2 0 2 0 0 3 0 2 4 2 3 5 3 9 6 7 5 7 8 4 8 6 0 9 4 3 10 5 5 11 8 3 12 5 4 13 6 5 14 8 3 15 11 2 16 12 4 17 14 4 18 14 2 19 12 6 20 13 1 21 16 7 22 17 2 23 15 2 24 15 7 25 17 6 26 19 7 27 17 8 28 18 6 29 19 1 30 9 0 31 4 7 32 10 7 33 10 0 34 4 5 35 8</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface800-lib" name="polySurface800Mesh">
+      <mesh>
+        <source id="polySurface800-POSITION">
+          <float_array id="polySurface800-POSITION-array" count="18">
+-5084.243164 2670.351563 22942.160156
+-4857.919434 2036.695435 23433.708984
+-3476.860840 2036.695435 22892.888672
+-3831.207520 2686.259521 22200.957031
+-5310.566895 2036.695679 22450.609375
+-4185.554688 2036.695557 21509.023438
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface800-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface800-Normal0">
+          <float_array id="polySurface800-Normal0-array" count="36">
+0.277480 0.648780 0.708583
+0.299914 0.711363 0.635622
+0.299914 0.711363 0.635622
+0.299914 0.711363 0.635622
+0.299914 0.711363 0.635622
+0.319426 0.767015 0.556467
+-0.394243 0.647059 -0.652600
+-0.407812 0.706456 -0.578454
+-0.407812 0.706456 -0.578454
+-0.407812 0.706456 -0.578454
+-0.407812 0.706456 -0.578454
+-0.417625 0.759347 -0.498980
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface800-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface800-UV0">
+          <float_array id="polySurface800-UV0-array" count="12">
+0.080278 0.296465
+0.000000 0.592931
+0.816780 0.871159
+0.908390 0.435580
+0.160555 0.000000
+1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface800-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface800-VERTEX">
+          <input semantic="POSITION" source="#polySurface800-POSITION"/>
+        </vertices>
+        <triangles count="4" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface800-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface800-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface800-UV0"/><p> 1 0 1 2 1 2 0 2 0 0 3 0 2 4 2 3 5 3 0 6 0 3 7 3 4 8 4 4 9 4 3 10 3 5 11 5</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface801-lib" name="polySurface801Mesh">
+      <mesh>
+        <source id="polySurface801-POSITION">
+          <float_array id="polySurface801-POSITION-array" count="39">
+-6775.348633 975.000000 22203.578125
+-4984.578613 975.000000 20422.664063
+-4479.436523 1014.562317 20345.535156
+-3778.687012 975.000000 21108.062500
+-4185.554688 1133.314819 21509.023438
+-5949.265625 975.000000 23023.824219
+-5949.265625 1950.713135 23023.824219
+-6775.348633 1950.713135 22203.578125
+-4185.554688 1950.713135 21509.023438
+-3778.687012 1950.713135 21108.062500
+-4479.436523 1990.275513 20345.535156
+-4984.578613 1950.713135 20422.664063
+-6362.307129 2190.602051 22613.701172
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface801-POSITION-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface801-Normal0">
+          <float_array id="polySurface801-Normal0-array" count="153">
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+0.042056 -0.997978 0.047650
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+-0.704596 0.000000 0.709609
+0.651547 0.000000 0.758608
+0.651547 0.000000 0.758608
+0.651547 0.000000 0.758608
+0.651547 0.000000 0.758608
+0.651547 0.000000 0.758608
+0.651547 0.000000 0.758608
+0.701918 0.000000 0.712258
+0.701918 0.000000 0.712258
+0.701918 0.000000 0.712258
+0.701918 0.000000 0.712258
+0.701918 0.000000 0.712258
+0.701918 0.000000 0.712258
+0.706118 -0.000000 -0.708094
+0.706118 -0.000000 -0.708094
+0.706118 -0.000000 -0.708094
+0.706118 -0.000000 -0.708094
+0.706118 -0.000000 -0.708094
+0.706118 -0.000000 -0.708094
+-0.049835 0.000000 -0.998757
+-0.049835 0.000000 -0.998757
+-0.049835 0.000000 -0.998757
+-0.049835 0.000000 -0.998757
+-0.049835 0.000000 -0.998757
+-0.049835 0.000000 -0.998757
+-0.705153 0.000000 -0.709056
+-0.705153 0.000000 -0.709056
+-0.705153 0.000000 -0.709056
+-0.705153 0.000000 -0.709056
+-0.705153 0.000000 -0.709056
+-0.705153 0.000000 -0.709056
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface801-Normal0-array" count="51" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface801-UV0">
+          <float_array id="polySurface801-UV0-array" count="50">
+0.377176 0.607307
+0.017438 0.245578
+0.001859 0.143541
+0.155887 0.001992
+0.236879 0.084178
+0.542863 0.440441
+0.746520 0.143541
+0.754512 0.245578
+0.557421 0.245578
+0.549429 0.143541
+0.754512 0.607307
+0.557421 0.607307
+0.754512 0.001992
+0.557421 0.001992
+0.562738 0.611031
+0.728425 0.611031
+0.728425 0.808122
+0.645582 0.856579
+0.562738 0.808122
+0.734150 0.998008
+0.766129 0.692024
+0.931241 0.692024
+0.931241 0.998008
+0.734150 0.611031
+0.931241 0.611031
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface801-UV0-array" count="25" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface801-VERTEX">
+          <input semantic="POSITION" source="#polySurface801-POSITION"/>
+        </vertices>
+        <triangles count="17" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface801-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface801-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface801-UV0"/><p> 0 0 0 1 1 1 5 2 5 5 3 5 1 4 1 4 5 4 1 6 1 2 7 2 4 8 4 2 9 2 3 10 3 4 11 4 0 12 14 5 13 15 7 14 18 7 15 18 5 16 15 12 17 17 5 18 15 6 19 16 12 20 17 5 21 19 4 22 20 6 23 22 6 24 22 4 25 20 8 26 21 3 27 23 9 28 24 4 29 20 4 30 20 9 31 24 8 32 21 3 33 12 2 34 6 9 35 13 9 36 13 2 37 6 10 38 9 1 39 7 11 40 8 2 41 6 2 42 6 11 43 8 10 44 9 1 45 7 0 46 10 11 47 8 11 48 8 0 49 10 7 50 11</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface802-lib" name="polySurface802Mesh">
+      <mesh>
+        <source id="polySurface802-POSITION">
+          <float_array id="polySurface802-POSITION-array" count="24">
+-4620.225098 2190.602051 21057.380859
+-3778.686768 1950.713135 21108.062500
+-6775.349121 1950.713013 22203.578125
+-6362.307129 2190.602051 22613.701172
+-4984.579102 1950.713379 20422.666016
+-4479.436523 1990.275513 20345.535156
+-5949.265137 1950.713013 23023.824219
+-4185.554199 1950.713013 21509.023438
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface802-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface802-Normal0">
+          <float_array id="polySurface802-Normal0-array" count="63">
+0.278742 0.918787 -0.279524
+0.278742 0.918787 -0.279524
+0.278745 0.918786 -0.279522
+-0.238827 0.937571 -0.252827
+-0.238827 0.937571 -0.252827
+-0.238827 0.937571 -0.252827
+-0.238827 0.937571 -0.252827
+-0.238827 0.937571 -0.252827
+-0.238827 0.937571 -0.252827
+-0.017205 0.938508 -0.344829
+-0.017205 0.938508 -0.344829
+-0.017205 0.938508 -0.344829
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+0.244280 0.929811 0.275278
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface802-Normal0-array" count="21" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface802-UV0">
+          <float_array id="polySurface802-UV0-array" count="16">
+0.806386 0.245129
+1.000000 0.463949
+0.000000 0.000000
+0.001267 0.200478
+0.871697 0.000000
+0.998558 0.114818
+0.002533 0.400957
+0.802841 0.462897
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface802-UV0-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface802-VERTEX">
+          <input semantic="POSITION" source="#polySurface802-POSITION"/>
+        </vertices>
+        <triangles count="7" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface802-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface802-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface802-UV0"/><p> 0 0 0 1 1 1 5 2 5 3 3 3 0 4 0 2 5 2 2 6 2 0 7 0 4 8 4 4 9 4 0 10 0 5 11 5 1 12 1 0 13 0 7 14 7 3 15 3 6 16 6 0 17 0 6 18 6 7 19 7 0 20 0</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface803-lib" name="polySurface803Mesh">
+      <mesh>
+        <source id="polySurface803-POSITION">
+          <float_array id="polySurface803-POSITION-array" count="24">
+-2632.903564 1327.678955 22343.017578
+-3501.860840 1325.336182 22877.777344
+-2696.425781 1325.331421 24172.240234
+-1734.553223 1325.336182 23497.951172
+-2632.903564 2230.738770 22343.017578
+-3501.860840 2228.395996 22877.777344
+-2696.425781 2228.391113 24172.240234
+-1734.553223 2228.395996 23497.951172
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface803-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface803-Normal0">
+          <float_array id="polySurface803-Normal0-array" count="90">
+-0.000917 -0.999999 -0.001315
+0.000515 -0.999999 -0.001266
+0.000515 -0.999999 -0.001266
+0.000515 -0.999999 -0.001266
+0.000515 -0.999999 -0.001266
+0.001948 -0.999997 -0.001216
+-0.524108 0.000000 -0.851652
+-0.524110 0.000000 -0.851651
+-0.524110 0.000000 -0.851651
+-0.524110 0.000000 -0.851651
+-0.524110 0.000000 -0.851651
+-0.524113 0.000000 -0.851649
+-0.849059 0.000000 0.528298
+-0.849059 0.000000 0.528298
+-0.849059 0.000000 0.528298
+-0.849059 0.000000 0.528298
+-0.849059 0.000000 0.528298
+-0.849059 0.000000 0.528298
+0.574022 0.000000 0.818840
+0.574021 0.000000 0.818841
+0.574021 0.000000 0.818841
+0.574021 0.000000 0.818841
+0.574021 0.000000 0.818841
+0.574020 0.000000 0.818842
+0.789330 0.000000 -0.613969
+0.789329 0.000000 -0.613970
+0.789329 0.000000 -0.613970
+0.789329 0.000000 -0.613970
+0.789329 0.000000 -0.613970
+0.789329 0.000000 -0.613971
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface803-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface803-UV0">
+          <float_array id="polySurface803-UV0-array" count="36">
+0.283529 0.001992
+0.574609 0.376210
+0.262946 0.594690
+0.001972 0.175263
+0.873752 0.293072
+0.874511 0.574628
+0.581904 0.574628
+0.581144 0.293072
+0.874511 0.001992
+0.581904 0.001992
+0.695660 0.998008
+0.695658 0.578581
+0.988265 0.578581
+0.988267 0.998008
+0.471102 0.598643
+0.689583 0.598644
+0.689583 0.891252
+0.471102 0.891250
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface803-UV0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface803-VERTEX">
+          <input semantic="POSITION" source="#polySurface803-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface803-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface803-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface803-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 1 6 5 5 7 6 0 8 4 0 9 4 5 10 6 4 11 7 1 12 10 2 13 11 5 14 13 5 15 13 2 16 11 6 17 12 2 18 14 3 19 15 6 20 17 6 21 17 3 22 15 7 23 16 3 24 8 0 25 4 7 26 9 7 27 9 0 28 4 4 29 7</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface804-lib" name="polySurface804Mesh">
+      <mesh>
+        <source id="polySurface804-POSITION">
+          <float_array id="polySurface804-POSITION-array" count="15">
+-2600.684326 2507.573486 23196.548828
+-2632.902344 2230.740967 22343.013672
+-3501.858643 2228.386719 22877.792969
+-2696.424316 2228.383545 24172.255859
+-1734.552246 2228.396973 23497.945313
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface804-POSITION-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface804-Normal0">
+          <float_array id="polySurface804-Normal0-array" count="36">
+-0.185224 0.936790 -0.296843
+-0.185224 0.936790 -0.296843
+-0.185224 0.936790 -0.296843
+-0.359799 0.905773 0.223874
+-0.359799 0.905773 0.223874
+-0.359799 0.905773 0.223874
+0.201668 0.936251 0.287689
+0.201668 0.936251 0.287689
+0.201668 0.936251 0.287689
+0.385178 0.873460 -0.297835
+0.385178 0.873460 -0.297835
+0.385178 0.873460 -0.297835
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface804-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface804-UV0">
+          <float_array id="polySurface804-UV0-array" count="10">
+0.022964 0.000000
+1.000000 0.000000
+0.500000 0.497983
+0.971883 0.688748
+0.000000 0.995966
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface804-UV0-array" count="5" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface804-VERTEX">
+          <input semantic="POSITION" source="#polySurface804-POSITION"/>
+        </vertices>
+        <triangles count="4" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface804-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface804-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface804-UV0"/><p> 1 0 0 2 1 1 0 2 2 0 3 2 2 4 1 3 5 3 4 6 4 0 7 2 3 8 3 1 9 0 0 10 2 4 11 4</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface805-lib" name="polySurface805Mesh">
+      <mesh>
+        <source id="polySurface805-POSITION">
+          <float_array id="polySurface805-POSITION-array" count="24">
+-1634.883789 1481.305420 23630.857422
+-2584.221191 1478.962646 24335.376953
+-1913.382568 1478.957886 25182.242188
+-977.840759 1478.962646 24469.595703
+-1634.883789 2230.738770 23630.857422
+-2584.221191 2228.395996 24335.376953
+-1913.382568 2228.391113 25182.242188
+-977.840759 2228.395996 24469.595703
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface805-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface805-Normal0">
+          <float_array id="polySurface805-Normal0-array" count="90">
+-0.001329 -0.999998 -0.001752
+0.000111 -0.999999 -0.001493
+0.000111 -0.999999 -0.001493
+0.000111 -0.999999 -0.001493
+0.000111 -0.999999 -0.001493
+0.001552 -0.999998 -0.001235
+-0.595944 0.000000 -0.803026
+-0.595943 0.000000 -0.803027
+-0.595943 0.000000 -0.803027
+-0.595943 0.000000 -0.803027
+-0.595943 0.000000 -0.803027
+-0.595942 0.000000 -0.803028
+-0.783862 0.000000 0.620936
+-0.783864 0.000000 0.620933
+-0.783864 0.000000 0.620933
+-0.783864 0.000000 0.620933
+-0.783864 0.000000 0.620933
+-0.783866 0.000000 0.620930
+0.605966 0.000000 0.795491
+0.605964 0.000000 0.795492
+0.605964 0.000000 0.795492
+0.605964 0.000000 0.795492
+0.605964 0.000000 0.795492
+0.605962 0.000000 0.795494
+0.787215 0.000000 -0.616679
+0.787215 0.000000 -0.616679
+0.787215 0.000000 -0.616679
+0.787215 0.000000 -0.616679
+0.787215 0.000000 -0.616679
+0.787215 0.000000 -0.616679
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface805-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface805-UV0">
+          <float_array id="polySurface805-UV0-array" count="36">
+0.001992 0.247419
+0.315479 0.001842
+0.581838 0.351510
+0.265313 0.602243
+0.868931 0.247419
+0.869806 0.602243
+0.589697 0.602243
+0.588821 0.247419
+0.869806 0.001842
+0.589697 0.001842
+0.717899 0.922758
+0.717897 0.606234
+0.998006 0.606234
+0.998008 0.922758
+0.445403 0.606234
+0.711762 0.606236
+0.711762 0.886346
+0.445403 0.886344
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface805-UV0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface805-VERTEX">
+          <input semantic="POSITION" source="#polySurface805-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface805-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface805-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface805-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 1 6 5 5 7 6 0 8 4 0 9 4 5 10 6 4 11 7 1 12 10 2 13 11 5 14 13 5 15 13 2 16 11 6 17 12 2 18 14 3 19 15 6 20 17 6 21 17 3 22 15 7 23 16 3 24 8 0 25 4 7 26 9 7 27 9 0 28 4 4 29 7</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface806-lib" name="polySurface806Mesh">
+      <mesh>
+        <source id="polySurface806-POSITION">
+          <float_array id="polySurface806-POSITION-array" count="15">
+-1781.030640 2507.579346 24402.494141
+-1634.883301 2230.745605 23630.875000
+-2584.221191 2228.395996 24335.375000
+-1913.382568 2228.391113 25182.242188
+-977.840942 2228.399902 24469.611328
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface806-POSITION-array" count="5" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface806-Normal0">
+          <float_array id="polySurface806-Normal0-array" count="36">
+-0.277174 0.886494 -0.370545
+-0.277174 0.886494 -0.370545
+-0.277174 0.886494 -0.370545
+-0.336246 0.903322 0.266360
+-0.336246 0.903322 0.266360
+-0.336246 0.903322 0.266360
+0.278248 0.888333 0.365297
+0.278248 0.888333 0.365297
+0.278248 0.888333 0.365297
+0.336328 0.904872 -0.260940
+0.336328 0.904872 -0.260940
+0.336328 0.904872 -0.260940
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface806-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface806-UV0">
+          <float_array id="polySurface806-UV0-array" count="10">
+0.022964 0.000000
+1.000000 0.000000
+0.500000 0.497983
+0.971883 0.688748
+0.000000 0.995966
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface806-UV0-array" count="5" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface806-VERTEX">
+          <input semantic="POSITION" source="#polySurface806-POSITION"/>
+        </vertices>
+        <triangles count="4" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface806-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface806-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface806-UV0"/><p> 1 0 0 2 1 1 0 2 2 0 3 2 2 4 1 3 5 3 4 6 4 0 7 2 3 8 3 1 9 0 0 10 2 4 11 4</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface807-lib" name="polySurface807Mesh">
+      <mesh>
+        <source id="polySurface807-POSITION">
+          <float_array id="polySurface807-POSITION-array" count="36">
+300.032410 1294.947388 17798.945313
+-318.044250 1294.947388 19834.509766
+-172.825836 1295.968994 20106.791016
+3057.482422 1294.947388 21329.041016
+3812.141846 1294.947510 18980.857422
+300.032410 2309.556152 17798.945313
+-318.044250 2309.556152 19834.509766
+-172.825836 2310.577637 20106.791016
+3057.482422 2309.556152 21329.041016
+3812.141846 2309.556152 18980.857422
+-161.826965 2309.556152 19320.025391
+3310.795898 2595.370605 20563.382813
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface807-POSITION-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface807-Normal0">
+          <float_array id="polySurface807-Normal0-array" count="135">
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.000087 -1.000000 0.000195
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.956863 -0.000000 -0.290541
+-0.882350 0.000000 0.470594
+-0.882350 0.000000 0.470594
+-0.882350 0.000000 0.470594
+-0.882350 0.000000 0.470594
+-0.882350 0.000000 0.470594
+-0.882350 0.000000 0.470594
+-0.353885 0.000000 0.935289
+-0.353885 0.000000 0.935289
+-0.353885 0.000000 0.935289
+-0.353885 0.000000 0.935289
+-0.353885 0.000000 0.935289
+-0.353885 0.000000 0.935289
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.952038 -0.002980 0.305966
+0.318949 0.000000 -0.947772
+0.318949 0.000000 -0.947772
+0.318949 0.000000 -0.947772
+0.318949 0.000000 -0.947772
+0.318949 0.000000 -0.947772
+0.318949 0.000000 -0.947772
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface807-Normal0-array" count="45" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface807-UV0">
+          <float_array id="polySurface807-UV0-array" count="50">
+0.001992 0.593229
+0.200966 0.001968
+0.596281 0.129014
+0.390516 0.672834
+0.344678 0.697281
+0.601965 0.985744
+0.601965 0.643059
+0.772775 0.643059
+0.772775 0.729672
+0.772775 0.985744
+0.602137 0.597220
+0.772946 0.597220
+0.779991 0.545788
+0.779819 0.001968
+0.950628 0.001968
+0.950800 0.545788
+0.779082 0.945094
+0.779082 0.549779
+0.949891 0.549779
+0.998008 0.816196
+0.949891 0.945094
+0.773274 0.001968
+0.773274 0.593229
+0.602464 0.593229
+0.602464 0.001968
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface807-UV0-array" count="25" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface807-VERTEX">
+          <input semantic="POSITION" source="#polySurface807-POSITION"/>
+        </vertices>
+        <triangles count="15" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface807-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface807-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface807-UV0"/><p> 3 0 2 2 1 3 4 2 1 0 3 0 4 4 1 1 5 4 4 6 1 2 7 3 1 8 4 0 9 5 1 10 6 5 11 9 5 12 9 1 13 6 10 14 8 1 15 6 6 16 7 10 17 8 1 18 6 2 19 10 6 20 7 6 21 7 2 22 10 7 23 11 2 24 12 3 25 13 7 26 15 7 27 15 3 28 13 8 29 14 3 30 16 4 31 17 8 32 20 8 33 20 4 34 17 11 35 19 4 36 17 9 37 18 11 38 19 4 39 21 0 40 22 9 41 24 9 42 24 0 43 22 5 44 23</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface808-lib" name="polySurface808Mesh">
+      <mesh>
+        <source id="polySurface808-POSITION">
+          <float_array id="polySurface808-POSITION-array" count="24">
+300.852570 2595.370605 19485.685547
+300.032410 2309.556152 17798.945313
+-161.827011 2309.556396 19320.025391
+-318.044250 2309.556396 19834.511719
+-172.825867 2310.577393 20106.791016
+3057.482422 2309.556152 21329.041016
+3310.795898 2595.370850 20563.382813
+3812.141846 2309.556396 18980.857422
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface808-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface808-Normal0">
+          <float_array id="polySurface808-Normal0-array" count="63">
+-0.481486 0.864174 -0.146198
+-0.481486 0.864174 -0.146198
+-0.481486 0.864174 -0.146198
+-0.481486 0.864175 -0.146198
+-0.481486 0.864175 -0.146198
+-0.481486 0.864175 -0.146198
+-0.119165 0.938613 0.323737
+-0.119165 0.938613 0.323737
+-0.119165 0.938613 0.323737
+-0.119165 0.938613 0.323737
+-0.119165 0.938613 0.323737
+-0.119165 0.938613 0.323737
+-0.330902 0.927671 0.173004
+-0.330902 0.927671 0.173004
+-0.330902 0.927671 0.173004
+0.056658 0.984909 -0.163536
+0.056658 0.984909 -0.163536
+0.056658 0.984909 -0.163536
+0.056658 0.984909 -0.163536
+0.056658 0.984909 -0.163536
+0.056658 0.984909 -0.163536
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface808-Normal0-array" count="21" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface808-UV0">
+          <float_array id="polySurface808-UV0-array" count="16">
+0.000000 0.000000
+0.209548 0.000000
+0.216335 0.127627
+0.362640 0.000000
+0.420985 0.015244
+0.486668 0.915794
+0.260488 0.957897
+0.034307 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface808-UV0-array" count="8" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface808-VERTEX">
+          <input semantic="POSITION" source="#polySurface808-POSITION"/>
+        </vertices>
+        <triangles count="7" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface808-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface808-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface808-UV0"/><p> 1 0 0 2 1 1 0 2 2 2 3 1 3 4 3 0 5 2 4 6 4 5 7 5 0 8 2 0 9 2 5 10 5 6 11 6 0 12 2 3 13 3 4 14 4 1 15 0 0 16 2 7 17 7 7 18 7 0 19 2 6 20 6</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface811-lib" name="polySurface811Mesh">
+      <mesh>
+        <source id="polySurface811-POSITION">
+          <float_array id="polySurface811-POSITION-array" count="24">
+-875.146729 1033.803223 18277.912109
+-1468.233398 1062.171997 19911.886719
+-851.346191 1062.171875 20117.371094
+-312.831299 1052.104004 18469.863281
+-875.146729 2248.105469 18277.912109
+-1468.233398 2268.414063 19911.882813
+-851.346191 2268.413818 20117.371094
+-312.831299 2268.414063 18469.863281
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface811-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface811-Normal0">
+          <float_array id="polySurface811-Normal0-array" count="90">
+0.010365 -0.999830 0.015286
+0.010365 -0.999830 0.015286
+0.010365 -0.999830 0.015286
+0.010365 -0.999830 0.015286
+0.010365 -0.999830 0.015286
+0.010365 -0.999830 0.015286
+-0.939994 -0.000000 -0.341192
+-0.939994 -0.000000 -0.341192
+-0.939994 -0.000000 -0.341192
+-0.939994 -0.000000 -0.341192
+-0.939994 -0.000000 -0.341192
+-0.939994 -0.000000 -0.341192
+0.950511 0.000000 0.310690
+0.950511 0.000000 0.310690
+0.950511 0.000000 0.310690
+0.950511 0.000000 0.310690
+0.950511 0.000000 0.310690
+0.950511 0.000000 0.310690
+-0.316032 0.000002 0.948749
+-0.316032 0.000002 0.948749
+-0.316032 0.000002 0.948749
+-0.316032 0.000002 0.948749
+-0.316032 0.000002 0.948749
+-0.316032 0.000002 0.948749
+0.323054 0.000000 -0.946381
+0.323054 0.000000 -0.946381
+0.323054 0.000000 -0.946381
+0.323054 0.000000 -0.946381
+0.323054 0.000000 -0.946381
+0.323054 0.000000 -0.946381
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface811-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface811-UV0">
+          <float_array id="polySurface811-UV0-array" count="40">
+0.181179 0.001992
+0.351231 0.060041
+0.188377 0.558271
+0.001821 0.496129
+0.538941 0.998008
+0.547520 0.503871
+0.912307 0.503872
+0.906165 0.998008
+0.361362 0.500222
+0.358317 0.001992
+0.726149 0.001992
+0.726148 0.500222
+0.171117 0.561919
+0.357673 0.561919
+0.357673 0.926706
+0.171117 0.926706
+0.533333 0.871702
+0.363281 0.877236
+0.363281 0.510012
+0.533333 0.503871
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface811-UV0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface811-VERTEX">
+          <input semantic="POSITION" source="#polySurface811-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface811-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface811-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface811-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 3 12 9 7 13 10 2 14 8 2 15 8 7 16 10 6 17 11 1 18 12 2 19 13 5 20 15 5 21 15 2 22 13 6 23 14 0 24 17 4 25 18 3 26 16 3 27 16 4 28 18 7 29 19</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface812-lib" name="polySurface812Mesh">
+      <mesh>
+        <source id="polySurface812-POSITION">
+          <float_array id="polySurface812-POSITION-array" count="18">
+-1013.667969 2494.504883 19583.878906
+-687.404297 2494.504883 18627.609375
+-875.146973 2248.105713 18277.912109
+-1468.233398 2268.414063 19911.882813
+-851.346191 2268.414063 20117.371094
+-312.831299 2268.414063 18469.863281
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface812-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface812-Normal0">
+          <float_array id="polySurface812-Normal0-array" count="54">
+-0.574705 0.790910 -0.210180
+-0.574705 0.790910 -0.210180
+-0.574705 0.790910 -0.210180
+-0.574705 0.790910 -0.210180
+-0.574705 0.790910 -0.210180
+-0.574705 0.790910 -0.210180
+-0.140670 0.895476 0.422298
+-0.140670 0.895476 0.422298
+-0.140670 0.895476 0.422298
+0.188302 0.752388 -0.631232
+0.188302 0.752388 -0.631232
+0.188302 0.752388 -0.631232
+0.554561 0.811504 0.184183
+0.554561 0.811504 0.184183
+0.554561 0.811504 0.184183
+0.554561 0.811504 0.184183
+0.554561 0.811504 0.184183
+0.554561 0.811504 0.184183
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface812-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface812-UV0">
+          <float_array id="polySurface812-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface812-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface812-VERTEX">
+          <input semantic="POSITION" source="#polySurface812-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface812-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface812-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface812-UV0"/><p> 3 0 1 0 1 2 2 2 0 2 3 0 0 4 2 1 5 3 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 1 12 3 0 13 2 5 14 5 5 15 5 0 16 2 4 17 4</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface813-lib" name="polySurface813Mesh">
+      <mesh>
+        <source id="polySurface813-POSITION">
+          <float_array id="polySurface813-POSITION-array" count="24">
+-1470.317871 975.000000 18040.621094
+-2085.120605 983.060425 19706.398438
+-1468.233398 983.060425 19911.886719
+-875.146729 972.992493 18277.912109
+-1470.317871 1842.303955 18040.621094
+-2085.120605 1842.303955 19706.398438
+-1468.233398 1842.303955 19911.882813
+-875.146729 1842.303955 18277.912109
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface813-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface813-Normal0">
+          <float_array id="polySurface813-Normal0-array" count="90">
+-0.003231 -0.999986 0.004311
+-0.003231 -0.999986 0.004311
+-0.003231 -0.999986 0.004311
+-0.003231 -0.999986 0.004311
+-0.003231 -0.999986 0.004311
+-0.003231 -0.999986 0.004311
+-0.938143 0.000000 -0.346249
+-0.938143 0.000000 -0.346249
+-0.938143 0.000000 -0.346249
+-0.938143 0.000000 -0.346249
+-0.938143 0.000000 -0.346249
+-0.938143 0.000000 -0.346249
+0.939994 0.000001 0.341192
+0.939994 0.000001 0.341192
+0.939994 0.000001 0.341192
+0.939994 0.000001 0.341192
+0.939994 0.000001 0.341192
+0.939994 0.000001 0.341192
+-0.316031 0.000002 0.948749
+-0.316031 0.000002 0.948749
+-0.316031 0.000002 0.948749
+-0.316031 0.000002 0.948749
+-0.316031 0.000002 0.948749
+-0.316031 0.000002 0.948749
+0.370344 0.000000 -0.928895
+0.370344 0.000000 -0.928895
+0.370344 0.000000 -0.928895
+0.370344 0.000000 -0.928895
+0.370344 0.000000 -0.928895
+0.370344 0.000000 -0.928895
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface813-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface813-UV0">
+          <float_array id="polySurface813-UV0-array" count="40">
+0.186656 0.001992
+0.365683 0.073369
+0.187283 0.564866
+0.001725 0.503055
+0.371455 0.503055
+0.373879 0.001992
+0.632339 0.001992
+0.632339 0.503055
+0.605661 0.998008
+0.602633 0.506511
+0.864121 0.506511
+0.864121 0.998007
+0.227424 0.568322
+0.412982 0.568322
+0.412982 0.826782
+0.227424 0.826782
+0.597320 0.768000
+0.418294 0.767396
+0.418294 0.506511
+0.597320 0.506511
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface813-UV0-array" count="20" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface813-VERTEX">
+          <input semantic="POSITION" source="#polySurface813-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface813-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface813-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface813-UV0"/><p> 0 0 0 3 1 1 1 2 3 1 3 3 3 4 1 2 5 2 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 3 12 9 7 13 10 2 14 8 2 15 8 7 16 10 6 17 11 1 18 12 2 19 13 5 20 15 5 21 15 2 22 13 6 23 14 3 24 16 0 25 17 7 26 19 7 27 19 0 28 17 4 29 18</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface814-lib" name="polySurface814Mesh">
+      <mesh>
+        <source id="polySurface814-POSITION">
+          <float_array id="polySurface814-POSITION-array" count="18">
+-1612.862305 2068.387207 19435.884766
+-1299.868652 2068.395508 18466.353516
+-1470.317871 1842.305176 18040.623047
+-2085.118164 1842.290771 19706.394531
+-1468.231445 1842.293213 19911.873047
+-875.146729 1842.304932 18277.912109
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface814-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface814-Normal0">
+          <float_array id="polySurface814-Normal0-array" count="54">
+-0.534352 0.824063 -0.188119
+-0.534352 0.824063 -0.188119
+-0.534352 0.824063 -0.188119
+-0.534352 0.824063 -0.188119
+-0.534352 0.824063 -0.188119
+-0.534352 0.824063 -0.188119
+-0.153788 0.873608 0.461692
+-0.153788 0.873608 0.461692
+-0.153788 0.873608 0.461692
+0.208311 0.826807 -0.522490
+0.208311 0.826807 -0.522490
+0.208311 0.826807 -0.522490
+0.549416 0.813375 0.191216
+0.549416 0.813375 0.191216
+0.549416 0.813375 0.191216
+0.549416 0.813375 0.191216
+0.549416 0.813375 0.191216
+0.549416 0.813375 0.191216
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface814-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface814-UV0">
+          <float_array id="polySurface814-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface814-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface814-VERTEX">
+          <input semantic="POSITION" source="#polySurface814-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface814-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface814-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface814-UV0"/><p> 3 0 1 0 1 2 2 2 0 2 3 0 0 4 2 1 5 3 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 1 12 3 0 13 2 5 14 5 5 15 5 0 16 2 4 17 4</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface815-lib" name="polySurface815Mesh">
+      <mesh>
+        <source id="polySurface815-POSITION">
+          <float_array id="polySurface815-POSITION-array" count="24">
+-2075.946533 975.000000 17686.695313
+-3455.460938 1015.029236 19326.621094
+-2085.120605 1178.432373 19706.398438
+-1470.317871 974.999939 18040.621094
+-2075.946533 2254.322998 17686.695313
+-3455.460938 2286.875488 19326.619141
+-2085.120605 2267.841553 19706.398438
+-1470.317871 2267.841309 18040.621094
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface815-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface815-Normal0">
+          <float_array id="polySurface815-Normal0-array" count="90">
+0.044945 -0.993940 0.100318
+0.044945 -0.993940 0.100318
+0.044945 -0.993940 0.100318
+0.044945 -0.993940 0.100318
+0.044945 -0.993940 0.100318
+0.044945 -0.993940 0.100318
+-0.765250 -0.000001 -0.643733
+-0.765250 -0.000001 -0.643733
+-0.765250 -0.000001 -0.643733
+-0.765250 -0.000001 -0.643733
+-0.765250 -0.000001 -0.643733
+-0.765250 -0.000001 -0.643733
+0.938143 0.000000 0.346248
+0.938143 0.000000 0.346248
+0.938143 0.000000 0.346248
+0.938143 0.000000 0.346248
+0.938143 0.000000 0.346248
+0.938143 0.000000 0.346248
+-0.267074 0.000001 0.963676
+-0.267074 0.000001 0.963676
+-0.267074 0.000001 0.963676
+-0.267074 0.000001 0.963676
+-0.267074 0.000001 0.963676
+-0.267074 0.000001 0.963676
+0.504555 0.000000 -0.863380
+0.504555 0.000000 -0.863380
+0.504555 0.000000 -0.863380
+0.504555 0.000000 -0.863380
+0.504555 0.000000 -0.863380
+0.504555 0.000000 -0.863380
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface815-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface815-UV0">
+          <float_array id="polySurface815-UV0-array" count="36">
+0.377567 0.001859
+0.542450 0.098216
+0.375069 0.551726
+0.001992 0.448331
+0.605227 0.551726
+0.549842 0.098216
+0.901822 0.098216
+0.901822 0.551726
+0.549842 0.001859
+0.898141 0.001859
+0.288448 0.928794
+0.332935 0.555717
+0.629529 0.555717
+0.634711 0.928794
+0.998008 0.555718
+0.987110 0.931292
+0.640847 0.931292
+0.649709 0.555718
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface815-UV0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface815-VERTEX">
+          <input semantic="POSITION" source="#polySurface815-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface815-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface815-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface815-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 14 1 7 15 4 8 17 4 9 17 1 10 15 5 11 16 3 12 5 7 13 6 2 14 4 2 15 4 7 16 6 6 17 7 1 18 10 2 19 11 5 20 13 5 21 13 2 22 11 6 23 12 0 24 8 4 25 9 3 26 5 3 27 5 4 28 9 7 29 6</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface816-lib" name="polySurface816Mesh">
+      <mesh>
+        <source id="polySurface816-POSITION">
+          <float_array id="polySurface816-POSITION-array" count="18">
+-2560.816895 2512.966797 19236.171875
+-1990.618408 2512.968994 18225.298828
+-2075.946533 2254.327148 17686.705078
+-3455.461426 2286.876709 19326.621094
+-2085.120605 2267.842041 19706.398438
+-1470.317871 2267.844482 18040.628906
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface816-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface816-Normal0">
+          <float_array id="polySurface816-Normal0-array" count="54">
+-0.332243 0.907923 -0.255520
+-0.332243 0.907923 -0.255520
+-0.332243 0.907923 -0.255520
+-0.332243 0.907923 -0.255520
+-0.332243 0.907923 -0.255520
+-0.332243 0.907923 -0.255520
+-0.146708 0.808519 0.569889
+-0.146708 0.808519 0.569889
+-0.146708 0.808519 0.569889
+0.244374 0.858442 -0.450953
+0.244374 0.858442 -0.450953
+0.244374 0.858442 -0.450953
+0.394124 0.902342 0.174488
+0.394124 0.902342 0.174488
+0.394124 0.902342 0.174488
+0.394124 0.902342 0.174488
+0.394124 0.902342 0.174488
+0.394124 0.902342 0.174488
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface816-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface816-UV0">
+          <float_array id="polySurface816-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface816-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface816-VERTEX">
+          <input semantic="POSITION" source="#polySurface816-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface816-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface816-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface816-UV0"/><p> 3 0 1 0 1 2 2 2 0 2 3 0 0 4 2 1 5 3 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 0 12 2 4 13 4 1 14 3 1 15 3 4 16 4 5 17 5</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface817-lib" name="polySurface817Mesh">
+      <mesh>
+        <source id="polySurface817-POSITION">
+          <float_array id="polySurface817-POSITION-array" count="24">
+-2570.738037 914.019165 17346.150391
+-4099.400879 980.874878 18578.984375
+-3455.460938 1015.029236 19326.621094
+-2075.946533 975.000000 17686.695313
+-2570.738037 1914.223877 17346.150391
+-4099.400879 1920.906494 18578.984375
+-3455.460938 1936.026733 19326.619141
+-2075.946533 1974.898193 17686.695313
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface817-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface817-Normal0">
+          <float_array id="polySurface817-Normal0-array" count="90">
+0.023561 -0.997920 0.060001
+0.023561 -0.997920 0.060001
+0.023561 -0.997920 0.060001
+0.023561 -0.997920 0.060001
+0.023561 -0.997920 0.060001
+0.023561 -0.997920 0.060001
+-0.627765 0.000000 -0.778403
+-0.627765 0.000000 -0.778403
+-0.627765 0.000000 -0.778403
+-0.627765 0.000000 -0.778403
+-0.627765 0.000000 -0.778403
+-0.627765 0.000000 -0.778403
+0.765250 0.000001 0.643733
+0.765250 0.000001 0.643733
+0.765250 0.000001 0.643733
+0.765250 0.000001 0.643733
+0.765250 0.000001 0.643733
+0.765250 0.000001 0.643733
+-0.757698 0.000001 0.652606
+-0.757698 0.000001 0.652606
+-0.757698 0.000001 0.652606
+-0.757698 0.000001 0.652606
+-0.757698 0.000001 0.652606
+-0.757698 0.000001 0.652606
+0.566952 0.000000 -0.823751
+0.566952 0.000000 -0.823751
+0.566952 0.000000 -0.823751
+0.566952 0.000000 -0.823751
+0.566952 0.000000 -0.823751
+0.566952 0.000000 -0.823751
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface817-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface817-UV0">
+          <float_array id="polySurface817-UV0-array" count="36">
+0.001863 0.136014
+0.094105 0.001992
+0.538304 0.375654
+0.335795 0.550076
+0.832609 0.136014
+0.814500 0.550076
+0.559878 0.550076
+0.561688 0.136014
+0.816092 0.001992
+0.545253 0.001992
+0.673435 0.998008
+0.662592 0.553809
+0.933431 0.553809
+0.922902 0.998008
+0.454345 0.553809
+0.656854 0.563060
+0.656854 0.812527
+0.454345 0.808432
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface817-UV0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface817-VERTEX">
+          <input semantic="POSITION" source="#polySurface817-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface817-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface817-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface817-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 2 12 10 3 13 11 6 14 13 6 15 13 3 16 11 7 17 12 1 18 14 2 19 15 5 20 17 5 21 17 2 22 15 6 23 16 0 24 4 4 25 7 3 26 8 3 27 8 4 28 7 7 29 9</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface818-lib" name="polySurface818Mesh">
+      <mesh>
+        <source id="polySurface818-POSITION">
+          <float_array id="polySurface818-POSITION-array" count="18">
+-3490.035156 2146.997559 18609.230469
+-2641.873047 2146.997070 17781.222656
+-2570.737793 1914.223511 17346.150391
+-4099.400879 1920.906616 18578.986328
+-3455.460938 1936.026978 19326.619141
+-2075.946533 1974.897827 17686.693359
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface818-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface818-Normal0">
+          <float_array id="polySurface818-Normal0-array" count="54">
+-0.356430 0.837694 -0.413796
+-0.356430 0.837694 -0.413796
+-0.356430 0.837694 -0.413796
+-0.356430 0.837694 -0.413796
+-0.356430 0.837694 -0.413796
+-0.356430 0.837694 -0.413796
+-0.346126 0.895428 0.280010
+-0.346126 0.895428 0.280010
+-0.346126 0.895428 0.280010
+0.193798 0.877846 -0.437982
+0.193798 0.877846 -0.437982
+0.193798 0.877846 -0.437982
+0.293492 0.914244 0.279320
+0.293492 0.914244 0.279320
+0.293492 0.914244 0.279320
+0.293492 0.914244 0.279320
+0.293492 0.914244 0.279320
+0.293492 0.914244 0.279320
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface818-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface818-UV0">
+          <float_array id="polySurface818-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface818-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface818-VERTEX">
+          <input semantic="POSITION" source="#polySurface818-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface818-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface818-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface818-UV0"/><p> 3 0 1 0 1 2 2 2 0 2 3 0 0 4 2 1 5 3 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 1 12 3 0 13 2 5 14 5 5 15 5 0 16 2 4 17 4</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface819-lib" name="polySurface819Mesh">
+      <mesh>
+        <source id="polySurface819-POSITION">
+          <float_array id="polySurface819-POSITION-array" count="24">
+-3039.927246 897.806030 17005.605469
+-4458.867676 961.840393 18161.634766
+-4099.400879 980.874878 18578.984375
+-2570.738037 914.019104 17346.150391
+-3039.927246 1783.262939 17005.605469
+-4458.867676 1789.945801 18161.632813
+-4099.400879 1789.946045 18578.984375
+-2570.738037 1804.812500 17346.150391
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface819-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface819-Normal0">
+          <float_array id="polySurface819-Normal0-array" count="90">
+-0.001451 -0.998659 0.051749
+-0.001451 -0.998659 0.051749
+-0.001451 -0.998659 0.051749
+-0.001451 -0.998659 0.051749
+-0.001451 -0.998659 0.051749
+-0.001451 -0.998659 0.051749
+-0.631625 -0.000001 -0.775274
+-0.631625 -0.000001 -0.775274
+-0.631625 -0.000001 -0.775274
+-0.631625 -0.000001 -0.775274
+-0.631625 -0.000001 -0.775274
+-0.631625 -0.000001 -0.775274
+0.627765 0.000000 0.778403
+0.627765 0.000000 0.778403
+0.627765 0.000000 0.778403
+0.627765 0.000000 0.778403
+0.627765 0.000000 0.778403
+0.627765 0.000000 0.778403
+-0.757696 0.000001 0.652607
+-0.757696 0.000001 0.652607
+-0.757696 0.000001 0.652607
+-0.757696 0.000001 0.652607
+-0.757696 0.000001 0.652607
+-0.757696 0.000001 0.652607
+0.587400 0.000000 -0.809297
+0.587400 0.000000 -0.809297
+0.587400 0.000000 -0.809297
+0.587400 0.000000 -0.809297
+0.587400 0.000000 -0.809297
+0.587400 0.000000 -0.809297
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface819-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface819-UV0">
+          <float_array id="polySurface819-UV0-array" count="32">
+0.001917 0.151150
+0.110178 0.001992
+0.502104 0.487964
+0.369426 0.602241
+0.796900 0.151150
+0.776543 0.602241
+0.513282 0.602241
+0.515406 0.151150
+0.791745 0.001992
+0.508555 0.001992
+0.698584 0.998008
+0.677330 0.606082
+0.960520 0.606082
+0.955794 0.998008
+0.692533 0.865330
+0.955794 0.865329
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface819-UV0-array" count="16" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface819-VERTEX">
+          <input semantic="POSITION" source="#polySurface819-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface819-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface819-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface819-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 3 12 11 7 13 12 2 14 10 2 15 10 7 16 12 6 17 13 1 18 14 2 19 10 5 20 15 5 21 15 2 22 10 6 23 13 0 24 4 4 25 7 3 26 8 3 27 8 4 28 7 7 29 9</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface820-lib" name="polySurface820Mesh">
+      <mesh>
+        <source id="polySurface820-POSITION">
+          <float_array id="polySurface820-POSITION-array" count="18">
+-3988.483887 2016.037109 18151.646484
+-3191.525879 2016.036621 17466.279297
+-3039.927734 1783.262939 17005.605469
+-4458.867676 1789.946777 18161.628906
+-4099.400391 1789.947021 18578.980469
+-2570.737793 1804.812500 17346.148438
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface820-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface820-Normal0">
+          <float_array id="polySurface820-Normal0-array" count="54">
+-0.407847 0.768137 -0.493585
+-0.407847 0.768137 -0.493585
+-0.407847 0.768137 -0.493585
+-0.407847 0.768137 -0.493585
+-0.407847 0.768137 -0.493585
+-0.407847 0.768137 -0.493585
+-0.400640 0.848771 0.345073
+-0.400640 0.848771 0.345073
+-0.400640 0.848771 0.345073
+0.232225 0.896754 -0.376700
+0.232225 0.896754 -0.376700
+0.232225 0.896754 -0.376700
+0.388554 0.788236 0.477190
+0.388554 0.788236 0.477190
+0.388554 0.788236 0.477190
+0.388554 0.788236 0.477190
+0.388554 0.788236 0.477190
+0.388554 0.788236 0.477190
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface820-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface820-UV0">
+          <float_array id="polySurface820-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface820-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface820-VERTEX">
+          <input semantic="POSITION" source="#polySurface820-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface820-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface820-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface820-UV0"/><p> 2 0 0 3 1 1 1 2 3 1 3 3 3 4 1 0 5 2 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 0 12 2 4 13 4 1 14 3 1 15 3 4 16 4 5 17 5</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface821-lib" name="polySurface821Mesh">
+      <mesh>
+        <source id="polySurface821-POSITION">
+          <float_array id="polySurface821-POSITION-array" count="24">
+-3481.635254 897.806030 16585.425781
+-4818.334473 942.805908 17744.285156
+-4458.867676 961.840393 18161.634766
+-3039.927246 897.806030 17005.605469
+-3481.635254 1740.778076 16585.425781
+-4818.334473 1785.777954 17744.281250
+-4458.867676 1790.191162 18161.632813
+-3039.927246 1785.777954 17005.605469
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface821-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface821-Normal0">
+          <float_array id="polySurface821-Normal0-array" count="90">
+-0.011346 -0.999372 0.033566
+-0.011346 -0.999372 0.033566
+-0.011346 -0.999372 0.033566
+-0.011346 -0.999372 0.033566
+-0.011346 -0.999372 0.033566
+-0.011346 -0.999372 0.033566
+-0.655055 -0.000002 -0.755581
+-0.655055 -0.000002 -0.755581
+-0.655055 -0.000002 -0.755581
+-0.655055 -0.000002 -0.755581
+-0.655055 -0.000002 -0.755581
+-0.655055 -0.000002 -0.755581
+0.631625 0.000001 0.775274
+0.631625 0.000001 0.775274
+0.631625 0.000001 0.775274
+0.631625 0.000001 0.775274
+0.631625 0.000001 0.775274
+0.631625 0.000001 0.775274
+-0.757696 0.000002 0.652608
+-0.757696 0.000002 0.652608
+-0.757696 0.000002 0.652608
+-0.757696 0.000002 0.652608
+-0.757696 0.000002 0.652608
+-0.757696 0.000002 0.652608
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface821-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface821-UV0">
+          <float_array id="polySurface821-UV0-array" count="32">
+0.001947 0.151331
+0.144007 0.001992
+0.534853 0.481728
+0.393750 0.603261
+0.841366 0.151331
+0.826152 0.603261
+0.541147 0.603261
+0.556361 0.151331
+0.841366 0.001992
+0.541147 0.001992
+0.695250 0.998008
+0.673600 0.607162
+0.973819 0.607162
+0.975311 0.998008
+0.688814 0.856905
+0.973819 0.856904
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface821-UV0-array" count="16" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface821-VERTEX">
+          <input semantic="POSITION" source="#polySurface821-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface821-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface821-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface821-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 3 12 11 7 13 12 2 14 10 2 15 10 7 16 12 6 17 13 1 18 14 2 19 10 5 20 15 5 21 15 2 22 10 6 23 13 0 24 4 4 25 7 3 26 8 3 27 8 4 28 7 7 29 9</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface822-lib" name="polySurface822Mesh">
+      <mesh>
+        <source id="polySurface822-POSITION">
+          <float_array id="polySurface822-POSITION-array" count="18">
+-4347.951172 1997.002686 17734.296875
+-3550.992676 1997.002686 17048.931641
+-3481.635742 1740.778931 16585.427734
+-4818.334961 1785.779053 17744.279297
+-4458.867676 1790.192139 18161.630859
+-3039.927490 1785.778809 17005.607422
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface822-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface822-Normal0">
+          <float_array id="polySurface822-Normal0-array" count="54">
+-0.390139 0.791361 -0.470680
+-0.390139 0.791361 -0.470680
+-0.390139 0.791361 -0.470680
+-0.390139 0.791361 -0.470680
+-0.390139 0.791361 -0.470680
+-0.390139 0.791361 -0.470680
+-0.382408 0.866737 0.320205
+-0.382408 0.866737 0.320205
+-0.382408 0.866737 0.320205
+0.315369 0.849713 -0.422528
+0.315369 0.849713 -0.422528
+0.315369 0.849713 -0.422528
+0.387139 0.796780 0.463967
+0.387139 0.796780 0.463967
+0.387139 0.796780 0.463967
+0.387139 0.796780 0.463967
+0.387139 0.796780 0.463967
+0.387139 0.796780 0.463967
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface822-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface822-UV0">
+          <float_array id="polySurface822-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface822-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface822-VERTEX">
+          <input semantic="POSITION" source="#polySurface822-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface822-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface822-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface822-UV0"/><p> 2 0 0 3 1 1 1 2 3 1 3 3 3 4 1 0 5 2 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 0 12 2 4 13 4 1 14 3 1 15 3 4 16 4 5 17 5</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface823-lib" name="polySurface823Mesh">
+      <mesh>
+        <source id="polySurface823-POSITION">
+          <float_array id="polySurface823-POSITION-array" count="24">
+-4180.252930 866.000000 15920.857422
+-5466.651367 866.000000 16991.570313
+-4818.334473 942.805908 17744.285156
+-3481.635254 897.806030 16585.425781
+-4180.252930 1740.778076 15920.857422
+-5466.651367 1785.777954 16991.568359
+-4818.334473 1785.777954 17744.281250
+-3481.635254 1740.778076 16585.425781
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface823-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface823-Normal0">
+          <float_array id="polySurface823-Normal0-array" count="90">
+0.026497 -0.998331 0.051324
+0.026497 -0.998331 0.051324
+0.026497 -0.998331 0.051324
+0.026497 -0.998331 0.051324
+0.026497 -0.998331 0.051324
+0.026497 -0.998331 0.051324
+-0.639730 -0.000001 -0.768599
+-0.639730 -0.000001 -0.768599
+-0.639730 -0.000001 -0.768599
+-0.639730 -0.000001 -0.768599
+-0.639730 -0.000001 -0.768599
+-0.639730 -0.000001 -0.768599
+0.655055 0.000002 0.755581
+0.655055 0.000002 0.755581
+0.655055 0.000002 0.755581
+0.655055 0.000002 0.755581
+0.655055 0.000002 0.755581
+0.655055 0.000002 0.755581
+-0.757696 0.000002 0.652607
+-0.757696 0.000002 0.652607
+-0.757696 0.000002 0.652607
+-0.757696 0.000002 0.652607
+-0.757696 0.000002 0.652607
+-0.757696 0.000002 0.652607
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+0.689230 0.000000 -0.724543
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface823-Normal0-array" count="30" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface823-UV0">
+          <float_array id="polySurface823-UV0-array" count="36">
+0.001992 0.215191
+0.204861 0.001927
+0.558620 0.409974
+0.328842 0.607882
+0.846211 0.215191
+0.846211 0.607882
+0.565434 0.607882
+0.579171 0.215191
+0.836502 0.001927
+0.579171 0.001927
+0.740678 0.965632
+0.726941 0.611874
+0.984271 0.611874
+0.998008 0.965631
+0.491028 0.611874
+0.720806 0.635320
+0.720804 0.892650
+0.491028 0.892650
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface823-UV0-array" count="18" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface823-VERTEX">
+          <input semantic="POSITION" source="#polySurface823-POSITION"/>
+        </vertices>
+        <triangles count="10" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface823-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface823-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface823-UV0"/><p> 3 0 1 2 1 2 0 2 0 0 3 0 2 4 2 1 5 3 0 6 4 1 7 5 4 8 7 4 9 7 1 10 5 5 11 6 3 12 11 7 13 12 2 14 10 2 15 10 7 16 12 6 17 13 1 18 14 2 19 15 5 20 17 5 21 17 2 22 15 6 23 16 0 24 4 4 25 7 3 26 8 3 27 8 4 28 7 7 29 9</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface824-lib" name="polySurface824Mesh">
+      <mesh>
+        <source id="polySurface824-POSITION">
+          <float_array id="polySurface824-POSITION-array" count="18">
+-4871.915527 1977.293091 17069.361328
+-4144.448242 1977.293213 16501.031250
+-4180.253418 1740.777588 15920.856445
+-5466.651367 1785.777344 16991.568359
+-4818.333984 1785.777222 17744.281250
+-3481.635010 1740.777588 16585.423828
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface824-POSITION-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface824-Normal0">
+          <float_array id="polySurface824-Normal0-array" count="54">
+-0.257550 0.903994 -0.341266
+-0.257550 0.903994 -0.341266
+-0.257550 0.903994 -0.341266
+-0.257550 0.903994 -0.341266
+-0.257550 0.903994 -0.341266
+-0.257550 0.903994 -0.341266
+-0.327298 0.901890 0.281905
+-0.327298 0.901890 0.281905
+-0.327298 0.901890 0.281905
+0.353622 0.858348 -0.371740
+0.353622 0.858348 -0.371740
+0.353622 0.858348 -0.371740
+0.255151 0.925221 0.280826
+0.255151 0.925221 0.280826
+0.255151 0.925221 0.280826
+0.255151 0.925221 0.280826
+0.255151 0.925221 0.280826
+0.255151 0.925221 0.280826
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface824-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface824-UV0">
+          <float_array id="polySurface824-UV0-array" count="12">
+0.232040 0.000000
+0.786336 0.000000
+0.893168 0.109450
+0.116020 0.477065
+1.000000 0.218900
+0.000000 0.954130
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface824-UV0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface824-VERTEX">
+          <input semantic="POSITION" source="#polySurface824-POSITION"/>
+        </vertices>
+        <triangles count="6" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface824-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface824-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface824-UV0"/><p> 3 0 1 0 1 2 2 2 0 2 3 0 0 4 2 1 5 3 3 6 1 4 7 4 0 8 2 5 9 5 2 10 0 1 11 3 0 12 2 4 13 4 1 14 3 1 15 3 4 16 4 5 17 5</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface825-lib" name="polySurface825Mesh">
+      <mesh>
+        <source id="polySurface825-POSITION">
+          <float_array id="polySurface825-POSITION-array" count="66">
+-5326.606445 1996.249023 15384.115234
+-6032.414551 1996.249023 15892.191406
+-5813.318359 1996.249023 16138.066406
+-6034.567383 1996.249023 16332.207031
+-5735.301270 1996.249023 16679.660156
+-5500.240234 1996.249023 16480.937500
+-5225.451172 1996.249023 16790.812500
+-4501.852539 1996.249023 16188.535156
+-4795.057617 1996.249023 15884.772461
+-4481.643555 1996.249023 15619.811523
+-4854.577637 1996.249023 15296.794922
+-5149.574707 1996.249023 15555.648438
+-4953.853516 2145.238281 15704.314453
+-5675.563477 2145.238281 16325.673828
+-5281.175293 2145.238281 15986.124023
+-5281.175293 2145.238281 15986.125000
+-5675.563477 2145.238281 16325.673828
+-6034.567383 1996.249023 16332.207031
+-5735.301270 1996.249023 16679.660156
+-4953.853516 2145.238281 15704.314453
+-4481.643555 1996.249023 15619.811523
+-4854.577637 1996.249023 15296.794922
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface825-POSITION-array" count="22" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface825-Normal0">
+          <float_array id="polySurface825-Normal0-array" count="162">
+0.240468 0.942496 -0.232112
+0.240468 0.942496 -0.232112
+0.240468 0.942496 -0.232112
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.349559 0.845912 -0.402791
+-0.213843 0.958103 0.190550
+-0.213843 0.958103 0.190550
+-0.213843 0.958103 0.190550
+-0.162321 0.960627 -0.225493
+-0.162321 0.960627 -0.225493
+-0.162321 0.960627 -0.225493
+0.242504 0.937313 -0.250273
+0.242504 0.937313 -0.250273
+0.242504 0.937313 -0.250273
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+0.346541 0.845779 0.405669
+-0.216765 0.957112 0.192222
+-0.216765 0.957112 0.192222
+-0.216765 0.957112 0.192222
+0.142072 0.975029 0.170689
+0.142072 0.975029 0.170689
+0.142072 0.975029 0.170689
+-0.359642 0.880173 0.309764
+-0.359642 0.880173 0.309764
+-0.359642 0.880173 0.309764
+0.242834 0.928670 -0.280363
+0.242834 0.928670 -0.280363
+0.242834 0.928670 -0.280363
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface825-Normal0-array" count="54" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface825-UV0">
+          <float_array id="polySurface825-UV0-array" count="44">
+0.285625 0.000000
+0.815544 0.000000
+0.816252 0.218804
+0.995607 0.217635
+1.000000 0.497025
+0.812499 0.501699
+0.812824 0.754066
+0.239463 0.772763
+0.249999 0.515723
+0.000000 0.521956
+0.039048 0.223869
+0.278188 0.222311
+0.019524 0.372913
+0.997804 0.357330
+0.547220 0.220558
+0.531249 0.508711
+0.000000 0.000000
+1.000000 0.000000
+0.304098 0.952462
+0.000000 0.000000
+1.000000 0.000000
+0.410245 0.785438
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface825-UV0-array" count="22" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface825-VERTEX">
+          <input semantic="POSITION" source="#polySurface825-POSITION"/>
+        </vertices>
+        <triangles count="18" material="Telhas"><input semantic="VERTEX" offset="0" source="#polySurface825-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface825-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface825-UV0"/><p> 8 0 8 15 1 15 7 2 7 10 3 10 11 4 11 12 5 12 3 6 3 13 7 13 2 8 2 11 9 11 14 10 14 12 11 12 2 12 2 13 13 13 14 14 14 14 15 14 13 16 13 12 17 12 14 18 14 1 19 1 2 20 2 0 21 0 1 22 1 14 23 14 0 24 0 14 25 14 11 26 11 9 27 9 12 28 12 8 29 8 4 30 4 5 31 5 13 32 13 8 33 8 12 34 12 15 35 15 12 36 12 13 37 13 15 38 15 13 39 13 5 40 5 15 41 15 6 42 6 15 43 15 5 44 5 7 45 7 15 46 15 6 47 6 16 48 16 17 49 17 18 50 18 19 51 19 20 52 20 21 53 21</p></triangles>
+      </mesh>
+    </geometry>
+    <geometry id="polySurface826-lib" name="polySurface826Mesh">
+      <mesh>
+        <source id="polySurface826-POSITION">
+          <float_array id="polySurface826-POSITION-array" count="108">
+-5012.913574 866.000000 15158.302734
+-4180.252930 866.000000 15920.857422
+-5466.651367 866.000000 16991.570313
+-6267.683594 866.000000 16061.547852
+-6267.683594 1780.254395 16061.549805
+-5012.913574 1780.254395 15158.302734
+-5466.651367 1780.254395 16991.570313
+-4180.252930 1780.254395 15920.857422
+-5735.300293 1780.254395 16679.660156
+-4481.643555 1780.254395 15619.809570
+-6034.566406 1780.254395 16332.205078
+-4854.577637 1780.254395 15296.792969
+-5326.606445 1780.254395 15384.115234
+-5149.574707 1780.254395 15555.646484
+-5813.318359 1780.254395 16138.066406
+-6032.414551 1780.254395 15892.191406
+-4795.057617 1780.254395 15884.772461
+-4501.852539 1780.254395 16188.535156
+-5500.239258 1780.254395 16480.937500
+-5225.451172 1780.254395 16790.812500
+-5149.574707 1996.248779 15555.646484
+-4854.577637 1996.248779 15296.792969
+-5813.317383 1996.248779 16138.066406
+-6034.565430 1996.248779 16332.205078
+-5735.299316 1996.248779 16679.660156
+-5500.238281 1996.248779 16480.937500
+-4795.057617 1996.248779 15884.772461
+-4481.643555 1996.248779 15619.809570
+-6032.414551 1996.249023 15892.191406
+-5326.606445 1996.249023 15384.115234
+-5813.318359 1996.249023 16138.066406
+-5149.574707 1996.249023 15555.646484
+-5500.239258 1996.249023 16480.937500
+-4795.057617 1996.249023 15884.772461
+-5225.451172 1996.249023 16790.812500
+-4501.852539 1996.249023 16188.535156
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface826-POSITION-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface826-Normal0">
+          <float_array id="polySurface826-Normal0-array" count="612">
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.584225 0.000001 -0.811592
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+-0.757696 -0.000000 0.652608
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.639731 -0.000000 0.768599
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.675346 -0.009852 -0.737435
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+0.000000 1.000000 -0.000000
+-0.659558 0.000000 -0.751654
+-0.659558 0.000000 -0.751654
+-0.659558 0.000000 -0.751654
+-0.659558 0.000000 -0.751654
+-0.659558 0.000000 -0.751654
+-0.659558 0.000000 -0.751654
+-0.659559 0.000000 -0.751653
+-0.659559 0.000000 -0.751653
+-0.659559 0.000000 -0.751653
+-0.659559 0.000000 -0.751653
+-0.659559 0.000000 -0.751653
+-0.659559 0.000000 -0.751653
+-0.659555 0.000002 -0.751657
+-0.659555 0.000002 -0.751657
+-0.659555 0.000002 -0.751657
+-0.659555 0.000002 -0.751657
+-0.659555 0.000002 -0.751657
+-0.659555 0.000002 -0.751657
+-0.757695 0.000003 0.652608
+-0.757695 0.000003 0.652608
+-0.757695 0.000003 0.652608
+-0.757695 0.000003 0.652608
+-0.757695 0.000003 0.652608
+-0.757695 0.000003 0.652608
+0.645611 -0.000004 0.763667
+0.645611 -0.000004 0.763667
+0.645611 -0.000004 0.763667
+0.645611 -0.000004 0.763667
+0.645611 -0.000004 0.763667
+0.645611 -0.000004 0.763667
+0.645610 -0.000001 0.763667
+0.645610 -0.000001 0.763667
+0.645610 -0.000001 0.763667
+0.645610 -0.000001 0.763667
+0.645610 -0.000001 0.763667
+0.645610 -0.000001 0.763667
+0.645610 0.000000 0.763667
+0.645610 0.000000 0.763667
+0.645610 0.000000 0.763667
+0.645610 0.000000 0.763667
+0.645610 0.000000 0.763667
+0.645610 0.000000 0.763667
+0.654707 0.000000 -0.755883
+0.654707 0.000000 -0.755883
+0.654707 0.000000 -0.755883
+0.654707 0.000000 -0.755883
+0.654707 0.000000 -0.755883
+0.654707 0.000000 -0.755883
+-0.584225 0.000000 -0.811592
+-0.584225 0.000000 -0.811592
+-0.584225 0.000000 -0.811592
+-0.584225 0.000000 -0.811592
+-0.584225 0.000000 -0.811592
+-0.584225 0.000000 -0.811592
+-0.746594 0.000000 0.665280
+-0.746594 0.000000 0.665280
+-0.746594 0.000000 0.665280
+-0.746594 0.000000 0.665280
+-0.746594 0.000000 0.665280
+-0.746594 0.000000 0.665280
+0.659559 0.000000 0.751653
+0.659559 0.000000 0.751653
+0.659559 0.000000 0.751653
+0.659559 0.000000 0.751653
+0.659559 0.000000 0.751653
+0.659559 0.000000 0.751653
+0.695861 0.000000 -0.718177
+0.695861 0.000000 -0.718177
+0.695861 0.000000 -0.718177
+0.695861 0.000000 -0.718177
+0.695861 0.000000 -0.718177
+0.695861 0.000000 -0.718177
+-0.645610 0.000000 -0.763667
+-0.645610 0.000000 -0.763667
+-0.645610 0.000000 -0.763667
+-0.645610 0.000000 -0.763667
+-0.645610 0.000000 -0.763667
+-0.645610 0.000000 -0.763667
+-0.748195 0.000000 0.663479
+-0.748195 0.000000 0.663479
+-0.748195 0.000000 0.663479
+-0.748195 0.000000 0.663479
+-0.748195 0.000000 0.663479
+-0.748195 0.000000 0.663479
+0.639731 0.000000 0.768599
+0.639731 0.000000 0.768599
+0.639731 0.000000 0.768599
+0.639731 0.000000 0.768599
+0.639731 0.000000 0.768599
+0.639731 0.000000 0.768599
+0.719500 0.000000 -0.694492
+0.719500 0.000000 -0.694492
+0.719500 0.000000 -0.694492
+0.719500 0.000000 -0.694492
+0.719500 0.000000 -0.694492
+0.719500 0.000000 -0.694492
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface826-Normal0-array" count="204" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="polySurface826-UV0">
+          <float_array id="polySurface826-UV0-array" count="196">
+0.880400 0.900188
+0.827478 0.973706
+0.787277 0.932217
+0.847943 0.863080
+0.001976 0.197138
+0.180692 0.001992
+0.431628 0.303478
+0.213665 0.491210
+0.653707 0.846314
+0.591609 0.919766
+0.520418 0.851049
+0.583152 0.775678
+0.990229 0.582573
+0.929563 0.651710
+0.793065 0.807267
+0.747566 0.859120
+0.666135 0.788982
+0.712708 0.733893
+0.852428 0.568624
+0.914526 0.495171
+0.990229 0.914428
+0.950538 0.969567
+0.887106 0.914933
+0.932605 0.863080
+0.397384 0.805511
+0.278309 0.970928
+0.220685 0.919579
+0.357183 0.764022
+0.214319 0.832739
+0.074600 0.998008
+0.001976 0.933607
+0.143129 0.764022
+0.716672 0.982754
+0.661583 0.936180
+0.724544 0.863080
+0.781073 0.910130
+0.704091 0.197138
+0.704091 0.491210
+0.489822 0.491210
+0.489822 0.436072
+0.489822 0.270656
+0.489822 0.197138
+0.439200 0.436072
+0.439200 0.270656
+0.704091 0.001992
+0.489822 0.160029
+0.489822 0.072627
+0.489822 0.001992
+0.489822 0.384724
+0.439200 0.384724
+0.439200 0.160029
+0.439200 0.072627
+0.119893 0.495171
+0.337857 0.495171
+0.337857 0.709440
+0.264757 0.709440
+0.183326 0.709440
+0.119894 0.709440
+0.264757 0.760061
+0.183326 0.760061
+0.343945 0.495171
+0.594881 0.495171
+0.594881 0.709440
+0.532147 0.709440
+0.390995 0.709440
+0.343945 0.709440
+0.532147 0.760062
+0.390995 0.760062
+0.603338 0.709440
+0.603338 0.760062
+0.660047 0.495171
+0.660047 0.564308
+0.609425 0.564308
+0.609425 0.495171
+0.660047 0.719865
+0.609425 0.719865
+0.660047 0.771718
+0.609425 0.771718
+0.063185 0.743562
+0.063185 0.696988
+0.113806 0.696988
+0.113806 0.743562
+0.063185 0.557269
+0.113806 0.557269
+0.063185 0.495171
+0.113806 0.495171
+0.404392 0.940721
+0.404392 0.804223
+0.455014 0.804223
+0.455014 0.940721
+0.404392 0.764022
+0.455014 0.764022
+0.513027 0.764022
+0.513027 0.929291
+0.462405 0.929291
+0.462405 0.764022
+0.513027 0.864891
+0.462405 0.864891
+</float_array>
+          <technique_common>
+            <accessor source="#polySurface826-UV0-array" count="98" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="polySurface826-VERTEX">
+          <input semantic="POSITION" source="#polySurface826-POSITION"/>
+        </vertices>
+        <triangles count="68" material="RebocoBranco"><input semantic="VERTEX" offset="0" source="#polySurface826-VERTEX"/><input semantic="NORMAL" offset="1" source="#polySurface826-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#polySurface826-UV0"/><p> 12 0 1 13 1 2 5 2 0 5 3 0 13 4 2 11 5 3 1 6 5 2 7 6 0 8 4 0 9 4 2 10 6 3 11 7 0 12 36 3 13 37 5 14 41 5 15 41 3 16 37 12 17 40 4 18 38 15 19 39 3 20 37 3 21 37 15 22 39 12 23 40 3 24 52 2 25 53 4 26 57 4 27 57 2 28 53 10 29 56 10 30 56 2 31 53 8 32 55 2 33 53 6 34 54 8 35 55 2 36 60 1 37 61 6 38 65 6 39 65 1 40 61 19 41 64 19 42 64 1 43 61 17 44 63 1 45 61 7 46 62 17 47 63 1 48 44 0 49 36 7 50 47 7 51 47 0 52 36 9 53 46 9 54 46 0 55 36 11 56 45 0 57 36 5 58 41 11 59 45 16 60 9 17 61 10 9 62 8 9 63 8 17 64 10 7 65 11 27 66 19 21 67 12 26 68 18 21 69 12 20 70 13 26 71 18 26 72 18 20 73 13 25 74 17 20 75 13 22 76 14 25 77 17 25 78 17 22 79 14 24 80 16 22 81 14 23 82 15 24 83 16 4 84 21 10 85 22 15 86 20 15 87 20 10 88 22 14 89 23 28 90 25 30 91 26 29 92 24 29 93 24 30 94 26 31 95 27 32 96 29 34 97 30 33 98 28 33 99 28 34 100 30 35 101 31 8 102 33 6 103 34 18 104 32 18 105 32 6 106 34 19 107 35 11 108 70 13 109 71 21 110 73 21 111 73 13 112 71 20 113 72 13 114 71 14 115 74 20 116 72 20 117 72 14 118 74 22 119 75 14 120 74 10 121 76 22 122 75 22 123 75 10 124 76 23 125 77 10 126 56 8 127 55 23 128 59 23 129 59 8 130 55 24 131 58 8 132 78 18 133 79 24 134 81 24 135 81 18 136 79 25 137 80 18 138 79 16 139 82 25 140 80 25 141 80 16 142 82 26 143 83 16 144 82 9 145 84 26 146 83 26 147 83 9 148 84 27 149 85 9 150 46 11 151 45 27 152 51 27 153 51 11 154 45 21 155 50 12 156 40 15 157 39 29 158 43 29 159 43 15 160 39 28 161 42 15 162 39 14 163 48 28 164 42 28 165 42 14 166 48 30 167 49 14 168 86 13 169 87 30 170 89 30 171 89 13 172 87 31 173 88 13 174 87 12 175 90 31 176 88 31 177 88 12 178 90 29 179 91 16 180 92 18 181 93 33 182 95 33 183 95 18 184 93 32 185 94 18 186 93 19 187 96 32 188 94 32 189 94 19 190 96 34 191 97 19 192 64 17 193 63 34 194 67 34 195 67 17 196 63 35 197 66 17 198 63 16 199 68 35 200 66 35 201 66 16 202 68 33 203 69</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="group43" id="group43" sid="group43"><matrix sid="matrix">0.010000 0.000000 0.000000 0.000000 0.000000 0.010000 0.000000 -0.000000 0.000000 0.000000 0.010000 -0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="polySurface799" id="polySurface799" sid="polySurface799"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface799-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface800" id="polySurface800" sid="polySurface800"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface800-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface801" id="polySurface801" sid="polySurface801"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface801-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface802" id="polySurface802" sid="polySurface802"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface802-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface803" id="polySurface803" sid="polySurface803"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface803-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface804" id="polySurface804" sid="polySurface804"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface804-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface805" id="polySurface805" sid="polySurface805"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface805-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface806" id="polySurface806" sid="polySurface806"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface806-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface807" id="polySurface807" sid="polySurface807"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface807-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface808" id="polySurface808" sid="polySurface808"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface808-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface811" id="polySurface811" sid="polySurface811"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface811-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface812" id="polySurface812" sid="polySurface812"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface812-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface813" id="polySurface813" sid="polySurface813"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface813-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface814" id="polySurface814" sid="polySurface814"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface814-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface815" id="polySurface815" sid="polySurface815"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface815-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface816" id="polySurface816" sid="polySurface816"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface816-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface817" id="polySurface817" sid="polySurface817"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface817-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface818" id="polySurface818" sid="polySurface818"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface818-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface819" id="polySurface819" sid="polySurface819"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface819-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface820" id="polySurface820" sid="polySurface820"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface820-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface821" id="polySurface821" sid="polySurface821"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface821-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface822" id="polySurface822" sid="polySurface822"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface822-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface823" id="polySurface823" sid="polySurface823"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface823-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface824" id="polySurface824" sid="polySurface824"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface824-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface825" id="polySurface825" sid="polySurface825"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface825-lib"><bind_material><technique_common><instance_material symbol="Telhas" target="#Telhas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="polySurface826" id="polySurface826" sid="polySurface826"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#polySurface826-lib"><bind_material><technique_common><instance_material symbol="RebocoBranco" target="#RebocoBranco"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>2.000000</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>

@@ -1,0 +1,83 @@
+<materialLib name="VeniceMaterials">
+  <textures>
+    <texture name="RoomLightMap" filename="textures/room_light_rt_ao.png" />
+    <texture name="FurnitureLightMap" filename="textures/furniture_rt_ao.png" />
+  </textures>
+  <shaders>
+    <shader name="ColourSimple" ps="shaders/colour.frag" vs="shaders/colour.vert" />
+    <shader name="LightMapSimple" ps="shaders/lightmap.frag" vs="shaders/lightmap.vert" />
+  </shaders>
+  <materials>
+    <material name="RoomMaterial">
+      <color>
+	<ambient r="0.1" g="0.1" b="0.1" a="1.0" />
+	<diffuse r="0.9" g="0.9" b="0.9" a="1.0" />
+	<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+	<emissive r="0.0" g="0.0" b="0.0" a="1.0" />
+	<shininess value="0" />
+      </color>
+      <textures>
+	<texture unit="0" name="RoomLightMap" />
+      </textures>
+      <shader>
+	<name>LightMapSimple</name>
+	<values>
+	  <valueof uniform="LightMapSampler" value="TEXTURE(RoomLightMap,UNIT)" />
+	  <valueof uniform="LightControl" value="LIGHT(RoomLight,COLOR)" />
+	</values>
+      </shader>
+    </material>
+    <material name="Surface_F">
+      <color>
+	<ambient r="0.1" g="0.1" b="0.1" a="1.0" />
+	<diffuse r="0.9" g="0.9" b="0.9" a="1.0" />
+	<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+	<emissive r="0.0" g="0.0" b="0.0" a="1.0" />
+	<shininess value="0" />
+      </color>
+      <textures>
+	<texture unit="0" name="RoomLightMap" />
+      </textures>
+      <shader>
+	<name>LightMapSimple</name>
+	<values>
+	  <valueof uniform="LightMapSampler" value="TEXTURE(RoomLightMap,UNIT)" />
+	  <valueof uniform="LightControl" value="LIGHT(RoomLight,COLOR)" />
+	</values>
+      </shader>
+    </material>
+    <material name="FurnitureMaterial">
+      <color>
+	<ambient r="0.1" g="0.1" b="0.1" a="1.0" />
+	<diffuse r="0.9" g="0.9" b="0.9" a="1.0" />
+	<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+	<emissive r="0.0" g="0.0" b="0.0" a="1.0" />
+	<shininess value="0" />
+      </color>
+      <textures>
+	<texture unit="0" name="FurnitureLightMap" />
+      </textures>
+      <shader>
+	<name>LightMapSimple</name>
+	<values>
+	  <valueof uniform="LightMapSampler" value="TEXTURE(FurnitureLightMap,UNIT)" />
+	  <valueof uniform="LightControl" value="LIGHT(RoomLight,COLOR)" />
+	</values>
+      </shader>
+    </material>
+    <material name="CeilingMaterial">
+      <color>
+	<ambient r="0.1" g="0.1" b="0.1" a="1.0" />
+	<diffuse r="0.3" g="0.1" b="0.1" a="1.0" />
+	<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+	<emissive r="0.0" g="0.0" b="0.0" a="1.0" />
+	<shininess value="0" />
+      </color>
+      
+      <shader>
+	<name>ColourSimple</name>
+	<values />
+      </shader>
+    </material>
+  </materials>
+</materialLib>

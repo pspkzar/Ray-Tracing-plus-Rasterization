@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<project name="complexity map" width=900 height=300>
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>..\ntg-bin-pl3dxiv</folder>
+				<folder>..\ntg-bin-terrain</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true" ratio="1">
+				<geometry x="0" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true" ratio ="1">
+				<geometry x=".33" y="0" width=".34"  />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true" ratio ="1">
+				<geometry x=".67" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="0.0" y="20.0" z="20" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-52" y="77.0" z="-27.0" />
+				<direction x="1" y="-1" z="1" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materialLibs>
+			<mlib filename="..\mlibs\aulas.mlib"/>
+		</materialLibs>
+	</assets>
+	
+	<pipelines>
+		<pipeline name="complexityMap" default="true">
+			
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport1</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			
+			<pass class="default" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport2</viewport>
+				<materialMaps>
+					<map fromMaterial="*" 
+						 toLibrary="Aulas" toMaterial="fivePerCentTest" />
+				</materialMaps>
+				
+			</pass>
+			
+			<pass class="default" name="pass3">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport3</viewport>
+				<materialMaps>
+					<map fromMaterial="*" 
+						 toLibrary="Aulas" toMaterial="fivePerCentDraw" />
+				</materialMaps>
+				
+			</pass>
+
+		</pipeline>
+	</pipelines>
+</project>

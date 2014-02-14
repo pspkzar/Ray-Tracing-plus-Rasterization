@@ -1,0 +1,1013 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\geometry">
+      <UniqueIdentifier>{2059a5be-436c-40e9-bd81-1003f85016bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\loader">
+      <UniqueIdentifier>{633ce31f-81ff-49fb-beb3-ae5f0fe50277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\material">
+      <UniqueIdentifier>{da580031-3073-4f44-a328-72023003cf69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{15fdb1a2-5a3f-4842-8a8f-346351195f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{9c7124ea-8c6e-4e77-a004-10149fc839b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render\opengl">
+      <UniqueIdentifier>{59c66afc-fe07-4b24-a2e2-371639e2a34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\resource">
+      <UniqueIdentifier>{1a029650-639a-4a35-a1c0-3b04ba49c418}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{65b7c584-74f9-4204-ba4e-b6598200d052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\system">
+      <UniqueIdentifier>{d1b65763-adcc-40b3-b35a-6cafbd3b9d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\world">
+      <UniqueIdentifier>{26f3088a-0502-4e2a-9223-6a47109247d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{b321e896-4b75-4edb-b494-007d5ac5f944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\event">
+      <UniqueIdentifier>{16bfeae6-9449-4790-8ea5-d564f6c84750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\render\optix">
+      <UniqueIdentifier>{2dd6d8f3-2d35-4172-b707-9ec420118505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPTIX">
+      <UniqueIdentifier>{14c68e0a-3c69-4513-bdd2-1b86bdc8d583}</UniqueIdentifier>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\curitiba\clogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\curitiba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\enums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\slogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\axis.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\bbox.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\boundingbox.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\boundingvolumefactory.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\box.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\frustum.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\mesh.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\meshbones.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\meshposeanim.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\meshposekeyframe.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\meshwithpose.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\poseoffset.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\primitive.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\quad.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\skeletonanim.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\skeletonbone.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\sphere.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\cboloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\deviltextureloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\objLoader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\ogremeshloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\passloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\projectloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\sceneloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\textureloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\colormaterial.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\material.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\materialgroup.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\materialid.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\materiallib.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\materiallibmanager.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\programvalue.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\teximage.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\texturemat.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\mat3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\mat4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\plane.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\randomgen.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\simpletransform.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\spherical.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\transformfactory.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\vec2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\vec3.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\math\vec4.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\depthmappass.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\indexdata.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\iprogram.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\irenderer.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\istate.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\materialsortrenderqueue.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\pass.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\passfactory.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\pipeline.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\quadpass.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\renderfactory.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\rendermanager.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\renderqueuefactory.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\rendertarget.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\texture.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\textureCubeMap.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\vertexdata.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\viewport.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glindexarray.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glprogram.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glrenderer.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glrendertarget.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glstate.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glteximage.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\gltexture.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\gltextureCubeMap.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\gluniform.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\glvertexarray.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\resource\resourcemanager.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\resource\texturemanager.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\camera.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\geometryobject.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\light.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\lightFactory.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\lightWithSwitch.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octree.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octreenode.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octreescene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\scene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneaux.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\scenefactory.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneobject.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneobjectfactory.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneposeobject.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneposes.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\sceneskeleton.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\system\file.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\system\fileutil.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\system\textfile.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\system\textutil.cpp">
+      <Filter>Source Files\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\world\bulletworld.cpp">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\world\curitibabulletmotionstate.cpp">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\world\physicalobject.cpp">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\world\worldfactory.cpp">
+      <Filter>Source Files\world</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\debug\fonts.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\debug\profile.cpp">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\cameraMotion.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\cameraOrientation.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventCameraMotion.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventCameraOrientation.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventFactory.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventFloat.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventInt.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventManager.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventString.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventVec3.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\eventVec4.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\interpolatorFactory.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\listenerType.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\objectAnimation.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\positionInterpolator.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\proximitySensor.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\route.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\sensorFactory.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\timeSensor.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\event\touchSensor.cpp">
+      <Filter>Source Files\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\assimploader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\resource\font.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\resource\fontmanager.cpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\loader\fontxmlloader.cpp">
+      <Filter>Source Files\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\profilerpass.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\distancemap.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octreeByMat.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octreeByMatnode.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\scene\octreeByMatscene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\passOptix.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixMaterialLib.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixRenderer.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixGeometry.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixBufferLib.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixTextureLib.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\optix\optixMaterial.cpp">
+      <Filter>Source Files\render\optix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\geometry\square.cpp">
+      <Filter>Source Files\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\material\textureSampler.cpp">
+      <Filter>Source Files\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\gltexturesampler.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\render\opengl\gltextureMS.cpp">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\curitiba\resource\attribute.hpp">
+      <Filter>Source Files\resource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\curitiba\clogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\config.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\enums.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\errors.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\slogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\axis.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\bbox.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\boundingbox.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\boundingvolumefactory.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\box.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\frustum.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\iboundingvolume.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\mesh.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\meshbones.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\meshposeanim.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\meshwithpose.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\poseoffset.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\primitive.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\quad.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\skeletonanim.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\skeletonbone.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\sphere.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\cboloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\deviltextureloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\objLoader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\passloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\projectloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\sceneloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\colormaterial.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\imaterialgroup.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\material.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\materialgroup.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\materialid.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\materiallib.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\materiallibmanager.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\programvalue.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\texturemat.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\itransform.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\mat3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\mat4.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\mtrand.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\plane.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\randomgen.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\simpletransform.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\transformfactory.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\utils.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\vec2.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\vec3.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\math\vec4.h">
+      <Filter>Source Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\depthmappass.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\indexdata.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\iprogram.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\irenderable.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\irenderer.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\irenderqueue.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\istate.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\materialsortrenderqueue.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\pass.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\passfactory.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\pipeline.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\renderfactory.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\rendermanager.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\renderqueuefactory.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\rendertarget.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\texture.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\textureCubeMap.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\vertexdata.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\viewport.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glindexarray.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glprogram.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glrenderer.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glrendertarget.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glstate.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glteximage.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\gltexture.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\gltextureCubeMap.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\gluniform.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\glvertexarray.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\resource\resourcemanager.h">
+      <Filter>Source Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\resource\texturemanager.h">
+      <Filter>Source Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\camera.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\geometryobject.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\iscene.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\iscenepartitioned.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\light.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\lightFactory.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\lightWithSwitch.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octree.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octreenode.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octreescene.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\scene.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneaux.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\scenefactory.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneobject.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneobjectfactory.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneposeobject.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneposes.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\sceneskeleton.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\system\dirent.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\system\file.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\system\fileutil.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\system\textfile.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\system\textutil.h">
+      <Filter>Source Files\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\world\bulletworld.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\world\curitibabulletmotionstate.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\world\iworld.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\world\physicalobject.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\world\worldfactory.h">
+      <Filter>Source Files\world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\debug\fonts.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\debug\profile.h">
+      <Filter>Source Files\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\cameraMotion.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\cameraOrientation.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventCameraMotion.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventCameraOrientation.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventFactory.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventFloat.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventInt.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventManager.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventString.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventVec3.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\eventVec4.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\iEventData.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\ilistener.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\interpolator.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\interpolatorFactory.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\listenerType.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\objectAnimation.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\positionInterpolator.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\proximitySensor.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\route.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\sensor.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\sensorFactory.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\event\timeSensor.h">
+      <Filter>Source Files\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\assimploader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\resource\font.h">
+      <Filter>Source Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\resource\fontmanager.h">
+      <Filter>Source Files\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\fontxmlloader.h">
+      <Filter>Source Files\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\profilerpass.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\distancemap.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octreeByMat.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octreeByMatnode.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\scene\octreeByMatscene.h">
+      <Filter>Source Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\passOptix.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixMaterialLib.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixRenderer.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixGeometry.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixBufferLib.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixTextureLib.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\optix\optixMaterial.h">
+      <Filter>Source Files\render\optix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\geometry\square.h">
+      <Filter>Source Files\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\material\textureSampler.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\gltexturesampler.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\render\opengl\gltextureMS.h">
+      <Filter>Source Files\render\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\curitiba\loader\textureloader.h">
+      <Filter>Source Files\material</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\src\curitiba\geometry\meshposekeyframe.h">
+      <Filter>Source Files\geometry</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\curitiba\loader\ogremeshloader.h">
+      <Filter>Source Files\loader</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\curitiba\material\teximage.h">
+      <Filter>Source Files\material</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\curitiba\math\spherical.h">
+      <Filter>Source Files\math</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\curitiba\render\quadpass.h">
+      <Filter>Source Files\render</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\src\curitiba\event\touchSensor.h">
+      <Filter>Source Files\event</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\optix\rtvssm.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\ssao.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\deferredShadows.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\common.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\reflection.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\refraction.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\final.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src\optix\dummy.cu">
+      <Filter>OPTIX</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

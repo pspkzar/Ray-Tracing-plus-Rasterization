@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<project name="teste1-shadows">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>..\ntg-bin-pl3dxiv</folder>
+			</scene>
+			<scene name="Terrain">
+				<folder>..\ntg-bin-terrain</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SunViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true" ratio="1">
+				<geometry x="0" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true" ratio="1">
+				<geometry x=".33" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true" ratio="1">
+				<geometry x=".66" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-240.0" y="180.0" z="-330" />
+				<view x="0.54" y="-0.37" z="0.75" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="testCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="100.0" />
+				<position x="19.3" y="19.0" z="-7.9" />
+				<view x="0.483" y="-0.44" z="-0.75" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-52" y="77.0" z="-27.0" />
+				<direction x="0.78" y="-0.58" z="-0.22" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		
+		<materiallibs>
+			<mlib filename="..\mlibs\shadowMaterials.mlib"/>
+		</materiallibs>
+	</assets>
+	
+	<pipelines>
+		<pipeline name="shadow" default="true" defaultCamera="testCamera">
+		
+			<pass class="depthmap" name="getShadowMap">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>testCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<!--params>
+					<param name="To" float="10" />
+				</params-->
+				<rendertarget name="depth" fromLibrary="Shadow Materials" />
+					
+				<materialmaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialmaps>
+			</pass>
+			
+			<pass class="default" name="computeShadowsToRT">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>Terrain</scene>
+				</scenes>
+				<camera>testCamera</camera>
+				<rendertarget name="simple" fromLibrary="Shadow Materials" />
+				<materialmaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="flat-with-shadow" />
+				</materialmaps>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			
+			<pass class="quad" name="showShadowMap">
+				<viewport>MainViewport</viewport>				
+				<texture name="shadowMap" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+			<pass class="default" name="DebugViewFromGodsCamera">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>Terrain</scene>
+					<scene>testCamera</scene>
+					<scene>shadow#getShadowMap-LightCam</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport2</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass> 
+			
+			<pass class="quad" name="showComputedShadows">
+				<viewport>SmallViewport1</viewport>				
+				<texture name="offscreenrender" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+			<pass class="default" name="DebugViewFromLight">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>testCamera</scene>
+				</scenes>
+				<camera>shadow#getShadowMap-LightCam</camera>
+				<viewport>SmallViewport3</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass> 
+		</pipeline>
+	</pipelines>
+</project>

@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<project name="Igide" useTriangleIDs = "yes" useTangents="yes">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<!--file>..\ntg-bin-4\al01-finallambert.dae</file-->
+				<file>..\3dsmodels\al.obj</file>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.5" g="0.5" b="0.5" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true" ratio = 1>
+				<geometry x="0" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true" ratio= 1>
+				<geometry x=".33" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true" ratio = 1>
+				<geometry x=".66" y="0" width=".33"  />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="20.0" />
+				<position x="1.4" y="14.0" z="-58" />
+				<view x="0.881001" y="0.083889" z="-0.465618" />
+				<!--position x="0.0" y="0.0" z="5.0" />
+				<view x="0.0" y="0" z="-1" /-->
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="ObserverCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-50.0" y="50.0" z="-50" />
+				<view x="1.0" y="-1.0" z="1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="150.0" />
+				<direction x="1.0" y="-1.0" z="-1.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		<materiallibs>
+			<mlib filename="..\mlibs\vision.mlib"/>
+			<!--mlib filename="..\mlibs\shadowMaterials.mlib"/-->
+			<mlib filename = "..\mlibs\PL3D_Materials.mlib"/>
+		</materiallibs>
+	</assets>
+	
+	
+	
+	<pipelines>
+		<pipeline name="igide" default="true">
+		
+			<pass class="depthmap" name="shadowmap">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<clearcolor>true</clearcolor>
+				<rendertarget name="depth" fromLibrary="VisionMaterials" />
+				<!--map toMaterial="Grade*">
+					<state name="Grades" fromLibrary="PL3D_Materials" />
+				</map-->
+				<materialmaps>
+					<map fromMaterial="*" toLibrary="VisionMaterials" 
+										  toMaterial="depthOnly" />
+					<map fromMaterial="Vidro" toLibrary="VisionMaterials"
+												toMaterial="NoRender" />
+					
+					<!--map fromMaterial="*" toLibrary="VisionMaterials" 
+										  toMaterial="depthOnly" /-->
+				</materialmaps>
+			</pass>	
+			
+			<pass class="default" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertarget name="triangleIDs" fromLibrary="VisionMaterials" />
+				<materialmaps>
+					<map fromMaterial="*" 	toLibrary="VisionMaterials" 
+											toMaterial="bw-shadows_with_IDs" />
+				</materialmaps>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			
+			<pass class="quad" name="contour">
+				<rendertarget name= "contours" fromLibrary="VisionMaterials" />
+				<materialmaps>
+					<map fromMaterial="quad" toLibrary="VisionMaterials" 
+											 toMaterial="ContourShader" />
+				</materialmaps>
+				<!--use material="ContourShader" fromLibrary="VisionMaterials" /-->
+			</pass>
+			
+			
+			
+			
+			<pass class="quad" name="blur">
+				<rendertarget name= "blur" fromLibrary="VisionMaterials" />
+				<materialmaps>
+					<map fromMaterial="quad" toLibrary="VisionMaterials" 
+											 toMaterial="BlurShader" />
+				</materialmaps>
+				<!--use material="ContourShader" fromLibrary="VisionMaterials" /-->
+			</pass>
+				
+			
+			
+			
+			
+			<pass class="quad" name="bla">
+				<viewport>MainViewport</viewport>
+				<texture name="shadowMap" fromLibrary="VisionMaterials" />
+			</pass>
+			
+			<pass class="quad" name="showShadowMap">
+				<viewport>SmallViewport1</viewport>
+				<texture name="shadowMap" fromLibrary="VisionMaterials" />
+			</pass>
+			
+			<pass class="quad" name="showShadowedScene">
+				<viewport>SmallViewport2</viewport>	
+				<texture name="shadowedscene" fromLibrary="VisionMaterials" />
+			</pass>
+			
+			<pass class="quad" name="showContour">
+				<viewport>SmallViewport3</viewport>								
+				<texture name="contours" fromLibrary="VisionMaterials" />
+			</pass>
+			
+			
+
+		</pipeline>
+	</pipelines>
+</project>

@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<project name="teste1-shadows">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>C:\PL3D\ntg-bin2</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SunViewport" fixed="false">
+				<bgcolor r="1.0" g="1.0" b="1.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true">
+				<geometry x="0" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true">
+				<geometry x="200" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true">
+				<geometry x="400" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport4" fixed="true">
+				<geometry x="600" y="0" width="200" height="200" />
+				<bgcolor  r="0.0" g="0.0" b="0.0" />
+			</viewport>			
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.5" far="10000.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="SunCamera1" type="ortho">
+				<viewport>SunViewport</viewport>
+				<ortho left="-1.0" right="1.0" bottom="-1.0" top="1.0" near="10.0" far="1000.0" />
+				<position x="0.0" y="0.0" z="0.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="SunCamera2" type="ortho">
+				<viewport>SunViewport</viewport>
+				<ortho left="-1.0" right="1.0" bottom="-1.0" top="1.0" near="10.0" far="1000.0" />
+				<position x="0.0" y="0.0" z="0.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="SunCamera3" type="ortho">
+				<viewport>SunViewport</viewport>
+				<ortho left="-1.0" right="1.0" bottom="-1.0" top="1.0" near="10.0" far="1000.0" />
+				<position x="0.0" y="0.0" z="0.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="SunCamera4" type="ortho">
+				<viewport>SunViewport</viewport>
+				<ortho left="-1.0" right="1.0" bottom="-1.0" top="1.0" near="10.0" far="1000.0" />
+				<position x="0.0" y="0.0" z="0.0" />
+				<view x="0.0" y="0.0" z="-1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="1.0" y="-1.0" z="0.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+			</light>
+		</lights>
+		<materialLibs>
+			<mlib filename="../mlibs/quadMaterials.mlib"/>
+		</materialLibs>
+	</assets>
+	<pipelines>
+		<pipeline name="shadow" default="true">
+			<pass class="depthmaprgba32f" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertargets>
+					<size width="2048" height="2048" />
+					<colors>
+						<color name="shadowMap" noreadandwrite="true" format="5" type="2"  />
+					</colors>
+				</rendertargets>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="quadMaterials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			<pass class="depthmaprgba32f" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertargets sameas="pass1">
+				</rendertargets>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="quadMaterials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			<pass class="depthmaprgba32f" name="pass3">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertargets sameas="pass1">
+				</rendertargets>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="quadMaterials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			<pass class="depthmaprgba32f" name="pass4">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertargets sameas="pass1">
+				</rendertargets>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="quadMaterials" toMaterial="depthOnly" />
+				</materialMaps>
+			</pass>
+			<pass class="default" name="pass5">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<rendertargets>
+					<size width="1024" height="1024" />
+					<colors>
+						<color name="offscreenrender" format="4" type="1" />
+					</colors>
+				</rendertargets>
+				<materialMaps>
+					<map fromMaterial="*" toLibrary="quadMaterials" toMaterial="flat-with-shadow-rgba32f" />
+				</materialMaps>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			<pass class="quad" name="pass6">
+				<materialMaps>
+					<map fromMaterial="quad" toLibrary="quadMaterials" toMaterial="quadpass2" />
+				</materialMaps>
+			</pass>
+<!--  			<pass class="default" name="pass7">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>SunCamera1</camera>
+				<viewport>SmallViewport1</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+ 			<pass class="default" name="pass8">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>SunCamera2</camera>
+				<viewport>SmallViewport2</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+ 			<pass class="default" name="pass9">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>SunCamera3</camera>
+				<viewport>SmallViewport3</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+ 			<pass class="default" name="pass10">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>SunCamera4</camera>
+				<viewport>SmallViewport4</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>	 -->		
+		</pipeline>
+	</pipelines>
+</project>

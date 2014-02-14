@@ -149,3 +149,20 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
+
+# 3D Models and ptx files
+PL3D_Curitiba/3dsmodels/
+*.cbo
+*.exe
+*.ptx
+PL3D_Curitiba/Texturas
+PL3D_Curitiba/TextureCubeMaps
+head/curitiba_new/Debug
+head/curitiba_new/Release
+head/curitiba_new/Debug Optix
+head/curitiba_new/Release Optix
+head/build/obj/composer
+head/premake/ipch
+head/premake/Release
+head/premake/Release Optix
+

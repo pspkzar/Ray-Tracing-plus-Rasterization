@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<materiallib name="quadMaterials">
+	<shaders>
+		<shader name="perpixel-color" ps="../shaders/perpixel-color.frag" vs="../shaders/perpixel-color.vert" />
+		<shader name="perpixel-color-shadow" ps="../shaders/perpixel-color-shadow.frag" vs="../shaders/perpixel-color-shadow.vert" />
+		<shader name="perpixel-color-shadow-4-depths" ps="../shaders/perpixel-color-shadow-4-depths.frag" vs="../shaders/perpixel-color-shadow-4-depths.vert" />
+		<shader name="perpixel-color-shadow-rgba32f" ps="../shaders/perpixel-color-shadow-rgba32f.frag" vs="../shaders/perpixel-color-shadow-rgba32f.vert" />
+		<shader name="depthOnly" ps="../shaders/depthOnly.frag" vs="../shaders/depthOnly.vert" />
+	</shaders>
+	<materials>
+		<material name="flat">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color</name>
+				<values>
+					<valueof uniform="lightPosition" value="LIGHT(Sun,POSITION)" /> 
+					<valueof uniform="lightColor" value="LIGHT(Sun,COLOR)" />
+ 					<!--valueof uniform="camPos" value="CAMERA(MainCamera,POSITION)" /-->
+					<!--valueof uniform="camView" value="CAMERA(MainCamera,VIEW)" /-->					
+					<!--valueof uniform="camUp" value="CAMERA(MainCamera,UP)" /-->					
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" />
+			</textures>
+		</material>
+		<material name="flat-with-shadow">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow</name>
+				<values>
+					<valueof uniform="lightDirection" value="CAMERA(shadow#pass1-LightCam,VIEW)" /> 
+					<valueof uniform="lightColor" value="LIGHT(Sun,COLOR)" />
+ 					<valueof uniform="lightSpaceMat" value="CAMERA(shadow#pass1-LightCam,TS05_MVPMATRIX)" />
+					<valueof uniform="shadowMap" value="TEXTURE(shadowMap,UNIT)" /> 				
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>		
+		<material name="flat-with-shadow2">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow</name>
+				<values>
+					<valueof uniform="lightPosition" value="LIGHT(SunCamera1,POSITION)" /> 
+					<valueof uniform="lightColor" value="LIGHT(Sun,COLOR)" />
+ 					<valueof uniform="lightSpaceMat" value="CAMERA(SunCamera1,TS05_MVPMATRIX)" />
+					<valueof uniform="shadowMap" value="TEXTURE(shadowMap,UNIT)" /> 
+ 					<!--valueof uniform="camPos" value="CAMERA(MainCamera,POSITION)" /-->
+					<!--valueof uniform="camView" value="CAMERA(MainCamera,VIEW)" /-->					
+					<!--valueof uniform="camUp" value="CAMERA(MainCamera,UP)" /-->					
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" />
+
+
+			</textures>
+		</material>		
+		<material name="flat-with-shadow-4-depths">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow-4-depths</name>
+				<values>
+					<valueof uniform="lightPosition" value="LIGHT(Sun,POSITION)" /> 
+					<valueof uniform="lightColor" value="LIGHT(Sun,COLOR)" />
+ 					<valueof uniform="lightSpaceMat[0]" value="CAMERA(SunCamera1,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[1]" value="CAMERA(SunCamera2,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[2]" value="CAMERA(SunCamera3,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[3]" value="CAMERA(SunCamera4,TS05_MVPMATRIX)" />
+					<valueof uniform="shadowMap[0]" value="TEXTURE(shadowMap1,UNIT)" />
+					<valueof uniform="shadowMap[1]" value="TEXTURE(shadowMap2,UNIT)" />
+					<valueof uniform="shadowMap[2]" value="TEXTURE(shadowMap3,UNIT)" />
+					<valueof uniform="shadowMap[3]" value="TEXTURE(shadowMap4,UNIT)" />
+ 					<!--valueof uniform="camPos" value="CAMERA(MainCamera,POSITION)" /-->
+					<!--valueof uniform="camView" value="CAMERA(MainCamera,VIEW)" /-->					
+					<!--valueof uniform="camUp" value="CAMERA(MainCamera,UP)" /-->					
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap1" />
+				<texture unit="0" name="shadowMap2" />
+				<texture unit="0" name="shadowMap3" />
+				<texture unit="0" name="shadowMap4" />
+				<!--<texture unit="0">shadowMap1</texture>
+				<texture unit="1">shadowMap2</texture>
+				<texture unit="2">shadowMap3</texture>
+				<texture unit="3">shadowMap4</texture> /-->
+			</textures>
+		</material>		
+		<material name="flat-with-shadow-rgba32f">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow-rgba32f</name>
+				<values>
+					<valueof uniform="lightPosition" value="LIGHT(Sun,POSITION)" /> 
+					<valueof uniform="lightColor" value="LIGHT(Sun,COLOR)" />
+ 					<valueof uniform="lightSpaceMat[0]" value="CAMERA(SunCamera1,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[1]" value="CAMERA(SunCamera2,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[2]" value="CAMERA(SunCamera3,TS05_MVPMATRIX)" />
+					<valueof uniform="lightSpaceMat[3]" value="CAMERA(SunCamera4,TS05_MVPMATRIX)" />
+					<valueof uniform="shadowMap" value="TEXTURE(shadowMap,UNIT)" />
+ 					<!--valueof uniform="camPos" value="CAMERA(MainCamera,POSITION)" /-->
+					<!--valueof uniform="camView" value="CAMERA(MainCamera,VIEW)" /-->					
+					<!--valueof uniform="camUp" value="CAMERA(MainCamera,UP)" /-->					
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap1" />
+			</textures>
+		</material>		
+		<material  name="depthOnly" >
+			<color>
+				<ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>depthOnly</name>
+			</shader>		
+		</material>
+		<material name="quadpass2">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="offscreenrender" />
+			</textures>			
+		</material>
+		<material name="quadpass3">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.0" g="0.0" b="0.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="shadowMap" />
+			</textures>			
+		</material>
+	</materials>
+</materiallib>

@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<materiallib name="Aulas">
+	<states>
+		<state name="CountPixelTest">
+			<depth test="0" />
+			<blend src="ONE" dst="ONE" />
+		</state>	
+		<state name="CountPixelDraw"> 
+			<blend src="ONE" dst="ONE" />
+		</state>			
+	</states>
+	<textures>
+		<texture name="Crate" filename="../Texturas/crate.jpg"  mipmap="No"/>		
+		<texture name="Caustic" filename="../Texturas/caustic.jpg" />
+		<texture name="Marble" filename="../Texturas/water01.jpg" />
+			
+	</textures>
+	
+	<materials>
+		<material name="grey">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="0.7" g="0.7" b="0.7" a="1.0" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+		</material>
+		<material name="fivePerCentTest">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.05" g="0.05" b="0.05" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="CountPixelTest" />
+		</material>
+		
+		<material name="fivePerCentDraw">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.0" a="1.0" />
+				<diffuse r="0.05" g="0.05" b="0.05" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="CountPixelDraw" />
+		</material>
+		
+		<material name="simpleTextured">
+			<color>
+				<ambient r="0.4" g="0.4" b="0.4" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="Crate" />
+			</textures>
+		</material>
+		
+		<material name="simpleTextured2">
+			<color>
+				<ambient r="0.4" g="0.4" b="0.4" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="Marble" />
+			</textures>
+		</material>
+		<material name="simpleTextured3">
+			<color>
+				<ambient r="0.4" g="0.4" b="0.4" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="Crate" />
+			</textures>
+			<state >
+				<cull enable=1 face="FRONT"  />
+			</state>
+		</material>
+		
+		<material name="simpleTexturedBlend">
+			<color>
+				<ambient r="0.4" g="0.4" b="0.4" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="0.75" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<textures>
+				<texture unit="0" name="Marble" />
+			</textures>
+			<state >
+				<order value="2" />
+				<blend src="SRC_ALPHA" dst="ONE_MINUS_SRC_ALPHA" />
+			</state>
+		</material>
+	</materials>
+</materiallib>

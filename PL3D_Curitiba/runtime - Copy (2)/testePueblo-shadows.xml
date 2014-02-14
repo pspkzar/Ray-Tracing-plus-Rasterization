@@ -1,0 +1,133 @@
+<?xml version="1.0" ?>
+<project name="teste1-shadows" width=512 height = 512>
+	<assets>
+		<scenes>
+			<scene name="MainScene" >
+				<file>..\3dsmodels\PUEBLO.3ds</file>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SunViewport" fixed="true" ratio = 1>
+				<geometry x = 0 y=0.5 width=0.5 />
+				<bgcolor r="0.0" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport1" fixed="true" ratio = 1>
+				<geometry x="0.5" y="0" width=0.5  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport2" fixed="true" ratio = 1>
+				<geometry x="0" y="0" width=0.5  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+			<viewport name="SmallViewport3" fixed="true" ratio = 1>
+				<geometry x=0.5 y=0.5 width=0.5  />
+				<bgcolor  r="0.0" g="0.0" b="0.2" />
+			</viewport>
+		</viewports>
+		
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="1.0" far="1000.0" />
+				<position x="-240.0" y="180.0" z="-330" />
+				<view x="0.54" y="-0.37" z="0.75" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="testCamera" type="perspective">
+				<viewport>SunViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="7.0" />
+				<position x="1.032124" y="1.123455" z="0.374912" />
+				<view x="-0.813891" y="-0.562962" z="0.143719" />				
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150" y="150" z="0.0" />
+				<direction x="-1.0" y="-0.5" z="0.8" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		
+		<materiallibs>
+			<mlib filename="..\mlibs\shadowMaterials.mlib"/>
+		</materiallibs>
+	</assets>
+	
+	<pipelines>
+		<pipeline name="shadow" default="true" defaultCamera="testCamera">
+		
+			<pass class="depthmap" name="getShadowMap">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>testCamera</camera>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<!--params>
+					<param name="To" float="10" />
+				</params-->
+				<rendertarget name="depth" fromLibrary="Shadow Materials" />
+					
+				<materialmaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="depthOnly" />
+				</materialmaps>
+			</pass>
+			
+			<pass class="default" name="computeShadowsToRT">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>testCamera</camera>
+				<rendertarget name="simple" fromLibrary="Shadow Materials" />
+				<materialmaps>
+					<map fromMaterial="*" toLibrary="Shadow Materials" toMaterial="flat-with-shadow" />
+				</materialmaps>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			
+			<pass class="quad" name="showShadowMap">
+				<viewport>SmallViewport1</viewport>				
+				<texture name="shadowMap" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+			<pass class="default" name="DebugViewFromGodsCamera">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>testCamera</scene>
+					<scene>shadow#getShadowMap-LightCam</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport2</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass> 
+			
+			<pass class="quad" name="showComputedShadows">
+				<viewport>SunViewport</viewport>				
+				<texture name="offscreenrender" fromLibrary="Shadow Materials"/>
+			</pass>
+			
+			<pass class="default" name="DebugViewFromLight">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>testCamera</scene>
+				</scenes>
+				<camera>shadow#getShadowMap-LightCam</camera>
+				<viewport>SmallViewport3</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass> 
+		</pipeline>
+	</pipelines>
+</project>

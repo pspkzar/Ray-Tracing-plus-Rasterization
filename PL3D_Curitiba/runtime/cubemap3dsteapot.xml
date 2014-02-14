@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<project name="teste1">
+	<assets>
+		<scenes>
+			<scene name="MainScene"  param="SWAP_YZ">
+				<file>..\3dsmodels\teapot.3ds</file>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.0" g="0.0" b="0.3" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="10000.0" />
+				<position x="0.0" y="40" z="145.0" />
+				<view x="0.0" y="0" z="-1" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="-1.0" y="1.0" z="0.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		<materialLibs>
+			<mlib filename="..\mlibs\cubemap3.mlib"/>
+		</materialLibs>
+	</assets>
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>MainViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			 <materialMaps>
+					<map fromMaterial="*" toLibrary="CubeMap" toMaterial="House" />
+				</materialMaps>
+			</pass>
+		</pipeline>
+	</pipelines>
+</project>

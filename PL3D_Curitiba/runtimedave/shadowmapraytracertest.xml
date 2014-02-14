@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<!--project name="Render Target Test" useTriangleIDs = "yes" useTangents="yes" width="256" height="256"-->
+<!--project name="Render Target Test" useTriangleIDs = "yes" useTangents="yes" width="512" height="512"-->
+<project name="Render Target Test" useTriangleIDs = "yes" useTangents="yes" width="1024" height="1024">
+  <assets>
+    <scenes>
+      <scene name="MainScene">
+        <!--folder>..\ntg-bin-raytracer</folder-->
+        <!--folder>..\curitibasimple</folder-->
+        <!--folder>..\curitibatrees</folder-->
+        <!--folder>..\curitibapueblo</folder-->
+        <!--file>..\ntg-bench\bench.obj</file-->
+        <folder>..\testGeomMaya</folder>
+      </scene>
+    </scenes>
+    <viewports>
+      <viewport name="MainViewport" fixed="false">
+        <bgcolor r="0.0" g="0.0" b="0.0" />
+      </viewport>
+      <!--viewport name="SmallViewport" fixed="true">
+        <geometry x="0" y="0" width="400" height="400" />
+        <bgcolor r="0.0" g="0.5" b="0.0" />
+      </viewport-->
+    </viewports>
+    <cameras>
+      <camera name="MainCamera" type="perspective">
+        <viewport>MainViewport</viewport>
+        <!--1ª e 2ª cena-->
+        <!--perspective fov="60.0" near="0.3" far="30.0" /-->
+        <!--3ª cena-->
+        <!--perspective fov="60.0" near="0.3" far="7.0" /-->
+        <!--4ª cena-->
+        <!--perspective fov="60.0" near="15.0" far="120.0" /-->
+        <!--5ª cena-->
+        <perspective fov="60.0" near="20.0" far="250.0" />
+        <!--5ª cena ANTIGO-->
+        <!--perspective fov="60.0" near="1.0" far="300.0" /-->
+        <!--1ª cena, 1º viewpoint-->
+        <!--position x="1.5" y="3.0" z="-4.5" />
+        <view x="-0.5" y="-0.6" z="0.5" /-->
+        <!--1ª cena, 2º viewpoint-->
+        <!--position x="-4.5" y="3.5" z="-4.5" />
+        <view x="1.0" y="-1.4" z="1.0" /-->
+        <!--1ª cena, 1º viewpoint já não usado-->
+        <!--position x="6.0" y="6.0" z="-6.0" />
+        <view x="-1.0" y="-1.0" z="1.0" /-->
+        <!--1ª cena, 2º viewpoint já não usado-->
+        <!--position x="-5.0" y="5.0" z="-5.0" />
+        <view x="1.0" y="-1.0" z="1.0" /-->
+        <!--2ª cena, 1º viewpoint-->
+        <!--position x="-6.0" y="9.0" z="-3.5" />
+        <view x="1.0" y="-1.5" z="0.5" /-->
+        <!--2ª cena, 2º viewpoint-->
+        <!--position x="5.0" y="9.0" z="-7.5" />
+        <view x="-0.5" y="-1.2" z="1" /-->
+        <!--2ª cena, 1º viewpoint já não usado-->
+        <!--position x="-9.0" y="9.0" z="-4.0" />
+        <view x="1.0" y="-1.0" z="0.5" /-->
+        <!--2ª cena, 2º viewpoint já não usado-->
+        <!--position x="4.0" y="9.0" z="-9.0" />
+        <view x="-0.5" y="-1.0" z="1" /-->
+        <!--3ª cena, 1º viewpoint-->
+        <!--position x="1.032124" y="1.123455" z="0.374912" />
+        <view x="-0.813891" y="-0.562962" z="0.143719" /-->
+        <!--3ª cena, 2º viewpoint-->
+        <!--position x="-0.038985" y="0.613504" z="1.223343" />
+        <view x="-0.200675" y="-0.701832" z="-0.683493" /-->
+        <!--3ª cena, viewpoint não usado-->
+        <!--position x="1.611567" y="0.848166" z="0.265361" />
+        <view x="-0.991812" y="-0.127616" z="0.004745" /-->
+        <!--4ª cena, 1º viewpoint-->
+        <!--position x="-23.277" y="18.541" z="30.143" />
+        <view x="0.397" y="-0.644774" z="-0.652" /-->
+        <!--4ª cena, 2º viewpoint-->
+        <!--position x="-37.034573" y="35.208973" z="-8.597797" />
+        <view x="0.605439" y="-0.732089" z="0.312232" /-->
+        <!--4ª cena, 3º viewpoint-->
+        <!--position x="27.214222" y="27.875109" z="27.032139" />
+        <view x="-0.560848" y="-0.777942" z="-0.283293" /-->
+        <!--4ª cena, 4º viewpoint-->
+        <!--position x="42.947086" y="24.103859" z="-27.831772" />
+        <view x="0.415959" y="-0.784187" z="0.460467" /-->
+        <!--4ª cena, 5º viewpoint-->
+        <!--position x="76.844704" y="28.391548" z="-31.870102" />
+        <view x="-0.232891" y="-0.79644" z="0.558073" /-->
+        <!--4ª cena, 6º viewpoint-->
+        <!--position x="90.805244" y="35.846294" z="24.061787" />
+        <view x="-0.421061" y="-0.842219" z="-0.336714" /-->
+        <!--4ª cena, 7º viewpoint-->
+        <!--position x="-3.615331" y="22.376335" z="2.338565" />
+        <view x="-0.387214" y="-0.852832" z="0.350347" /-->
+        <!--4ª cena, 8º viewpoint-->
+        <!--position x="-3.263903" y="24.423452" z="12.998949" />
+        <view x="-0.239566" y="-0.958412" z="-0.155095" /-->
+        <!--4ª cena, 9º viewpoint-->
+        <!--position x="-17.561422" y="24.968716" z="4.010894" />
+        <view x="0.386402" y="-0.873032" z="0.297505" /-->
+        <!--5ª cena, 1º viewpoint-->
+        <!--position x="35.0" y="50.0" z="-43.0" />
+        <view x="-1.0" y="-1.2" z="1.0" /-->
+        <!--5ª cena, 2º viewpoint-->
+        <!--position x="-28.0" y="38.0" z="-40.0" />
+        <view x="0.4" y="-0.7" z="0.6" /-->
+        <!--5ª cena, 3º viewpoint-->
+        <position x="31.0" y="54.0" z="38.0" />
+        <view x="-0.51" y="-0.64" z="-0.56" />
+		<!--view x="-0.4" y="-0.7" z="-0.5" /-->
+        <up x="0.0" y="1.0" z="0.0" />
+      </camera>
+      <!--camera name="igide#shadowmap-LightCam" type="perspective">
+        <viewport>MainViewport</viewport>
+        <perspective fov="60.0" near="0.3" far="10000.0" />
+        <position x="-150.0" y="150.0" z="0.0" />
+        <view x="-1.0" y="-1.0" z="-1.0" />
+        <up x="0.0" y="1.0" z="0.0" />
+      </camera-->
+    </cameras>
+    <lights>
+      <light name="Sun" type="directional">
+        <position x="-150.0" y="150.0" z="0.0" />
+        <!--1ª cena-->
+        <!--direction x="-1.0" y="-1.0" z="-1.0" /-->
+        <!--2ª cena-->
+        <!--direction x="1.0" y="-1.0" z="-1.0" /-->
+        <!--3ª cena-->
+        <!--direction x="-1.0" y="-0.5" z="0.8" /-->
+        <!--4ª cena-->
+        <!--direction x="0.744" y="-0.408" z="0.527" /-->
+        <!--5ª cena-->
+        <direction x="0.528542" y="-0.376004" z="0.761095" />
+        <color r="0.9" g="0.9" b="0.9" />
+        <ambient r="0.5" g="0.5" b="0.5" />
+      </light>
+    </lights>
+    <materiallibs>
+      <mlib filename="..\mlibsdave\vision.mlib"/>
+      <mlib filename = "..\mlibsdave\PL3D_Materials.mlib"/>
+      <mlib filename="..\mlibsdave\rayTracerRenderTarget.mlib"/>
+    </materiallibs>
+  </assets>
+  <pipelines>
+    <pipeline name="igide" default="true">
+      <pass class="depthmap" name="shadowmap">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        <lights>
+          <light>Sun</light>
+        </lights>
+        <clearcolor>true</clearcolor>
+        <rendertarget name="depth" fromLibrary="VisionMaterials" />
+        <!--statemaps>
+          <set inMaterial="Grade*" state="Grades"
+											 fromLibrary="PL3D_Materials"/>
+        </statemaps-->
+        <materialmaps>
+          <!--map fromMaterial="Vidro" toLibrary="VisionMaterials"
+												toMaterial="NoRender" /-->
+          <!--map fromPriority="0" toLibrary="VisionMaterials"
+										  toMaterial="depthOnly" /-->
+          <map fromMaterial="*" toLibrary="VisionMaterials"
+										  toMaterial="depthOnly" />
+          <!--map fromMaterial="*" toLibrary="Shadow Materials" 
+										  toMaterial="depthOnly" /-->
+        </materialmaps>
+      </pass>
+
+      <pass class="default" name="pass2">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        <!--camera>igide#shadowmap-LightCam</camera-->
+        <rendertarget name="triangleIDs" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="*" 	toLibrary="VisionMaterials"
+											toMaterial="bw-shadows_with_IDs" />
+        </materialmaps>
+        <lights>
+          <light>Sun</light>
+        </lights>
+      </pass>
+
+      <pass class="default" name="pass3">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        <!--camera>igide#shadowmap-LightCam</camera-->
+        <rendertarget name="triangleIDsPCF4" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="*" 	toLibrary="VisionMaterials"
+											toMaterial="bw-shadows_with_IDsPCF4" />
+        </materialmaps>
+        <lights>
+          <light>Sun</light>
+        </lights>
+      </pass>
+
+      <pass class="default" name="pass4">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        <!--camera>igide#shadowmap-LightCam</camera-->
+        <rendertarget name="triangleIDsPCF9" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="*" 	toLibrary="VisionMaterials"
+											toMaterial="bw-shadows_with_IDsPCF9" />
+        </materialmaps>
+        <lights>
+          <light>Sun</light>
+        </lights>
+      </pass>
+
+      <pass class="quad" name="contour">
+        <rendertarget name= "contours" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="quad" toLibrary="VisionMaterials"
+											 toMaterial="ContourShader" />
+        </materialmaps>
+      </pass>
+
+      <pass class="quad" name="blur">
+        <rendertarget name= "blur" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="quad" toLibrary="VisionMaterials"
+											 toMaterial="BlurShader" />
+        </materialmaps>
+      </pass>
+
+      <pass class="quad" name="blur55">
+        <rendertarget name= "blur55" fromLibrary="VisionMaterials" />
+        <materialmaps>
+          <map fromMaterial="quad" toLibrary="VisionMaterials"
+											 toMaterial="Blur55Shader" />
+        </materialmaps>
+      </pass>
+
+      <!--pass class="shadowmapraytracer" name="pass1">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        
+        <rendertarget name="test" fromLibrary="Ray Tracer Render Target" />
+        <lights>
+          <light>Sun</light>
+        </lights>
+        <params>
+          <param name = "MaxDistance" float="10000" />
+          <param name = "RayPointX" float="3.0" />
+          <param name = "RayPointY" float="0.5" />
+          <param name = "RayPointZ" float="0.5" />
+          <param name = "VecX" float="-1.0" />
+          <param name = "VecY" float="0.0" />
+          <param name = "VecZ" float="0.0" />
+          <param name = "Raster" float="1.0" />
+          <param name = "Neighbours" float="0.0" />
+          <param name = "Adjacents" float="0.0" />
+          <param name = "Normal" float="1.0" />
+        </params>
+      </pass-->
+
+      <pass class="quad" name="bla">
+        <viewport>MainViewport</viewport>
+        <texture name="shadowedscene" fromLibrary="VisionMaterials" />
+      </pass>
+
+      <!--pass class="default" name="defeito">
+        <scenes>
+          <scene>MainScene</scene>
+        </scenes>
+        <camera>MainCamera</camera>
+        <viewport>MainViewport</viewport>
+        <lights>
+          <light>Sun</light>
+        </lights>
+      </pass-->
+      
+    </pipeline>
+  </pipelines>
+</project>

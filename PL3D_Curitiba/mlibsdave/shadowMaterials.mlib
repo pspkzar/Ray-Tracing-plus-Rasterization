@@ -1,0 +1,225 @@
+<?xml version="1.0" ?>
+<materiallib name="Shadow Materials">
+	<rendertargets>
+	
+		<rendertarget name ="sahdowMapRGBA32F">
+			<size width="2048" height="2048" />
+			<colors>
+				<color name="shadowMapRGBA32F" 
+									internalFormat="RGBA32F"
+									format="RGB" 
+									type="FLOAT"  />
+			</colors>
+		</rendertarget>
+
+		<rendertarget name="shadowMap1">
+			<size width="2048" height="2048" />
+			<depth name="shadowMap1" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+		</rendertarget>
+		<rendertarget name="shadowMap2">
+			<size width="2048" height="2048" />
+			<depth name="shadowMap2" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+		</rendertarget>
+		<rendertarget name="shadowMap3">
+			<size width="2048" height="2048" />
+			<depth name="shadowMap3" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+		</rendertarget>
+		<rendertarget name="shadowMap4">
+			<size width="2048" height="2048" />
+			<depth name="shadowMap4" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+		</rendertarget>
+
+		<rendertarget name = "depth">
+			<size width="4096" height="4096" />
+			<depth name="shadowMap" noreadandwrite="true"  
+									internalFormat="DEPTH_COMPONENT24"
+									format="DEPTH_COMPONENT" 
+									type="FLOAT"  />
+		</rendertarget>
+		<rendertarget name = "triangleIDs">
+			<size width="16" height="16" />
+			<colors>
+				<color name="shadowedscene" internalFormat="RGBA"
+									format="RGBA" 
+									type="FLOAT"  />
+				<color name="pixelCoords" 	internalFormat="RGBA32F"
+									format="RGBA"
+									type="FLOAT" />
+			</colors>
+		</rendertarget>
+				
+		<rendertarget name="simple">
+			<size width="1024" height="1024" />
+			<colors>
+				<color name="offscreenrender" format="RGBA" 
+												internalFormat="RGBA8" 
+												type="UNSIGNED_BYTE" />
+			</colors>
+		</rendertarget>
+
+	</rendertargets>
+	<shaders>
+		<shader name="perpixel-color-shadow" ps="../shaders/perpixel-color-shadow.frag" vs="../shaders/perpixel-color-shadow.vert" />
+		<shader name="perpixel-color-shadow-4-depths" ps="../shaders/perpixel-color-shadow-4-depths.frag" vs="../shaders/perpixel-color-shadow-4-depths.vert" />
+		<shader name="perpixel-color-shadow-rgba32f" ps="../shaders/perpixel-color-shadow-rgba32f.frag" vs="../shaders/perpixel-color-shadow-rgba32f.vert" />
+		<shader name="depthOnly" ps="../shaders/depthOnly.frag" vs="../shaders/depthOnly.vert" />
+	</shaders>
+	<states>
+		<state name="frontCull">
+      <cull value=1 face="FRONT" />
+		</state>
+		<state name ="NegativeOrder">
+			<order value="-1" />
+		</state>
+	</states>
+	<materials>
+		<material name="flat-with-shadow">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			
+			<shader>
+				<name>perpixel-color-shadow</name>
+				<values>
+					<valueof uniform="lightDirection" 	type="CAMERA" 
+														context="shadow#getShadowMap-LightCam" 
+														component="VIEW" /> 
+														
+					<valueof uniform="lightColor" 	type="LIGHT" 
+													context="Sun" 
+													component="DIFFUSE" />
+													
+ 					<valueof uniform="lightSpaceMat" 	type="CAMERA" 
+														context="shadow#getShadowMap-LightCam" 
+														component="TS05_PVM_MATRIX" />
+					<!--valueof uniform="shadowMap" type="TEXTURE" context="shadowMap" component="UNIT" /--> 
+					<valueof uniform="shadowMap" 		type="CURRENT" 
+														context="TEXTURE" id=0 
+														component="UNIT" />					
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>		
+		
+		<material name="flat-with-shadow-4-depths">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow-4-depths</name>
+				<values>
+					<valueof uniform="lightPosition" type="CAMERA" context="shadow#pass1-LightCam" component="VIEW" /> 
+					<valueof uniform="lightColor" type="LIGHT" context="Sun" component="DIFFUSE" />
+ 					<valueof uniform="lightSpaceMat[0]" type="CAMERA" context="shadow#pass1-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[1]" type="CAMERA" context="shadow#pass2-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[2]" type="CAMERA" context="shadow#pass3-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[3]" type="CAMERA" context="shadow#pass4-LightCam" component="TS05_PVM_MATRIX" />
+					<!--valueof uniform="split[0]" type="DATA" context="5" component="FLOAT" /-->
+					<!--valueof uniform="split[1]" type="DATA" context="15" component="FLOAT" /-->
+					<!--valueof uniform="split[2]" type="DATA" context="50" component="FLOAT" /-->
+					<!--valueof uniform="split[3]" type="DATA" context="500" component="FLOAT" /-->
+					<valueof uniform="shadowMap[0]" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />
+					<valueof uniform="shadowMap[1]" 		  type="CURRENT" context="TEXTURE" id=1 component="UNIT" />
+					<valueof uniform="shadowMap[2]" 		  type="CURRENT" context="TEXTURE" id=2 component="UNIT" />
+					<valueof uniform="shadowMap[3]" 		  type="CURRENT" context="TEXTURE" id=3 component="UNIT" />
+				</values>
+			</shader>
+			<textures>
+				<texture unit="0" name="shadowMap1" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+				<texture unit="1" name="shadowMap2" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+				<texture unit="2" name="shadowMap3" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+				<texture unit="3" name="shadowMap4" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+			</textures>
+		</material>	
+		
+		<material name="flat-with-shadow-rgba32f">
+			<color>
+				<ambient r="0.3" g="0.3" b="0.3" a="1.0" />
+				<diffuse r="1.0" g="1.0" b="1.0" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>perpixel-color-shadow-rgba32f</name>
+				<values>
+					<valueof uniform="lightPosition" type="CAMERA" context="shadow#pass1-LightCam" component="VIEW" /> 
+					<valueof uniform="lightColor" type="LIGHT" context="Sun" component="DIFFUSE" />
+					<valueof uniform="lightSpaceMat[0]" type="CAMERA" context="shadow#pass1-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[1]" type="CAMERA" context="shadow#pass2-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[2]" type="CAMERA" context="shadow#pass3-LightCam" component="TS05_PVM_MATRIX" />
+					<valueof uniform="lightSpaceMat[3]" type="CAMERA" context="shadow#pass4-LightCam" component="TS05_PVM_MATRIX" />
+					<!--valueof uniform="shadowMap" type="TEXTURE" context="shadowMapRGBA32F" component="UNIT" /-->
+					<valueof uniform="shadowMap" 		  type="CURRENT" context="TEXTURE" id=0 component="UNIT" />
+				</values>
+			</shader>
+				<texture unit="0" name="shadowMapRGB32F" >
+					<depthCompare mode="COMPARE_REF_TO_TEXTURE" func="LEQUAL" />
+					<filtering min="LINEAR" mag="LINEAR" />
+				</texture>	
+		</material>		
+		
+		<material  name="depthOnly" >
+			<color>
+				<ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<shader>
+				<name>depthOnly</name>
+			</shader>
+			<state name="frontCull" />	
+		</material>
+		
+		<material  name="NoRender" >
+			<color>
+				<ambient r="0.2" g="0.2" b="0.2" a="1.0" />
+				<diffuse r="0.8" g="0.8" b="0.8" a="1.0" />
+				<specular r="0.0" g="0.0" b="0.0" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.0" />
+			</color>
+			<state name="NegativeOrder"/>
+		</material>
+
+	</materials>
+</materiallib>

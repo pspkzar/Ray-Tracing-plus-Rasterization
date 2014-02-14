@@ -1,0 +1,2849 @@
+<mesh>
+    <submeshes>
+        <submesh material="Orange_OgreMax" usesharedvertices="false" use32bitindexes="false" operationtype="triangle_list">
+            <faces count="104">
+                <face v1="0" v2="1" v3="2" />
+                <face v1="0" v2="3" v3="1" />
+                <face v1="0" v2="4" v3="3" />
+                <face v1="0" v2="5" v3="4" />
+                <face v1="6" v2="7" v3="8" />
+                <face v1="6" v2="9" v3="7" />
+                <face v1="10" v2="11" v3="12" />
+                <face v1="10" v2="13" v3="11" />
+                <face v1="14" v2="15" v3="16" />
+                <face v1="14" v2="17" v3="15" />
+                <face v1="18" v2="19" v3="20" />
+                <face v1="18" v2="21" v3="19" />
+                <face v1="8" v2="22" v3="23" />
+                <face v1="8" v2="7" v3="22" />
+                <face v1="12" v2="24" v3="25" />
+                <face v1="12" v2="11" v3="24" />
+                <face v1="16" v2="26" v3="27" />
+                <face v1="16" v2="15" v3="26" />
+                <face v1="20" v2="28" v3="29" />
+                <face v1="20" v2="19" v3="28" />
+                <face v1="23" v2="30" v3="31" />
+                <face v1="23" v2="22" v3="30" />
+                <face v1="25" v2="32" v3="33" />
+                <face v1="25" v2="24" v3="32" />
+                <face v1="34" v2="35" v3="36" />
+                <face v1="34" v2="37" v3="35" />
+                <face v1="29" v2="38" v3="39" />
+                <face v1="29" v2="28" v3="38" />
+                <face v1="31" v2="40" v3="41" />
+                <face v1="31" v2="30" v3="40" />
+                <face v1="42" v2="43" v3="44" />
+                <face v1="42" v2="45" v3="43" />
+                <face v1="36" v2="46" v3="47" />
+                <face v1="36" v2="35" v3="46" />
+                <face v1="39" v2="48" v3="49" />
+                <face v1="39" v2="38" v3="48" />
+                <face v1="41" v2="50" v3="51" />
+                <face v1="41" v2="40" v3="50" />
+                <face v1="52" v2="53" v3="54" />
+                <face v1="52" v2="55" v3="53" />
+                <face v1="56" v2="57" v3="58" />
+                <face v1="56" v2="59" v3="57" />
+                <face v1="49" v2="60" v3="61" />
+                <face v1="49" v2="48" v3="60" />
+                <face v1="51" v2="62" v3="63" />
+                <face v1="51" v2="50" v3="62" />
+                <face v1="64" v2="65" v3="66" />
+                <face v1="64" v2="67" v3="65" />
+                <face v1="68" v2="69" v3="70" />
+                <face v1="68" v2="71" v3="69" />
+                <face v1="61" v2="72" v3="73" />
+                <face v1="61" v2="60" v3="72" />
+                <face v1="63" v2="74" v3="75" />
+                <face v1="63" v2="62" v3="74" />
+                <face v1="76" v2="77" v3="78" />
+                <face v1="76" v2="79" v3="77" />
+                <face v1="70" v2="80" v3="81" />
+                <face v1="70" v2="69" v3="80" />
+                <face v1="73" v2="82" v3="83" />
+                <face v1="73" v2="72" v3="82" />
+                <face v1="75" v2="84" v3="85" />
+                <face v1="75" v2="74" v3="84" />
+                <face v1="78" v2="86" v3="87" />
+                <face v1="78" v2="77" v3="86" />
+                <face v1="88" v2="89" v3="90" />
+                <face v1="88" v2="91" v3="89" />
+                <face v1="83" v2="92" v3="93" />
+                <face v1="83" v2="82" v3="92" />
+                <face v1="85" v2="94" v3="95" />
+                <face v1="85" v2="84" v3="94" />
+                <face v1="96" v2="97" v3="98" />
+                <face v1="96" v2="99" v3="97" />
+                <face v1="100" v2="101" v3="102" />
+                <face v1="100" v2="103" v3="101" />
+                <face v1="93" v2="104" v3="105" />
+                <face v1="93" v2="92" v3="104" />
+                <face v1="95" v2="106" v3="107" />
+                <face v1="95" v2="94" v3="106" />
+                <face v1="108" v2="109" v3="110" />
+                <face v1="108" v2="111" v3="109" />
+                <face v1="102" v2="112" v3="113" />
+                <face v1="102" v2="101" v3="112" />
+                <face v1="105" v2="114" v3="115" />
+                <face v1="105" v2="104" v3="114" />
+                <face v1="107" v2="116" v3="117" />
+                <face v1="107" v2="106" v3="116" />
+                <face v1="110" v2="118" v3="119" />
+                <face v1="110" v2="109" v3="118" />
+                <face v1="120" v2="121" v3="122" />
+                <face v1="120" v2="123" v3="121" />
+                <face v1="115" v2="124" v3="125" />
+                <face v1="115" v2="114" v3="124" />
+                <face v1="117" v2="126" v3="127" />
+                <face v1="117" v2="116" v3="126" />
+                <face v1="119" v2="128" v3="129" />
+                <face v1="119" v2="118" v3="128" />
+                <face v1="130" v2="131" v3="132" />
+                <face v1="130" v2="133" v3="131" />
+                <face v1="125" v2="134" v3="135" />
+                <face v1="125" v2="124" v3="134" />
+                <face v1="136" v2="137" v3="138" />
+                <face v1="136" v2="138" v3="139" />
+                <face v1="136" v2="139" v3="140" />
+                <face v1="136" v2="140" v3="141" />
+            </faces>
+            <geometry vertexcount="142">
+                <vertexbuffer positions="true">
+                    <vertex>
+                        <position x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="43.9563" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="43.9563" z="-1.92139e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="43.9563" z="5.64646e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="43.9563" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="43.9563" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="43.9563" z="5.64646e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="43.9563" z="-1.92139e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="43.9563" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="87.9127" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="87.9127" z="-3.84279e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="87.9127" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="87.9127" z="-3.84279e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="131.869" z="-5.76418e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="131.869" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="131.869" z="-5.76418e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="131.869" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="175.825" z="-7.68557e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="175.825" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="175.825" z="-7.68557e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="175.825" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="219.782" z="-9.60696e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="219.782" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="175.825" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="219.782" z="-9.60696e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="219.782" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="263.738" z="-1.15284e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="263.738" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="219.782" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="263.738" z="-1.15284e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="263.738" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="307.694" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="307.694" z="-1.34497e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="307.694" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="307.694" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="307.694" z="-1.34497e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="307.694" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="351.651" z="-1.53711e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="351.651" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="307.694" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="351.651" z="-1.53711e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="351.651" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="395.607" z="-1.72925e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="395.607" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="351.651" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="395.607" z="-1.72925e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="395.607" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="439.563" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="439.563" z="-1.92139e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="439.563" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="439.563" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="439.563" z="-1.92139e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="439.563" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="483.52" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="483.52" z="-2.11353e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="483.52" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="483.52" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="439.563" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="483.52" z="-2.11353e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="483.52" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="527.476" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="483.52" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="527.476" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="0" y="527.476" z="-2.30567e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                    </vertex>
+                    <vertex>
+                        <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                    </vertex>
+                    <vertex>
+                        <position x="1.03229e-006" y="527.476" z="86.5661" />
+                    </vertex>
+                    <vertex>
+                        <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                    </vertex>
+                </vertexbuffer>
+                <vertexbuffer normals="true">
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="-1" z="4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                    <vertex>
+                        <normal x="0" y="1" z="-4.37114e-008" />
+                    </vertex>
+                </vertexbuffer>
+                <vertexbuffer texture_coord_dimensions_0="2" tangents="true" texture_coords="1">
+                    <vertex>
+                        <texcoord u="0.5" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="1" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="1" />
+                        <tangent x="-0.707107" y="-3.04665e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.916667" />
+                        <tangent x="-0.707107" y="-3.08126e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.916667" />
+                        <tangent x="-0.707107" y="-1.65831e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="1" />
+                        <tangent x="-0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="1" />
+                        <tangent x="-0.707107" y="3.04665e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.916667" />
+                        <tangent x="-0.707107" y="3.08126e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.916667" />
+                        <tangent x="-0.707107" y="1.65831e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="1" />
+                        <tangent x="-0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="1" />
+                        <tangent x="0.707107" y="3.04664e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.916667" />
+                        <tangent x="0.707107" y="3.08126e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.916667" />
+                        <tangent x="0.707107" y="1.65831e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="1" />
+                        <tangent x="0.707107" y="3.09086e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="1" />
+                        <tangent x="0.707107" y="-3.10696e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.916667" />
+                        <tangent x="0.707107" y="-3.10481e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.916667" />
+                        <tangent x="0.707107" y="-1.72895e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="1" />
+                        <tangent x="0.707107" y="-3.09086e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.833333" />
+                        <tangent x="-0.707107" y="-1.3635e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.833333" />
+                        <tangent x="-0.707107" y="7.06399e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.833333" />
+                        <tangent x="-0.707107" y="1.3635e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.833333" />
+                        <tangent x="-0.707107" y="-7.06404e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.833333" />
+                        <tangent x="0.707107" y="1.96148e-008" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.833333" />
+                        <tangent x="0.707107" y="-9.41872e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.833333" />
+                        <tangent x="0.707107" y="-1.38704e-008" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.833333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.75" />
+                        <tangent x="-0.707107" y="2.35465e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.75" />
+                        <tangent x="-0.707107" y="7.0639e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.75" />
+                        <tangent x="-0.707107" y="-3.38734e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.75" />
+                        <tangent x="-0.707107" y="-9.41868e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.833333" />
+                        <tangent x="0.707107" y="-6.03132e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.75" />
+                        <tangent x="0.707107" y="-2.35467e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.75" />
+                        <tangent x="0.707107" y="-7.06394e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.833333" />
+                        <tangent x="0.707107" y="1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.75" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.75" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.666667" />
+                        <tangent x="-0.707107" y="2.35462e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.666667" />
+                        <tangent x="-0.707107" y="7.06397e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.75" />
+                        <tangent x="-0.707107" y="-6.03123e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.666667" />
+                        <tangent x="-0.707107" y="-3.38729e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.666667" />
+                        <tangent x="-0.707107" y="-9.41853e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.75" />
+                        <tangent x="-0.707107" y="1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.666667" />
+                        <tangent x="0.707107" y="-3.3873e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.666667" />
+                        <tangent x="0.707107" y="-9.41855e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.666667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.666667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.583333" />
+                        <tangent x="-0.707107" y="2.35468e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.583333" />
+                        <tangent x="-0.707107" y="7.06395e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.666667" />
+                        <tangent x="-0.707107" y="-6.0314e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.583333" />
+                        <tangent x="-0.707107" y="-3.38738e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.583333" />
+                        <tangent x="-0.707107" y="-9.41878e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.666667" />
+                        <tangent x="-0.707107" y="0" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.666667" />
+                        <tangent x="0.707107" y="-6.03141e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.583333" />
+                        <tangent x="0.707107" y="-3.3874e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.583333" />
+                        <tangent x="0.707107" y="-9.4188e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.666667" />
+                        <tangent x="0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.583333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.583333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.5" />
+                        <tangent x="-0.707107" y="2.35462e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.5" />
+                        <tangent x="-0.707107" y="7.06392e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.583333" />
+                        <tangent x="-0.707107" y="-6.03123e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.5" />
+                        <tangent x="-0.707107" y="-3.38729e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.5" />
+                        <tangent x="-0.707107" y="-9.41852e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.583333" />
+                        <tangent x="-0.707107" y="1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.583333" />
+                        <tangent x="0.707107" y="-6.03125e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.5" />
+                        <tangent x="0.707107" y="-2.35464e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.5" />
+                        <tangent x="0.707107" y="-7.06395e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.583333" />
+                        <tangent x="0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.5" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.5" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.416667" />
+                        <tangent x="-0.707107" y="2.35465e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.416667" />
+                        <tangent x="-0.707107" y="7.06385e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.5" />
+                        <tangent x="-0.707107" y="-6.03132e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.416667" />
+                        <tangent x="-0.707107" y="-2.35466e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.416667" />
+                        <tangent x="-0.707107" y="-7.06389e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.5" />
+                        <tangent x="-0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.416667" />
+                        <tangent x="0.707107" y="-3.38734e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.416667" />
+                        <tangent x="0.707107" y="-9.41865e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.416667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.416667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.333333" />
+                        <tangent x="-0.707107" y="2.35459e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.333333" />
+                        <tangent x="-0.707107" y="7.06389e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.333333" />
+                        <tangent x="-0.707107" y="-3.38726e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.333333" />
+                        <tangent x="-0.707107" y="-9.41843e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.416667" />
+                        <tangent x="0.707107" y="-6.03118e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.333333" />
+                        <tangent x="0.707107" y="-3.38727e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.333333" />
+                        <tangent x="0.707107" y="-9.41844e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.416667" />
+                        <tangent x="0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.333333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.333333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.25" />
+                        <tangent x="-0.707107" y="2.35465e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.25" />
+                        <tangent x="-0.707107" y="7.06397e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.333333" />
+                        <tangent x="-0.707107" y="-6.03131e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.25" />
+                        <tangent x="-0.707107" y="-3.38733e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.25" />
+                        <tangent x="-0.707107" y="-9.41867e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.333333" />
+                        <tangent x="-0.707107" y="-2.19619e-022" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.333333" />
+                        <tangent x="0.707107" y="-6.03133e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.25" />
+                        <tangent x="0.707107" y="-2.35467e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.25" />
+                        <tangent x="0.707107" y="-7.06399e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.333333" />
+                        <tangent x="0.707107" y="0" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.25" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.25" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.166667" />
+                        <tangent x="-0.707107" y="2.35465e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.166667" />
+                        <tangent x="-0.707107" y="7.06396e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.25" />
+                        <tangent x="-0.707107" y="-6.03132e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.166667" />
+                        <tangent x="-0.707107" y="-2.35467e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.166667" />
+                        <tangent x="-0.707107" y="-7.06399e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.25" />
+                        <tangent x="-0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.166667" />
+                        <tangent x="0.707107" y="-3.38732e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.166667" />
+                        <tangent x="0.707107" y="-9.41865e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.166667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.166667" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.0833333" />
+                        <tangent x="-0.707107" y="2.35465e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0.0833333" />
+                        <tangent x="-0.707107" y="7.06395e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.0833333" />
+                        <tangent x="-0.707107" y="-2.35466e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0.0833333" />
+                        <tangent x="-0.707107" y="-7.06401e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.166667" />
+                        <tangent x="0.707107" y="-6.03133e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.0833333" />
+                        <tangent x="0.707107" y="-3.38735e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.0833333" />
+                        <tangent x="0.707107" y="-9.41867e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.166667" />
+                        <tangent x="0.707107" y="-1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0.0833333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.0833333" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0" />
+                        <tangent x="-0.707107" y="3.38732e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0" />
+                        <tangent x="-0.707107" y="9.41861e-010" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0" />
+                        <tangent x="-0.707107" y="-3.38734e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0" />
+                        <tangent x="-0.707107" y="-9.41868e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0.0833333" />
+                        <tangent x="0.707107" y="-6.03132e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0" />
+                        <tangent x="0.707107" y="-3.38734e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0" />
+                        <tangent x="0.707107" y="-9.41865e-010" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0.0833333" />
+                        <tangent x="0.707107" y="1.3027e-015" z="0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0" />
+                        <tangent x="0.707107" y="0" z="-0.707107" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="-0.25" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="3.79455e-008" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.25" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.5" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                    <vertex>
+                        <texcoord u="0.75" v="0" />
+                        <tangent x="0" y="0" z="0" />
+                    </vertex>
+                </vertexbuffer>
+            </geometry>
+        </submesh>
+    </submeshes>
+    <submeshnames>
+        <submeshname name="submesh0" index="0" />
+    </submeshnames>
+    <animations>
+        <animation name="Bend" length="1.79979">
+            <tracks>
+                <track target="submesh" index="0" type="morph">
+                    <keyframes>
+                        <keyframe time="0">
+                            <position x="0" y="2.66343e-006" z="-1.16422e-013" />
+                            <position x="-3.78393e-006" y="-1.12049e-006" z="-86.5661" />
+                            <position x="86.5661" y="2.65566e-006" z="-1.16083e-013" />
+                            <position x="-86.5661" y="2.67121e-006" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="6.44736e-006" z="86.5661" />
+                            <position x="86.5661" y="2.65566e-006" z="-1.16083e-013" />
+                            <position x="86.5661" y="2.65566e-006" z="-1.16083e-013" />
+                            <position x="0.032566" y="43.9563" z="-86.5661" />
+                            <position x="86.5986" y="43.828" z="-1.91578e-006" />
+                            <position x="-3.78393e-006" y="-1.12049e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-1.12049e-006" z="-86.5661" />
+                            <position x="-86.5335" y="44.0846" z="5.64085e-006" />
+                            <position x="0.032566" y="43.9563" z="-86.5661" />
+                            <position x="-86.5661" y="2.67121e-006" z="7.56785e-006" />
+                            <position x="-86.5661" y="2.67121e-006" z="7.56785e-006" />
+                            <position x="0.0325708" y="43.9563" z="86.5661" />
+                            <position x="-86.5335" y="44.0846" z="5.64085e-006" />
+                            <position x="1.03229e-006" y="6.44736e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="6.44736e-006" z="86.5661" />
+                            <position x="86.5986" y="43.828" z="-1.91578e-006" />
+                            <position x="0.0325708" y="43.9563" z="86.5661" />
+                            <position x="86.5661" y="2.65566e-006" z="-1.16083e-013" />
+                            <position x="0.130275" y="87.9125" z="-86.5661" />
+                            <position x="86.696" y="87.656" z="-3.83156e-006" />
+                            <position x="-86.4355" y="88.1691" z="3.71386e-006" />
+                            <position x="0.130275" y="87.9125" z="-86.5661" />
+                            <position x="0.13028" y="87.9125" z="86.5661" />
+                            <position x="-86.4355" y="88.1691" z="3.71386e-006" />
+                            <position x="86.696" y="87.656" z="-3.83156e-006" />
+                            <position x="0.13028" y="87.9125" z="86.5661" />
+                            <position x="0.293124" y="131.869" z="-86.5661" />
+                            <position x="86.8584" y="131.484" z="-5.74734e-006" />
+                            <position x="-86.2721" y="132.253" z="1.78687e-006" />
+                            <position x="0.293124" y="131.869" z="-86.5661" />
+                            <position x="-86.4355" y="88.1691" z="3.71386e-006" />
+                            <position x="0.293128" y="131.869" z="86.5661" />
+                            <position x="-86.2721" y="132.253" z="1.78687e-006" />
+                            <position x="0.13028" y="87.9125" z="86.5661" />
+                            <position x="86.8584" y="131.484" z="-5.74734e-006" />
+                            <position x="0.293128" y="131.869" z="86.5661" />
+                            <position x="0.521111" y="175.824" z="-86.5661" />
+                            <position x="87.0857" y="175.311" z="-7.66309e-006" />
+                            <position x="0.293124" y="131.869" z="-86.5661" />
+                            <position x="-86.0435" y="176.337" z="-1.40103e-007" />
+                            <position x="0.521111" y="175.824" z="-86.5661" />
+                            <position x="-86.2721" y="132.253" z="1.78687e-006" />
+                            <position x="0.521116" y="175.824" z="86.5661" />
+                            <position x="-86.0435" y="176.337" z="-1.40103e-007" />
+                            <position x="87.0857" y="175.311" z="-7.66309e-006" />
+                            <position x="0.521116" y="175.824" z="86.5661" />
+                            <position x="0.814237" y="219.78" z="-86.5661" />
+                            <position x="87.378" y="219.138" z="-9.57884e-006" />
+                            <position x="0.521111" y="175.824" z="-86.5661" />
+                            <position x="-85.7495" y="220.421" z="-2.06706e-006" />
+                            <position x="0.814237" y="219.78" z="-86.5661" />
+                            <position x="-86.0435" y="176.337" z="-1.40103e-007" />
+                            <position x="-86.0435" y="176.337" z="-1.40103e-007" />
+                            <position x="0.814241" y="219.78" z="86.5661" />
+                            <position x="-85.7495" y="220.421" z="-2.06706e-006" />
+                            <position x="0.521116" y="175.824" z="86.5661" />
+                            <position x="87.378" y="219.138" z="-9.57884e-006" />
+                            <position x="0.814241" y="219.78" z="86.5661" />
+                            <position x="1.1725" y="263.735" z="-86.5661" />
+                            <position x="87.7352" y="262.965" z="-1.14946e-005" />
+                            <position x="0.814237" y="219.78" z="-86.5661" />
+                            <position x="-85.3902" y="264.504" z="-3.99399e-006" />
+                            <position x="1.1725" y="263.735" z="-86.5661" />
+                            <position x="-85.7495" y="220.421" z="-2.06706e-006" />
+                            <position x="-85.7495" y="220.421" z="-2.06706e-006" />
+                            <position x="1.1725" y="263.735" z="86.5661" />
+                            <position x="-85.3902" y="264.504" z="-3.99399e-006" />
+                            <position x="0.814241" y="219.78" z="86.5661" />
+                            <position x="87.7352" y="262.965" z="-1.14946e-005" />
+                            <position x="1.1725" y="263.735" z="86.5661" />
+                            <position x="1.5959" y="307.689" z="-86.5661" />
+                            <position x="88.1574" y="306.791" z="-1.34103e-005" />
+                            <position x="1.1725" y="263.735" z="-86.5661" />
+                            <position x="-84.9656" y="308.587" z="-5.92091e-006" />
+                            <position x="1.5959" y="307.689" z="-86.5661" />
+                            <position x="-85.3902" y="264.504" z="-3.99399e-006" />
+                            <position x="1.59591" y="307.689" z="86.5661" />
+                            <position x="-84.9656" y="308.587" z="-5.92091e-006" />
+                            <position x="88.1574" y="306.791" z="-1.34103e-005" />
+                            <position x="1.59591" y="307.689" z="86.5661" />
+                            <position x="2.08444" y="351.642" z="-86.5661" />
+                            <position x="88.6445" y="350.616" z="-1.53259e-005" />
+                            <position x="-84.4756" y="352.669" z="-7.84779e-006" />
+                            <position x="2.08444" y="351.642" z="-86.5661" />
+                            <position x="-84.9656" y="308.587" z="-5.92091e-006" />
+                            <position x="2.08444" y="351.642" z="86.5661" />
+                            <position x="-84.4756" y="352.669" z="-7.84779e-006" />
+                            <position x="1.59591" y="307.689" z="86.5661" />
+                            <position x="88.6445" y="350.616" z="-1.53259e-005" />
+                            <position x="2.08444" y="351.642" z="86.5661" />
+                            <position x="2.63811" y="395.595" z="-86.5661" />
+                            <position x="89.1965" y="394.441" z="-1.72416e-005" />
+                            <position x="2.08444" y="351.642" z="-86.5661" />
+                            <position x="-83.9203" y="396.75" z="-9.77463e-006" />
+                            <position x="2.63811" y="395.595" z="-86.5661" />
+                            <position x="-84.4756" y="352.669" z="-7.84779e-006" />
+                            <position x="-84.4756" y="352.669" z="-7.84779e-006" />
+                            <position x="2.63811" y="395.595" z="86.5661" />
+                            <position x="-83.9203" y="396.75" z="-9.77463e-006" />
+                            <position x="2.08444" y="351.642" z="86.5661" />
+                            <position x="89.1965" y="394.441" z="-1.72416e-005" />
+                            <position x="2.63811" y="395.595" z="86.5661" />
+                            <position x="3.25691" y="439.547" z="-86.5662" />
+                            <position x="89.8135" y="438.264" z="-1.91571e-005" />
+                            <position x="2.63811" y="395.595" z="-86.5661" />
+                            <position x="-83.2997" y="440.83" z="-1.17014e-005" />
+                            <position x="3.25691" y="439.547" z="-86.5662" />
+                            <position x="-83.9203" y="396.75" z="-9.77463e-006" />
+                            <position x="3.25692" y="439.547" z="86.5661" />
+                            <position x="-83.2997" y="440.83" z="-1.17014e-005" />
+                            <position x="89.8135" y="438.264" z="-1.91571e-005" />
+                            <position x="3.25692" y="439.547" z="86.5661" />
+                            <position x="3.94085" y="483.498" z="-86.5662" />
+                            <position x="90.4955" y="482.087" z="-2.10727e-005" />
+                            <position x="-82.6138" y="484.909" z="-1.36282e-005" />
+                            <position x="3.94085" y="483.498" z="-86.5662" />
+                            <position x="-83.2997" y="440.83" z="-1.17014e-005" />
+                            <position x="3.94086" y="483.498" z="86.5661" />
+                            <position x="-82.6138" y="484.909" z="-1.36282e-005" />
+                            <position x="3.25692" y="439.547" z="86.5661" />
+                            <position x="90.4955" y="482.087" z="-2.10727e-005" />
+                            <position x="3.94086" y="483.498" z="86.5661" />
+                            <position x="4.68992" y="527.448" z="-86.5662" />
+                            <position x="91.2424" y="525.909" z="-2.29882e-005" />
+                            <position x="-81.8625" y="528.988" z="-1.55549e-005" />
+                            <position x="4.68992" y="527.448" z="-86.5662" />
+                            <position x="-82.6138" y="484.909" z="-1.36282e-005" />
+                            <position x="4.68992" y="527.448" z="86.5661" />
+                            <position x="-81.8625" y="528.988" z="-1.55549e-005" />
+                            <position x="3.94086" y="483.498" z="86.5661" />
+                            <position x="91.2424" y="525.909" z="-2.29882e-005" />
+                            <position x="4.68992" y="527.448" z="86.5661" />
+                            <position x="4.68992" y="527.448" z="-2.30555e-005" />
+                            <position x="91.2424" y="525.909" z="-2.29882e-005" />
+                            <position x="4.68992" y="527.448" z="-86.5662" />
+                            <position x="-81.8625" y="528.988" z="-1.55549e-005" />
+                            <position x="4.68992" y="527.448" z="86.5661" />
+                            <position x="91.2424" y="525.909" z="-2.29882e-005" />
+                        </keyframe>
+                        <keyframe time="0.224583">
+                            <position x="0" y="1.70409e-007" z="-7.44882e-015" />
+                            <position x="-3.78393e-006" y="-3.61352e-006" z="-86.5661" />
+                            <position x="86.5661" y="1.62636e-007" z="-7.10905e-015" />
+                            <position x="-86.5661" y="1.78183e-007" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.95434e-006" z="86.5661" />
+                            <position x="86.5661" y="1.62636e-007" z="-7.10905e-015" />
+                            <position x="86.5661" y="1.62636e-007" z="-7.10905e-015" />
+                            <position x="0.509027" y="43.9524" z="-86.5661" />
+                            <position x="87.0519" y="41.9476" z="-1.83359e-006" />
+                            <position x="-3.78393e-006" y="-3.61352e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.61352e-006" z="-86.5661" />
+                            <position x="-86.0339" y="45.9573" z="5.559e-006" />
+                            <position x="0.509027" y="43.9524" z="-86.5661" />
+                            <position x="-86.5661" y="1.78183e-007" z="7.56785e-006" />
+                            <position x="-86.5661" y="1.78183e-007" z="7.56785e-006" />
+                            <position x="0.509032" y="43.9524" z="86.5661" />
+                            <position x="-86.0339" y="45.9573" z="5.559e-006" />
+                            <position x="1.03229e-006" y="3.95434e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.95434e-006" z="86.5661" />
+                            <position x="87.0519" y="41.9476" z="-1.83359e-006" />
+                            <position x="0.509032" y="43.9524" z="86.5661" />
+                            <position x="86.5661" y="1.62636e-007" z="-7.10905e-015" />
+                            <position x="2.03585" y="87.8812" z="-86.5661" />
+                            <position x="88.5091" y="83.8726" z="-3.66619e-006" />
+                            <position x="-84.4374" y="91.8899" z="3.55122e-006" />
+                            <position x="2.03585" y="87.8812" z="-86.5661" />
+                            <position x="2.03585" y="87.8812" z="86.5661" />
+                            <position x="-84.4374" y="91.8899" z="3.55122e-006" />
+                            <position x="88.5091" y="83.8726" z="-3.66619e-006" />
+                            <position x="2.03585" y="87.8812" z="86.5661" />
+                            <position x="4.57964" y="131.763" z="-86.5661" />
+                            <position x="90.9369" y="125.753" z="-5.49682e-006" />
+                            <position x="-81.7776" y="137.773" z="1.5456e-006" />
+                            <position x="4.57964" y="131.763" z="-86.5661" />
+                            <position x="-84.4374" y="91.8899" z="3.55122e-006" />
+                            <position x="4.57964" y="131.763" z="86.5661" />
+                            <position x="-81.7776" y="137.773" z="1.5456e-006" />
+                            <position x="2.03585" y="87.8812" z="86.5661" />
+                            <position x="90.9369" y="125.753" z="-5.49682e-006" />
+                            <position x="4.57964" y="131.763" z="86.5661" />
+                            <position x="8.13903" y="175.574" z="-86.5661" />
+                            <position x="94.3339" y="167.565" z="-7.32451e-006" />
+                            <position x="4.57964" y="131.763" z="-86.5661" />
+                            <position x="-78.0558" y="183.583" z="-4.56797e-007" />
+                            <position x="8.13903" y="175.574" z="-86.5661" />
+                            <position x="-81.7776" y="137.773" z="1.5456e-006" />
+                            <position x="8.13903" y="175.574" z="86.5661" />
+                            <position x="-78.0558" y="183.583" z="-4.56797e-007" />
+                            <position x="94.3339" y="167.565" z="-7.32451e-006" />
+                            <position x="8.13903" y="175.574" z="86.5661" />
+                            <position x="12.7121" y="219.291" z="-86.5661" />
+                            <position x="98.6984" y="209.288" z="-9.14827e-006" />
+                            <position x="8.13903" y="175.574" z="-86.5661" />
+                            <position x="-73.2742" y="229.293" z="-2.45488e-006" />
+                            <position x="12.7121" y="219.291" z="-86.5661" />
+                            <position x="-78.0558" y="183.583" z="-4.56797e-007" />
+                            <position x="-78.0558" y="183.583" z="-4.56797e-007" />
+                            <position x="12.7121" y="219.291" z="86.5661" />
+                            <position x="-73.2742" y="229.293" z="-2.45488e-006" />
+                            <position x="8.13903" y="175.574" z="86.5661" />
+                            <position x="98.6984" y="209.288" z="-9.14827e-006" />
+                            <position x="12.7121" y="219.291" z="86.5661" />
+                            <position x="18.2964" y="262.89" z="-86.5661" />
+                            <position x="104.028" y="250.898" z="-1.09671e-005" />
+                            <position x="12.7121" y="219.291" z="-86.5661" />
+                            <position x="-67.4351" y="274.881" z="-4.44759e-006" />
+                            <position x="18.2964" y="262.89" z="-86.5661" />
+                            <position x="-73.2742" y="229.293" z="-2.45488e-006" />
+                            <position x="-73.2742" y="229.293" z="-2.45488e-006" />
+                            <position x="18.2965" y="262.89" z="86.5661" />
+                            <position x="-67.4351" y="274.881" z="-4.44759e-006" />
+                            <position x="12.7121" y="219.291" z="86.5661" />
+                            <position x="104.028" y="250.898" z="-1.09671e-005" />
+                            <position x="18.2965" y="262.89" z="86.5661" />
+                            <position x="24.889" y="306.348" z="-86.5661" />
+                            <position x="110.32" y="292.374" z="-1.27801e-005" />
+                            <position x="18.2964" y="262.89" z="-86.5661" />
+                            <position x="-60.5418" y="320.322" z="-6.43386e-006" />
+                            <position x="24.889" y="306.348" z="-86.5661" />
+                            <position x="-67.4351" y="274.881" z="-4.44759e-006" />
+                            <position x="24.889" y="306.348" z="86.5661" />
+                            <position x="-60.5418" y="320.322" z="-6.43386e-006" />
+                            <position x="110.32" y="292.374" z="-1.27801e-005" />
+                            <position x="24.889" y="306.348" z="86.5661" />
+                            <position x="32.4863" y="349.642" z="-86.5661" />
+                            <position x="117.571" y="333.693" z="-1.45862e-005" />
+                            <position x="-52.598" y="365.59" z="-8.41261e-006" />
+                            <position x="32.4863" y="349.642" z="-86.5661" />
+                            <position x="-60.5418" y="320.322" z="-6.43386e-006" />
+                            <position x="32.4863" y="349.642" z="86.5661" />
+                            <position x="-52.598" y="365.59" z="-8.41261e-006" />
+                            <position x="24.889" y="306.348" z="86.5661" />
+                            <position x="117.571" y="333.693" z="-1.45862e-005" />
+                            <position x="32.4863" y="349.642" z="86.5661" />
+                            <position x="41.0842" y="392.748" z="-86.5661" />
+                            <position x="125.776" y="374.833" z="-1.63845e-005" />
+                            <position x="32.4863" y="349.642" z="-86.5661" />
+                            <position x="-43.6079" y="410.663" z="-1.03828e-005" />
+                            <position x="41.0842" y="392.748" z="-86.5661" />
+                            <position x="-52.598" y="365.59" z="-8.41261e-006" />
+                            <position x="-52.598" y="365.59" z="-8.41261e-006" />
+                            <position x="41.0842" y="392.748" z="86.5661" />
+                            <position x="-43.6079" y="410.663" z="-1.03828e-005" />
+                            <position x="32.4863" y="349.642" z="86.5661" />
+                            <position x="125.776" y="374.833" z="-1.63845e-005" />
+                            <position x="41.0842" y="392.748" z="86.5661" />
+                            <position x="50.6782" y="435.644" z="-86.5661" />
+                            <position x="134.933" y="415.772" z="-1.8174e-005" />
+                            <position x="41.0842" y="392.748" z="-86.5661" />
+                            <position x="-33.5763" y="455.515" z="-1.23433e-005" />
+                            <position x="50.6782" y="435.644" z="-86.5661" />
+                            <position x="-43.6079" y="410.663" z="-1.03828e-005" />
+                            <position x="50.6782" y="435.644" z="86.5661" />
+                            <position x="-33.5763" y="455.515" z="-1.23433e-005" />
+                            <position x="134.933" y="415.772" z="-1.8174e-005" />
+                            <position x="50.6782" y="435.644" z="86.5661" />
+                            <position x="61.263" y="478.306" z="-86.5662" />
+                            <position x="145.035" y="456.488" z="-1.99537e-005" />
+                            <position x="-22.5087" y="500.123" z="-1.42932e-005" />
+                            <position x="61.263" y="478.306" z="-86.5662" />
+                            <position x="-33.5763" y="455.515" z="-1.23433e-005" />
+                            <position x="61.263" y="478.306" z="86.5661" />
+                            <position x="-22.5087" y="500.123" z="-1.42932e-005" />
+                            <position x="50.6782" y="435.644" z="86.5661" />
+                            <position x="145.035" y="456.488" z="-1.99537e-005" />
+                            <position x="61.263" y="478.306" z="86.5661" />
+                            <position x="72.833" y="520.711" z="-86.5662" />
+                            <position x="156.077" y="496.959" z="-2.17228e-005" />
+                            <position x="-10.4109" y="544.463" z="-1.62314e-005" />
+                            <position x="72.833" y="520.711" z="-86.5662" />
+                            <position x="-22.5087" y="500.123" z="-1.42932e-005" />
+                            <position x="72.833" y="520.711" z="86.5661" />
+                            <position x="-10.4109" y="544.463" z="-1.62314e-005" />
+                            <position x="61.263" y="478.306" z="86.5661" />
+                            <position x="156.077" y="496.959" z="-2.17228e-005" />
+                            <position x="72.833" y="520.711" z="86.5661" />
+                            <position x="72.833" y="520.711" z="-2.2761e-005" />
+                            <position x="156.077" y="496.959" z="-2.17228e-005" />
+                            <position x="72.833" y="520.711" z="-86.5662" />
+                            <position x="-10.4109" y="544.463" z="-1.62314e-005" />
+                            <position x="72.833" y="520.711" z="86.5661" />
+                            <position x="156.077" y="496.959" z="-2.17228e-005" />
+                        </keyframe>
+                        <keyframe time="0.449375">
+                            <position x="0" y="6.98943e-008" z="-3.05518e-015" />
+                            <position x="-3.78393e-006" y="-3.71403e-006" z="-86.5661" />
+                            <position x="86.5661" y="6.21213e-008" z="-2.71541e-015" />
+                            <position x="-86.5661" y="7.76677e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.85382e-006" z="86.5661" />
+                            <position x="86.5661" y="6.21213e-008" z="-2.71541e-015" />
+                            <position x="86.5661" y="6.21213e-008" z="-2.71541e-015" />
+                            <position x="1.24079" y="43.933" z="-86.5661" />
+                            <position x="87.6689" y="39.0471" z="-1.7068e-006" />
+                            <position x="-3.78393e-006" y="-3.71403e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.71403e-006" z="-86.5661" />
+                            <position x="-85.1873" y="48.8188" z="5.43391e-006" />
+                            <position x="1.24079" y="43.933" z="-86.5661" />
+                            <position x="-86.5661" y="7.76677e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="7.76677e-008" z="7.56785e-006" />
+                            <position x="1.24079" y="43.933" z="86.5661" />
+                            <position x="-85.1873" y="48.8188" z="5.43391e-006" />
+                            <position x="1.03229e-006" y="3.85382e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.85382e-006" z="86.5661" />
+                            <position x="87.6689" y="39.0471" z="-1.7068e-006" />
+                            <position x="1.24079" y="43.933" z="86.5661" />
+                            <position x="86.5661" y="6.21213e-008" z="-2.71541e-015" />
+                            <position x="4.95921" y="87.7259" z="-86.5661" />
+                            <position x="90.9738" y="77.9698" z="-3.40817e-006" />
+                            <position x="-81.0554" y="97.482" z="3.30678e-006" />
+                            <position x="4.95921" y="87.7259" z="-86.5661" />
+                            <position x="4.95921" y="87.7259" z="86.5661" />
+                            <position x="-81.0554" y="97.482" z="3.30678e-006" />
+                            <position x="90.9738" y="77.9698" z="-3.40817e-006" />
+                            <position x="4.95921" y="87.7259" z="86.5661" />
+                            <position x="11.1434" y="131.239" z="-86.5661" />
+                            <position x="96.4703" y="116.644" z="-5.09866e-006" />
+                            <position x="-74.1834" y="145.834" z="1.19323e-006" />
+                            <position x="11.1434" y="131.239" z="-86.5661" />
+                            <position x="-81.0554" y="97.482" z="3.30678e-006" />
+                            <position x="11.1434" y="131.239" z="86.5661" />
+                            <position x="-74.1834" y="145.834" z="1.19323e-006" />
+                            <position x="4.95921" y="87.7259" z="86.5661" />
+                            <position x="96.4703" y="116.644" z="-5.09866e-006" />
+                            <position x="11.1434" y="131.239" z="86.5661" />
+                            <position x="19.7737" y="174.334" z="-86.5661" />
+                            <position x="104.141" y="154.946" z="-6.77291e-006" />
+                            <position x="11.1434" y="131.239" z="-86.5661" />
+                            <position x="-64.5934" y="193.722" z="-9.00001e-007" />
+                            <position x="19.7737" y="174.334" z="-86.5661" />
+                            <position x="-74.1834" y="145.834" z="1.19323e-006" />
+                            <position x="19.7737" y="174.334" z="86.5661" />
+                            <position x="-64.5934" y="193.722" z="-9.00001e-007" />
+                            <position x="104.141" y="154.946" z="-6.77291e-006" />
+                            <position x="19.7737" y="174.334" z="86.5661" />
+                            <position x="30.8224" y="216.873" z="-86.5661" />
+                            <position x="113.961" y="192.754" z="-8.42556e-006" />
+                            <position x="19.7737" y="174.334" z="-86.5661" />
+                            <position x="-52.3159" y="240.992" z="-2.96623e-006" />
+                            <position x="30.8224" y="216.873" z="-86.5661" />
+                            <position x="-64.5934" y="193.722" z="-9.00001e-007" />
+                            <position x="-64.5934" y="193.722" z="-9.00001e-007" />
+                            <position x="30.8225" y="216.873" z="86.5661" />
+                            <position x="-52.3159" y="240.992" z="-2.96623e-006" />
+                            <position x="19.7737" y="174.334" z="86.5661" />
+                            <position x="113.961" y="192.754" z="-8.42556e-006" />
+                            <position x="30.8225" y="216.873" z="86.5661" />
+                            <position x="44.2546" y="258.721" z="-86.5661" />
+                            <position x="125.899" y="229.948" z="-1.00513e-005" />
+                            <position x="30.8224" y="216.873" z="-86.5661" />
+                            <position x="-37.3899" y="287.493" z="-4.99888e-006" />
+                            <position x="44.2546" y="258.721" z="-86.5661" />
+                            <position x="-52.3159" y="240.992" z="-2.96623e-006" />
+                            <position x="-52.3159" y="240.992" z="-2.96623e-006" />
+                            <position x="44.2546" y="258.721" z="86.5661" />
+                            <position x="-37.3899" y="287.493" z="-4.99888e-006" />
+                            <position x="30.8225" y="216.873" z="86.5661" />
+                            <position x="125.899" y="229.948" z="-1.00513e-005" />
+                            <position x="44.2546" y="258.721" z="86.5661" />
+                            <position x="60.0272" y="299.743" z="-86.5661" />
+                            <position x="139.918" y="266.409" z="-1.16451e-005" />
+                            <position x="44.2546" y="258.721" z="-86.5661" />
+                            <position x="-19.8632" y="333.078" z="-6.99146e-006" />
+                            <position x="60.0272" y="299.743" z="-86.5661" />
+                            <position x="-37.3899" y="287.493" z="-4.99888e-006" />
+                            <position x="60.0272" y="299.743" z="86.5661" />
+                            <position x="-19.8632" y="333.078" z="-6.99146e-006" />
+                            <position x="139.918" y="266.409" z="-1.16451e-005" />
+                            <position x="60.0272" y="299.743" z="86.5661" />
+                            <position x="78.09" y="339.811" z="-86.5661" />
+                            <position x="155.972" y="302.02" z="-1.32017e-005" />
+                            <position x="0.208379" y="377.601" z="-8.93763e-006" />
+                            <position x="78.09" y="339.811" z="-86.5661" />
+                            <position x="-19.8632" y="333.078" z="-6.99146e-006" />
+                            <position x="78.09" y="339.811" z="86.5661" />
+                            <position x="0.208379" y="377.601" z="-8.93763e-006" />
+                            <position x="60.0272" y="299.743" z="86.5661" />
+                            <position x="155.972" y="302.02" z="-1.32017e-005" />
+                            <position x="78.09" y="339.811" z="86.5661" />
+                            <position x="98.3854" y="378.794" z="-86.5661" />
+                            <position x="174.01" y="336.668" z="-1.47162e-005" />
+                            <position x="78.09" y="339.811" z="-86.5661" />
+                            <position x="22.7609" y="420.921" z="-1.08312e-005" />
+                            <position x="98.3854" y="378.794" z="-86.5661" />
+                            <position x="0.208379" y="377.601" z="-8.93763e-006" />
+                            <position x="0.208379" y="377.601" z="-8.93763e-006" />
+                            <position x="98.3854" y="378.794" z="86.5661" />
+                            <position x="22.7609" y="420.921" z="-1.08312e-005" />
+                            <position x="78.09" y="339.811" z="86.5661" />
+                            <position x="174.01" y="336.668" z="-1.47162e-005" />
+                            <position x="98.3854" y="378.794" z="86.5661" />
+                            <position x="120.849" y="416.571" z="-86.5661" />
+                            <position x="193.975" y="370.243" z="-1.61838e-005" />
+                            <position x="98.3854" y="378.794" z="-86.5661" />
+                            <position x="47.7224" y="462.898" z="-1.26661e-005" />
+                            <position x="120.849" y="416.571" z="-86.5661" />
+                            <position x="22.7609" y="420.921" z="-1.08312e-005" />
+                            <position x="120.849" y="416.571" z="86.5661" />
+                            <position x="47.7224" y="462.898" z="-1.26661e-005" />
+                            <position x="193.975" y="370.243" z="-1.61838e-005" />
+                            <position x="120.849" y="416.571" z="86.5661" />
+                            <position x="145.408" y="453.019" z="-86.5662" />
+                            <position x="215.804" y="402.638" z="-1.75999e-005" />
+                            <position x="75.0135" y="503.4" z="-1.44365e-005" />
+                            <position x="145.408" y="453.019" z="-86.5662" />
+                            <position x="47.7224" y="462.898" z="-1.26661e-005" />
+                            <position x="145.409" y="453.019" z="86.5661" />
+                            <position x="75.0135" y="503.4" z="-1.44365e-005" />
+                            <position x="120.849" y="416.571" z="86.5661" />
+                            <position x="215.804" y="402.638" z="-1.75999e-005" />
+                            <position x="145.409" y="453.019" z="86.5661" />
+                            <position x="171.986" y="488.023" z="-86.5662" />
+                            <position x="239.425" y="433.749" z="-1.89598e-005" />
+                            <position x="104.547" y="542.296" z="-1.61367e-005" />
+                            <position x="171.986" y="488.023" z="-86.5662" />
+                            <position x="75.0135" y="503.4" z="-1.44365e-005" />
+                            <position x="171.986" y="488.023" z="86.5661" />
+                            <position x="104.547" y="542.296" z="-1.61367e-005" />
+                            <position x="145.409" y="453.019" z="86.5661" />
+                            <position x="239.425" y="433.749" z="-1.89598e-005" />
+                            <position x="171.986" y="488.023" z="86.5661" />
+                            <position x="171.986" y="488.023" z="-2.13322e-005" />
+                            <position x="239.425" y="433.749" z="-1.89598e-005" />
+                            <position x="171.986" y="488.023" z="-86.5662" />
+                            <position x="104.547" y="542.296" z="-1.61367e-005" />
+                            <position x="171.986" y="488.023" z="86.5661" />
+                            <position x="239.425" y="433.749" z="-1.89598e-005" />
+                        </keyframe>
+                        <keyframe time="0.674167">
+                            <position x="0" y="4.75636e-008" z="-2.07907e-015" />
+                            <position x="-3.78393e-006" y="-3.73636e-006" z="-86.5661" />
+                            <position x="86.5661" y="3.97906e-008" z="-1.7393e-015" />
+                            <position x="-86.5661" y="5.5337e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.83149e-006" z="86.5661" />
+                            <position x="86.5661" y="3.97906e-008" z="-1.7393e-015" />
+                            <position x="86.5661" y="3.97906e-008" z="-1.7393e-015" />
+                            <position x="1.82277" y="43.9059" z="-86.5661" />
+                            <position x="88.091" y="36.7306" z="-1.60555e-006" />
+                            <position x="-3.78393e-006" y="-3.73636e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.73636e-006" z="-86.5661" />
+                            <position x="-84.4455" y="51.0812" z="5.33502e-006" />
+                            <position x="1.82277" y="43.9059" z="-86.5661" />
+                            <position x="-86.5661" y="5.5337e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="5.5337e-008" z="7.56785e-006" />
+                            <position x="1.82277" y="43.9059" z="86.5661" />
+                            <position x="-84.4455" y="51.0812" z="5.33502e-006" />
+                            <position x="1.03229e-006" y="3.83149e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.83149e-006" z="86.5661" />
+                            <position x="88.091" y="36.7306" z="-1.60555e-006" />
+                            <position x="1.82277" y="43.9059" z="86.5661" />
+                            <position x="86.5661" y="3.97906e-008" z="-1.7393e-015" />
+                            <position x="7.27854" y="87.5096" z="-86.5661" />
+                            <position x="92.6552" y="73.2084" z="-3.20004e-006" />
+                            <position x="-78.0981" y="101.811" z="3.11756e-006" />
+                            <position x="7.27854" y="87.5096" z="-86.5661" />
+                            <position x="7.27854" y="87.5096" z="86.5661" />
+                            <position x="-78.0981" y="101.811" z="3.11756e-006" />
+                            <position x="92.6552" y="73.2084" z="-3.20004e-006" />
+                            <position x="7.27854" y="87.5096" z="86.5661" />
+                            <position x="16.3298" y="130.511" z="-86.5661" />
+                            <position x="100.227" y="109.182" z="-4.77252e-006" />
+                            <position x="-67.5677" y="151.84" z="9.30724e-007" />
+                            <position x="16.3298" y="130.511" z="-86.5661" />
+                            <position x="-78.0981" y="101.811" z="3.11756e-006" />
+                            <position x="16.3298" y="130.511" z="86.5661" />
+                            <position x="-67.5677" y="151.84" z="9.30724e-007" />
+                            <position x="7.27854" y="87.5096" z="86.5661" />
+                            <position x="100.227" y="109.182" z="-4.77252e-006" />
+                            <position x="16.3298" y="130.511" z="86.5661" />
+                            <position x="28.9141" y="172.614" z="-86.5661" />
+                            <position x="110.755" y="144.405" z="-6.31214e-006" />
+                            <position x="16.3298" y="130.511" z="-86.5661" />
+                            <position x="-52.9267" y="200.824" z="-1.21043e-006" />
+                            <position x="28.9141" y="172.614" z="-86.5661" />
+                            <position x="-67.5677" y="151.84" z="9.30724e-007" />
+                            <position x="28.9141" y="172.614" z="86.5661" />
+                            <position x="-52.9267" y="200.824" z="-1.21043e-006" />
+                            <position x="110.755" y="144.405" z="-6.31214e-006" />
+                            <position x="28.9141" y="172.614" z="86.5661" />
+                            <position x="44.945" y="213.53" z="-86.5661" />
+                            <position x="124.166" y="178.634" z="-7.80833e-006" />
+                            <position x="28.9141" y="172.614" z="-86.5661" />
+                            <position x="-34.276" y="248.426" z="-3.29117e-006" />
+                            <position x="44.945" y="213.53" z="-86.5661" />
+                            <position x="-52.9267" y="200.824" z="-1.21043e-006" />
+                            <position x="-52.9267" y="200.824" z="-1.21043e-006" />
+                            <position x="44.945" y="213.53" z="86.5661" />
+                            <position x="-34.276" y="248.426" z="-3.29117e-006" />
+                            <position x="28.9141" y="172.614" z="86.5661" />
+                            <position x="124.166" y="178.634" z="-7.80833e-006" />
+                            <position x="44.945" y="213.53" z="86.5661" />
+                            <position x="64.3122" y="252.975" z="-86.5661" />
+                            <position x="140.368" y="211.633" z="-9.25077e-006" />
+                            <position x="44.945" y="213.53" z="-86.5661" />
+                            <position x="-11.7438" y="294.318" z="-5.29718e-006" />
+                            <position x="64.3122" y="252.975" z="-86.5661" />
+                            <position x="-34.276" y="248.426" z="-3.29117e-006" />
+                            <position x="-34.276" y="248.426" z="-3.29117e-006" />
+                            <position x="64.3122" y="252.975" z="86.5661" />
+                            <position x="-11.7438" y="294.318" z="-5.29718e-006" />
+                            <position x="44.945" y="213.53" z="86.5661" />
+                            <position x="140.368" y="211.633" z="-9.25077e-006" />
+                            <position x="64.3122" y="252.975" z="86.5661" />
+                            <position x="86.8823" y="290.68" z="-86.5661" />
+                            <position x="159.25" y="243.176" z="-1.06296e-005" />
+                            <position x="64.3122" y="252.975" z="-86.5661" />
+                            <position x="14.5148" y="338.184" z="-7.21465e-006" />
+                            <position x="86.8823" y="290.68" z="-86.5661" />
+                            <position x="-11.7438" y="294.318" z="-5.29718e-006" />
+                            <position x="86.8823" y="290.68" z="86.5661" />
+                            <position x="14.5148" y="338.184" z="-7.21465e-006" />
+                            <position x="159.25" y="243.176" z="-1.06296e-005" />
+                            <position x="86.8823" y="290.68" z="86.5661" />
+                            <position x="112.5" y="326.384" z="-86.5661" />
+                            <position x="180.681" y="273.045" z="-1.19352e-005" />
+                            <position x="44.319" y="379.723" z="-9.03038e-006" />
+                            <position x="112.5" y="326.384" z="-86.5661" />
+                            <position x="14.5148" y="338.184" z="-7.21465e-006" />
+                            <position x="112.5" y="326.384" z="86.5661" />
+                            <position x="44.319" y="379.723" z="-9.03038e-006" />
+                            <position x="86.8823" y="290.68" z="86.5661" />
+                            <position x="180.681" y="273.045" z="-1.19352e-005" />
+                            <position x="112.5" y="326.384" z="86.5661" />
+                            <position x="140.989" y="359.842" z="-86.5661" />
+                            <position x="204.514" y="301.035" z="-1.31587e-005" />
+                            <position x="112.5" y="326.384" z="-86.5661" />
+                            <position x="77.4637" y="418.649" z="-1.07319e-005" />
+                            <position x="140.989" y="359.842" z="-86.5661" />
+                            <position x="44.319" y="379.723" z="-9.03038e-006" />
+                            <position x="44.319" y="379.723" z="-9.03038e-006" />
+                            <position x="140.989" y="359.842" z="86.5661" />
+                            <position x="77.4637" y="418.649" z="-1.07319e-005" />
+                            <position x="112.5" y="326.384" z="86.5661" />
+                            <position x="204.514" y="301.035" z="-1.31587e-005" />
+                            <position x="140.989" y="359.842" z="86.5661" />
+                            <position x="172.153" y="390.823" z="-86.5661" />
+                            <position x="230.585" y="326.953" z="-1.42916e-005" />
+                            <position x="140.989" y="359.842" z="-86.5661" />
+                            <position x="113.721" y="454.693" z="-1.23074e-005" />
+                            <position x="172.153" y="390.823" z="-86.5661" />
+                            <position x="77.4637" y="418.649" z="-1.07319e-005" />
+                            <position x="172.153" y="390.823" z="86.5661" />
+                            <position x="113.721" y="454.693" z="-1.23074e-005" />
+                            <position x="230.585" y="326.953" z="-1.42916e-005" />
+                            <position x="172.153" y="390.823" z="86.5661" />
+                            <position x="205.778" y="419.115" z="-86.5661" />
+                            <position x="258.715" y="350.621" z="-1.53262e-005" />
+                            <position x="152.841" y="487.609" z="-1.37462e-005" />
+                            <position x="205.778" y="419.115" z="-86.5661" />
+                            <position x="113.721" y="454.693" z="-1.23074e-005" />
+                            <position x="205.778" y="419.115" z="86.5661" />
+                            <position x="152.841" y="487.609" z="-1.37462e-005" />
+                            <position x="172.153" y="390.823" z="86.5661" />
+                            <position x="258.715" y="350.621" z="-1.53262e-005" />
+                            <position x="205.778" y="419.115" z="86.5661" />
+                            <position x="241.632" y="444.522" z="-86.5662" />
+                            <position x="288.71" y="371.877" z="-1.62552e-005" />
+                            <position x="194.555" y="517.168" z="-1.50383e-005" />
+                            <position x="241.632" y="444.522" z="-86.5662" />
+                            <position x="152.841" y="487.609" z="-1.37462e-005" />
+                            <position x="241.632" y="444.522" z="86.5661" />
+                            <position x="194.555" y="517.168" z="-1.50383e-005" />
+                            <position x="205.778" y="419.115" z="86.5661" />
+                            <position x="288.71" y="371.877" z="-1.62552e-005" />
+                            <position x="241.632" y="444.522" z="86.5661" />
+                            <position x="241.632" y="444.522" z="-1.94307e-005" />
+                            <position x="288.71" y="371.877" z="-1.62552e-005" />
+                            <position x="241.632" y="444.522" z="-86.5662" />
+                            <position x="194.555" y="517.168" z="-1.50383e-005" />
+                            <position x="241.632" y="444.522" z="86.5661" />
+                            <position x="288.71" y="371.877" z="-1.62552e-005" />
+                        </keyframe>
+                        <keyframe time="0.898958">
+                            <position x="0" y="5.71232e-008" z="-2.49694e-015" />
+                            <position x="-3.78393e-006" y="-3.7268e-006" z="-86.5661" />
+                            <position x="86.5661" y="4.93502e-008" z="-2.15717e-015" />
+                            <position x="-86.5661" y="6.48966e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.84105e-006" z="86.5661" />
+                            <position x="86.5661" y="4.93502e-008" z="-2.15717e-015" />
+                            <position x="86.5661" y="4.93502e-008" z="-2.15717e-015" />
+                            <position x="1.51799" y="43.9214" z="-86.5661" />
+                            <position x="87.8776" y="37.9448" z="-1.65862e-006" />
+                            <position x="-3.78393e-006" y="-3.7268e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.7268e-006" z="-86.5661" />
+                            <position x="-84.8416" y="49.898" z="5.38674e-006" />
+                            <position x="1.51799" y="43.9214" z="-86.5661" />
+                            <position x="-86.5661" y="6.48966e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="6.48966e-008" z="7.56785e-006" />
+                            <position x="1.518" y="43.9214" z="86.5661" />
+                            <position x="-84.8416" y="49.898" z="5.38674e-006" />
+                            <position x="1.03229e-006" y="3.84105e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.84105e-006" z="86.5661" />
+                            <position x="87.8776" y="37.9448" z="-1.65862e-006" />
+                            <position x="1.518" y="43.9214" z="86.5661" />
+                            <position x="86.5661" y="4.93502e-008" z="-2.15717e-015" />
+                            <position x="6.06474" y="87.6331" z="-86.5661" />
+                            <position x="91.8056" y="75.7085" z="-3.30932e-006" />
+                            <position x="-79.6761" y="99.5578" z="3.21604e-006" />
+                            <position x="6.06474" y="87.6331" z="-86.5661" />
+                            <position x="6.06474" y="87.6331" z="86.5661" />
+                            <position x="-79.6761" y="99.5578" z="3.21604e-006" />
+                            <position x="91.8056" y="75.7085" z="-3.30932e-006" />
+                            <position x="6.06474" y="87.6331" z="86.5661" />
+                            <position x="13.6185" y="130.927" z="-86.5661" />
+                            <position x="98.3315" y="113.111" z="-4.94423e-006" />
+                            <position x="-71.0945" y="148.743" z="1.06611e-006" />
+                            <position x="13.6185" y="130.927" z="-86.5661" />
+                            <position x="-79.6761" y="99.5578" z="3.21604e-006" />
+                            <position x="13.6185" y="130.927" z="86.5661" />
+                            <position x="-71.0945" y="148.743" z="1.06611e-006" />
+                            <position x="6.06474" y="87.6331" z="86.5661" />
+                            <position x="98.3315" y="113.111" z="-4.94423e-006" />
+                            <position x="13.6185" y="130.927" z="86.5661" />
+                            <position x="24.1433" y="173.595" z="-86.5661" />
+                            <position x="107.424" y="149.973" z="-6.55555e-006" />
+                            <position x="13.6185" y="130.927" z="-86.5661" />
+                            <position x="-59.1375" y="197.217" z="-1.05279e-006" />
+                            <position x="24.1433" y="173.595" z="-86.5661" />
+                            <position x="-71.0945" y="148.743" z="1.06611e-006" />
+                            <position x="24.1433" y="173.595" z="86.5661" />
+                            <position x="-59.1375" y="197.217" z="-1.05279e-006" />
+                            <position x="107.424" y="149.973" z="-6.55555e-006" />
+                            <position x="24.1433" y="173.595" z="86.5661" />
+                            <position x="37.5889" y="215.436" z="-86.5661" />
+                            <position x="119.04" y="186.12" z="-8.13557e-006" />
+                            <position x="24.1433" y="173.595" z="-86.5661" />
+                            <position x="-43.8623" y="244.751" z="-3.13056e-006" />
+                            <position x="37.5889" y="215.436" z="-86.5661" />
+                            <position x="-59.1375" y="197.217" z="-1.05279e-006" />
+                            <position x="-59.1375" y="197.217" z="-1.05279e-006" />
+                            <position x="37.5889" y="215.436" z="86.5661" />
+                            <position x="-43.8623" y="244.751" z="-3.13056e-006" />
+                            <position x="24.1433" y="173.595" z="86.5661" />
+                            <position x="119.04" y="186.12" z="-8.13557e-006" />
+                            <position x="37.5889" y="215.436" z="86.5661" />
+                            <position x="53.8911" y="256.248" z="-86.5661" />
+                            <position x="133.124" y="221.379" z="-9.67678e-006" />
+                            <position x="37.5889" y="215.436" z="-86.5661" />
+                            <position x="-25.3418" y="291.117" z="-5.15726e-006" />
+                            <position x="53.8911" y="256.248" z="-86.5661" />
+                            <position x="-43.8623" y="244.751" z="-3.13056e-006" />
+                            <position x="-43.8623" y="244.751" z="-3.13056e-006" />
+                            <position x="53.8911" y="256.248" z="86.5661" />
+                            <position x="-25.3418" y="291.117" z="-5.15726e-006" />
+                            <position x="37.5889" y="215.436" z="86.5661" />
+                            <position x="133.124" y="221.379" z="-9.67678e-006" />
+                            <position x="53.8911" y="256.248" z="86.5661" />
+                            <position x="72.972" y="295.837" z="-86.5661" />
+                            <position x="149.608" y="255.581" z="-1.11718e-005" />
+                            <position x="53.8911" y="256.248" z="-86.5661" />
+                            <position x="-3.66443" y="336.093" z="-7.12324e-006" />
+                            <position x="72.972" y="295.837" z="-86.5661" />
+                            <position x="-25.3418" y="291.117" z="-5.15726e-006" />
+                            <position x="72.972" y="295.837" z="86.5661" />
+                            <position x="-3.66443" y="336.093" z="-7.12324e-006" />
+                            <position x="149.608" y="255.581" z="-1.11718e-005" />
+                            <position x="72.972" y="295.837" z="86.5661" />
+                            <position x="94.7408" y="334.014" z="-86.5661" />
+                            <position x="168.415" y="288.563" z="-1.26135e-005" />
+                            <position x="21.0665" y="379.465" z="-9.01911e-006" />
+                            <position x="94.7408" y="334.014" z="-86.5661" />
+                            <position x="-3.66443" y="336.093" z="-7.12324e-006" />
+                            <position x="94.7408" y="334.014" z="86.5661" />
+                            <position x="21.0665" y="379.465" z="-9.01911e-006" />
+                            <position x="72.972" y="295.837" z="86.5661" />
+                            <position x="168.415" y="288.563" z="-1.26135e-005" />
+                            <position x="94.7408" y="334.014" z="86.5661" />
+                            <position x="119.093" y="370.598" z="-86.5661" />
+                            <position x="189.454" y="320.169" z="-1.3995e-005" />
+                            <position x="94.7408" y="334.014" z="-86.5661" />
+                            <position x="48.7328" y="421.027" z="-1.08358e-005" />
+                            <position x="119.093" y="370.598" z="-86.5661" />
+                            <position x="21.0665" y="379.465" z="-9.01911e-006" />
+                            <position x="21.0665" y="379.465" z="-9.01911e-006" />
+                            <position x="119.093" y="370.598" z="86.5661" />
+                            <position x="48.7328" y="421.027" z="-1.08358e-005" />
+                            <position x="94.7408" y="334.014" z="86.5661" />
+                            <position x="189.454" y="320.169" z="-1.3995e-005" />
+                            <position x="119.093" y="370.598" z="86.5661" />
+                            <position x="145.914" y="405.413" z="-86.5661" />
+                            <position x="212.624" y="350.246" z="-1.53097e-005" />
+                            <position x="119.093" y="370.598" z="-86.5661" />
+                            <position x="79.2026" y="460.579" z="-1.25647e-005" />
+                            <position x="145.914" y="405.413" z="-86.5661" />
+                            <position x="48.7328" y="421.027" z="-1.08358e-005" />
+                            <position x="145.914" y="405.413" z="86.5661" />
+                            <position x="79.2026" y="460.579" z="-1.25647e-005" />
+                            <position x="212.624" y="350.246" z="-1.53097e-005" />
+                            <position x="145.914" y="405.413" z="86.5661" />
+                            <position x="175.073" y="438.293" z="-86.5662" />
+                            <position x="237.816" y="378.652" z="-1.65514e-005" />
+                            <position x="112.33" y="497.933" z="-1.41975e-005" />
+                            <position x="175.073" y="438.293" z="-86.5662" />
+                            <position x="79.2026" y="460.579" z="-1.25647e-005" />
+                            <position x="175.073" y="438.293" z="86.5661" />
+                            <position x="112.33" y="497.933" z="-1.41975e-005" />
+                            <position x="145.914" y="405.413" z="86.5661" />
+                            <position x="237.816" y="378.652" z="-1.65514e-005" />
+                            <position x="175.073" y="438.293" z="86.5661" />
+                            <position x="206.434" y="469.081" z="-86.5662" />
+                            <position x="264.909" y="405.251" z="-1.77141e-005" />
+                            <position x="147.958" y="532.911" z="-1.57264e-005" />
+                            <position x="206.434" y="469.081" z="-86.5662" />
+                            <position x="112.33" y="497.933" z="-1.41975e-005" />
+                            <position x="206.434" y="469.081" z="86.5661" />
+                            <position x="147.958" y="532.911" z="-1.57264e-005" />
+                            <position x="175.073" y="438.293" z="86.5661" />
+                            <position x="264.909" y="405.251" z="-1.77141e-005" />
+                            <position x="206.434" y="469.081" z="86.5661" />
+                            <position x="206.434" y="469.081" z="-2.05042e-005" />
+                            <position x="264.909" y="405.251" z="-1.77141e-005" />
+                            <position x="206.434" y="469.081" z="-86.5662" />
+                            <position x="147.958" y="532.911" z="-1.57264e-005" />
+                            <position x="206.434" y="469.081" z="86.5661" />
+                            <position x="264.909" y="405.251" z="-1.77141e-005" />
+                        </keyframe>
+                        <keyframe time="1.12396">
+                            <position x="0" y="-8.05565e-008" z="3.52123e-015" />
+                            <position x="-3.78393e-006" y="-3.86448e-006" z="-86.5661" />
+                            <position x="86.5661" y="-8.83295e-008" z="3.86101e-015" />
+                            <position x="-86.5661" y="-7.27831e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.70337e-006" z="86.5661" />
+                            <position x="86.5661" y="-8.83295e-008" z="3.86101e-015" />
+                            <position x="86.5661" y="-8.83295e-008" z="3.86101e-015" />
+                            <position x="-1.07664" y="43.9387" z="-86.5661" />
+                            <position x="85.3856" y="48.1785" z="-2.10595e-006" />
+                            <position x="-3.78393e-006" y="-3.86448e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.86448e-006" z="-86.5661" />
+                            <position x="-87.5389" y="39.699" z="5.83255e-006" />
+                            <position x="-1.07664" y="43.9387" z="-86.5661" />
+                            <position x="-86.5661" y="-7.27831e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="-7.27831e-008" z="7.56785e-006" />
+                            <position x="-1.07664" y="43.9388" z="86.5661" />
+                            <position x="-87.5389" y="39.699" z="5.83255e-006" />
+                            <position x="1.03229e-006" y="3.70337e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.70337e-006" z="86.5661" />
+                            <position x="85.3856" y="48.1785" z="-2.10595e-006" />
+                            <position x="-1.07664" y="43.9388" z="86.5661" />
+                            <position x="86.5661" y="-8.83295e-008" z="3.86101e-015" />
+                            <position x="-4.30397" y="87.772" z="-86.5661" />
+                            <position x="81.8469" y="96.2413" z="-4.20684e-006" />
+                            <position x="-90.4548" y="79.3027" z="4.10142e-006" />
+                            <position x="-4.30397" y="87.772" z="-86.5661" />
+                            <position x="-4.30396" y="87.772" z="86.5661" />
+                            <position x="-90.4548" y="79.3027" z="4.10142e-006" />
+                            <position x="81.8469" y="96.2413" z="-4.20684e-006" />
+                            <position x="-4.30396" y="87.772" z="86.5661" />
+                            <position x="-9.67423" y="131.395" z="-86.5661" />
+                            <position x="75.9584" y="144.073" z="-6.29764e-006" />
+                            <position x="-95.3069" y="118.716" z="2.3786e-006" />
+                            <position x="-9.67423" y="131.395" z="-86.5661" />
+                            <position x="-90.4548" y="79.3027" z="4.10142e-006" />
+                            <position x="-9.67423" y="131.395" z="86.5661" />
+                            <position x="-95.3069" y="118.716" z="2.3786e-006" />
+                            <position x="-4.30396" y="87.772" z="86.5661" />
+                            <position x="75.9584" y="144.073" z="-6.29764e-006" />
+                            <position x="-9.67423" y="131.395" z="86.5661" />
+                            <position x="-17.1746" y="174.702" z="-86.5661" />
+                            <position x="67.7344" y="191.559" z="-8.37332e-006" />
+                            <position x="-9.67423" y="131.395" z="-86.5661" />
+                            <position x="-102.083" y="157.845" z="6.68246e-007" />
+                            <position x="-17.1746" y="174.702" z="-86.5661" />
+                            <position x="-95.3069" y="118.716" z="2.3786e-006" />
+                            <position x="-17.1746" y="174.702" z="86.5661" />
+                            <position x="-102.083" y="157.845" z="6.68246e-007" />
+                            <position x="67.7344" y="191.559" z="-8.37332e-006" />
+                            <position x="-17.1746" y="174.702" z="86.5661" />
+                            <position x="-26.7869" y="217.59" z="-86.5661" />
+                            <position x="57.1945" y="238.585" z="-1.04289e-005" />
+                            <position x="-17.1746" y="174.702" z="-86.5661" />
+                            <position x="-110.768" y="196.594" z="-1.02555e-006" />
+                            <position x="-26.7869" y="217.59" z="-86.5661" />
+                            <position x="-102.083" y="157.845" z="6.68246e-007" />
+                            <position x="-102.083" y="157.845" z="6.68246e-007" />
+                            <position x="-26.7869" y="217.59" z="86.5661" />
+                            <position x="-110.768" y="196.594" z="-1.02555e-006" />
+                            <position x="-17.1746" y="174.702" z="86.5661" />
+                            <position x="57.1945" y="238.585" z="-1.04289e-005" />
+                            <position x="-26.7869" y="217.59" z="86.5661" />
+                            <position x="-38.4883" y="259.956" z="-86.5661" />
+                            <position x="44.3641" y="285.039" z="-1.24595e-005" />
+                            <position x="-26.7869" y="217.59" z="-86.5661" />
+                            <position x="-121.341" y="234.872" z="-2.69873e-006" />
+                            <position x="-38.4883" y="259.956" z="-86.5661" />
+                            <position x="-110.768" y="196.594" z="-1.02555e-006" />
+                            <position x="-110.768" y="196.594" z="-1.02555e-006" />
+                            <position x="-38.4883" y="259.956" z="86.5661" />
+                            <position x="-121.341" y="234.872" z="-2.69873e-006" />
+                            <position x="-26.7869" y="217.59" z="86.5661" />
+                            <position x="44.3641" y="285.039" z="-1.24595e-005" />
+                            <position x="-38.4883" y="259.956" z="86.5661" />
+                            <position x="-52.2505" y="301.697" z="-86.5661" />
+                            <position x="29.2739" y="330.809" z="-1.44601e-005" />
+                            <position x="-38.4883" y="259.956" z="-86.5661" />
+                            <position x="-133.775" y="272.586" z="-4.34726e-006" />
+                            <position x="-52.2505" y="301.697" z="-86.5661" />
+                            <position x="-121.341" y="234.872" z="-2.69873e-006" />
+                            <position x="-52.2505" y="301.697" z="86.5661" />
+                            <position x="-133.775" y="272.586" z="-4.34726e-006" />
+                            <position x="29.2739" y="330.809" z="-1.44601e-005" />
+                            <position x="-52.2505" y="301.697" z="86.5661" />
+                            <position x="-68.0406" y="342.715" z="-86.5661" />
+                            <position x="11.9601" y="375.784" z="-1.6426e-005" />
+                            <position x="-148.041" y="309.646" z="-5.96719e-006" />
+                            <position x="-68.0406" y="342.715" z="-86.5661" />
+                            <position x="-133.775" y="272.586" z="-4.34726e-006" />
+                            <position x="-68.0406" y="342.715" z="86.5661" />
+                            <position x="-148.041" y="309.646" z="-5.96719e-006" />
+                            <position x="-52.2505" y="301.697" z="86.5661" />
+                            <position x="11.9601" y="375.784" z="-1.6426e-005" />
+                            <position x="-68.0406" y="342.715" z="86.5661" />
+                            <position x="-85.8207" y="382.91" z="-86.5661" />
+                            <position x="-7.53556" y="419.858" z="-1.83526e-005" />
+                            <position x="-68.0406" y="342.715" z="-86.5661" />
+                            <position x="-164.106" y="345.962" z="-7.55464e-006" />
+                            <position x="-85.8207" y="382.91" z="-86.5661" />
+                            <position x="-148.041" y="309.646" z="-5.96719e-006" />
+                            <position x="-148.041" y="309.646" z="-5.96719e-006" />
+                            <position x="-85.8207" y="382.91" z="86.5661" />
+                            <position x="-164.106" y="345.962" z="-7.55464e-006" />
+                            <position x="-68.0406" y="342.715" z="86.5661" />
+                            <position x="-7.53556" y="419.858" z="-1.83526e-005" />
+                            <position x="-85.8207" y="382.91" z="86.5661" />
+                            <position x="-105.548" y="422.186" z="-86.5661" />
+                            <position x="-29.1665" y="462.923" z="-2.0235e-005" />
+                            <position x="-85.8207" y="382.91" z="-86.5661" />
+                            <position x="-181.93" y="381.448" z="-9.10579e-006" />
+                            <position x="-105.548" y="422.186" z="-86.5661" />
+                            <position x="-164.106" y="345.962" z="-7.55464e-006" />
+                            <position x="-105.548" y="422.186" z="86.5661" />
+                            <position x="-181.93" y="381.448" z="-9.10579e-006" />
+                            <position x="-29.1665" y="462.923" z="-2.0235e-005" />
+                            <position x="-105.548" y="422.186" z="86.5661" />
+                            <position x="-127.175" y="460.449" z="-86.5662" />
+                            <position x="-52.8806" y="504.878" z="-2.20689e-005" />
+                            <position x="-201.47" y="416.019" z="-1.06169e-005" />
+                            <position x="-127.175" y="460.449" z="-86.5662" />
+                            <position x="-181.93" y="381.448" z="-9.10579e-006" />
+                            <position x="-127.175" y="460.449" z="86.5661" />
+                            <position x="-201.47" y="416.019" z="-1.06169e-005" />
+                            <position x="-105.548" y="422.186" z="86.5661" />
+                            <position x="-52.8806" y="504.878" z="-2.20689e-005" />
+                            <position x="-127.175" y="460.449" z="86.5661" />
+                            <position x="-150.651" y="497.606" z="-86.5662" />
+                            <position x="-78.6211" y="545.621" z="-2.38499e-005" />
+                            <position x="-222.68" y="449.591" z="-1.20844e-005" />
+                            <position x="-150.651" y="497.606" z="-86.5662" />
+                            <position x="-201.47" y="416.019" z="-1.06169e-005" />
+                            <position x="-150.651" y="497.606" z="86.5661" />
+                            <position x="-222.68" y="449.591" z="-1.20844e-005" />
+                            <position x="-127.175" y="460.449" z="86.5661" />
+                            <position x="-78.6211" y="545.621" z="-2.38499e-005" />
+                            <position x="-150.651" y="497.606" z="86.5661" />
+                            <position x="-150.651" y="497.606" z="-2.17511e-005" />
+                            <position x="-78.6211" y="545.621" z="-2.38499e-005" />
+                            <position x="-150.651" y="497.606" z="-86.5662" />
+                            <position x="-222.68" y="449.591" z="-1.20844e-005" />
+                            <position x="-150.651" y="497.606" z="86.5661" />
+                            <position x="-78.6211" y="545.621" z="-2.38499e-005" />
+                        </keyframe>
+                        <keyframe time="1.34854">
+                            <position x="0" y="-3.29995e-008" z="1.44245e-015" />
+                            <position x="-3.78393e-006" y="-3.81693e-006" z="-86.5661" />
+                            <position x="86.5661" y="-4.07726e-008" z="1.78223e-015" />
+                            <position x="-86.5661" y="-2.52261e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.75093e-006" z="86.5661" />
+                            <position x="86.5661" y="-4.07726e-008" z="1.78223e-015" />
+                            <position x="86.5661" y="-4.07726e-008" z="1.78223e-015" />
+                            <position x="-2.62562" y="43.8516" z="-86.5661" />
+                            <position x="83.3221" y="54.1809" z="-2.36832e-006" />
+                            <position x="-3.78393e-006" y="-3.81693e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.81693e-006" z="-86.5661" />
+                            <position x="-88.5733" y="33.5223" z="6.10254e-006" />
+                            <position x="-2.62562" y="43.8516" z="-86.5661" />
+                            <position x="-86.5661" y="-2.52261e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="-2.52261e-008" z="7.56785e-006" />
+                            <position x="-2.62561" y="43.8516" z="86.5661" />
+                            <position x="-88.5733" y="33.5223" z="6.10254e-006" />
+                            <position x="1.03229e-006" y="3.75093e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.75093e-006" z="86.5661" />
+                            <position x="83.3221" y="54.1809" z="-2.36832e-006" />
+                            <position x="-2.62561" y="43.8516" z="86.5661" />
+                            <position x="86.5661" y="-4.07726e-008" z="1.78223e-015" />
+                            <position x="-10.4649" y="87.0766" z="-86.5661" />
+                            <position x="73.6362" y="107.588" z="-4.7028e-006" />
+                            <position x="-94.5661" y="66.5657" z="4.65817e-006" />
+                            <position x="-10.4649" y="87.0766" z="-86.5661" />
+                            <position x="-10.4649" y="87.0766" z="86.5661" />
+                            <position x="-94.5661" y="66.5657" z="4.65817e-006" />
+                            <position x="73.6362" y="107.588" z="-4.7028e-006" />
+                            <position x="-10.4649" y="87.0766" z="86.5661" />
+                            <position x="-23.406" y="129.057" z="-86.5661" />
+                            <position x="57.6469" y="159.457" z="-6.97008e-006" />
+                            <position x="-104.459" y="98.6579" z="3.25538e-006" />
+                            <position x="-23.406" y="129.057" z="-86.5661" />
+                            <position x="-94.5661" y="66.5657" z="4.65817e-006" />
+                            <position x="-23.406" y="129.057" z="86.5661" />
+                            <position x="-104.459" y="98.6579" z="3.25538e-006" />
+                            <position x="-10.4649" y="87.0766" z="86.5661" />
+                            <position x="57.6469" y="159.457" z="-6.97008e-006" />
+                            <position x="-23.406" y="129.057" z="86.5661" />
+                            <position x="-41.2638" y="169.194" z="-86.5661" />
+                            <position x="35.5827" y="209.048" z="-9.13777e-006" />
+                            <position x="-23.406" y="129.057" z="-86.5661" />
+                            <position x="-118.11" y="129.34" z="1.9142e-006" />
+                            <position x="-41.2638" y="169.194" z="-86.5661" />
+                            <position x="-104.459" y="98.6579" z="3.25538e-006" />
+                            <position x="-41.2638" y="169.194" z="86.5661" />
+                            <position x="-118.11" y="129.34" z="1.9142e-006" />
+                            <position x="35.5827" y="209.048" z="-9.13777e-006" />
+                            <position x="-41.2638" y="169.194" z="86.5661" />
+                            <position x="-63.7832" y="206.913" z="-86.5661" />
+                            <position x="7.75879" y="255.652" z="-1.11749e-005" />
+                            <position x="-41.2638" y="169.194" z="-86.5661" />
+                            <position x="-135.325" y="158.175" z="6.53813e-007" />
+                            <position x="-63.7832" y="206.913" z="-86.5661" />
+                            <position x="-118.11" y="129.34" z="1.9142e-006" />
+                            <position x="-118.11" y="129.34" z="1.9142e-006" />
+                            <position x="-63.7832" y="206.913" z="86.5661" />
+                            <position x="-135.325" y="158.175" z="6.53813e-007" />
+                            <position x="-41.2638" y="169.194" z="86.5661" />
+                            <position x="7.75879" y="255.652" z="-1.11749e-005" />
+                            <position x="-63.7832" y="206.913" z="86.5661" />
+                            <position x="-90.6425" y="241.676" z="-86.5661" />
+                            <position x="-25.4272" y="298.603" z="-1.30523e-005" />
+                            <position x="-63.7832" y="206.913" z="-86.5661" />
+                            <position x="-155.858" y="184.749" z="-5.07784e-007" />
+                            <position x="-90.6425" y="241.676" z="-86.5661" />
+                            <position x="-135.325" y="158.175" z="6.53813e-007" />
+                            <position x="-135.325" y="158.175" z="6.53813e-007" />
+                            <position x="-90.6425" y="241.676" z="86.5661" />
+                            <position x="-155.858" y="184.749" z="-5.07784e-007" />
+                            <position x="-63.7832" y="206.913" z="86.5661" />
+                            <position x="-25.4272" y="298.603" z="-1.30523e-005" />
+                            <position x="-90.6425" y="241.676" z="86.5661" />
+                            <position x="-121.458" y="272.985" z="-86.5661" />
+                            <position x="-63.5011" y="337.287" z="-1.47433e-005" />
+                            <position x="-90.6425" y="241.676" z="-86.5661" />
+                            <position x="-179.414" y="208.683" z="-1.55399e-006" />
+                            <position x="-121.458" y="272.985" z="-86.5661" />
+                            <position x="-155.858" y="184.749" z="-5.07784e-007" />
+                            <position x="-121.458" y="272.985" z="86.5661" />
+                            <position x="-179.414" y="208.683" z="-1.55399e-006" />
+                            <position x="-63.5011" y="337.287" z="-1.47433e-005" />
+                            <position x="-121.458" y="272.985" z="86.5661" />
+                            <position x="-155.789" y="300.394" z="-86.5661" />
+                            <position x="-105.919" y="371.152" z="-1.62236e-005" />
+                            <position x="-205.659" y="229.636" z="-2.46985e-006" />
+                            <position x="-155.789" y="300.394" z="-86.5661" />
+                            <position x="-179.414" y="208.683" z="-1.55399e-006" />
+                            <position x="-155.789" y="300.394" z="86.5661" />
+                            <position x="-205.659" y="229.636" z="-2.46985e-006" />
+                            <position x="-121.458" y="272.985" z="86.5661" />
+                            <position x="-105.919" y="371.152" z="-1.62236e-005" />
+                            <position x="-155.789" y="300.394" z="86.5661" />
+                            <position x="-193.145" y="323.51" z="-86.5661" />
+                            <position x="-152.074" y="399.713" z="-1.7472e-005" />
+                            <position x="-155.789" y="300.394" z="-86.5661" />
+                            <position x="-234.216" y="247.307" z="-3.24229e-006" />
+                            <position x="-193.145" y="323.51" z="-86.5661" />
+                            <position x="-205.659" y="229.636" z="-2.46985e-006" />
+                            <position x="-205.659" y="229.636" z="-2.46985e-006" />
+                            <position x="-193.145" y="323.51" z="86.5661" />
+                            <position x="-234.216" y="247.307" z="-3.24229e-006" />
+                            <position x="-155.789" y="300.394" z="86.5661" />
+                            <position x="-152.074" y="399.713" z="-1.7472e-005" />
+                            <position x="-193.145" y="323.51" z="86.5661" />
+                            <position x="-232.993" y="342.004" z="-86.5661" />
+                            <position x="-201.308" y="422.563" z="-1.84708e-005" />
+                            <position x="-193.145" y="323.51" z="-86.5661" />
+                            <position x="-264.677" y="261.445" z="-3.86027e-006" />
+                            <position x="-232.993" y="342.004" z="-86.5661" />
+                            <position x="-234.216" y="247.307" z="-3.24229e-006" />
+                            <position x="-232.993" y="342.004" z="86.5661" />
+                            <position x="-264.677" y="261.445" z="-3.86027e-006" />
+                            <position x="-201.308" y="422.563" z="-1.84708e-005" />
+                            <position x="-232.993" y="342.004" z="86.5661" />
+                            <position x="-274.762" y="355.611" z="-86.5661" />
+                            <position x="-252.917" y="439.375" z="-1.92057e-005" />
+                            <position x="-296.608" y="271.847" z="-4.31495e-006" />
+                            <position x="-274.762" y="355.611" z="-86.5661" />
+                            <position x="-264.677" y="261.445" z="-3.86027e-006" />
+                            <position x="-274.762" y="355.611" z="86.5661" />
+                            <position x="-296.608" y="271.847" z="-4.31495e-006" />
+                            <position x="-232.993" y="342.004" z="86.5661" />
+                            <position x="-252.917" y="439.375" z="-1.92057e-005" />
+                            <position x="-274.762" y="355.611" z="86.5661" />
+                            <position x="-317.857" y="364.137" z="-86.5661" />
+                            <position x="-306.163" y="449.909" z="-1.96662e-005" />
+                            <position x="-329.552" y="278.364" z="-4.59983e-006" />
+                            <position x="-317.857" y="364.137" z="-86.5661" />
+                            <position x="-296.608" y="271.847" z="-4.31495e-006" />
+                            <position x="-317.857" y="364.137" z="86.5661" />
+                            <position x="-329.552" y="278.364" z="-4.59983e-006" />
+                            <position x="-274.762" y="355.611" z="86.5661" />
+                            <position x="-306.163" y="449.909" z="-1.96662e-005" />
+                            <position x="-317.857" y="364.137" z="86.5661" />
+                            <position x="-317.857" y="364.137" z="-1.59169e-005" />
+                            <position x="-306.163" y="449.909" z="-1.96662e-005" />
+                            <position x="-317.857" y="364.137" z="-86.5661" />
+                            <position x="-329.552" y="278.364" z="-4.59983e-006" />
+                            <position x="-317.857" y="364.137" z="86.5661" />
+                            <position x="-306.163" y="449.909" z="-1.96662e-005" />
+                        </keyframe>
+                        <keyframe time="1.57333">
+                            <position x="0" y="-6.88288e-008" z="3.0086e-015" />
+                            <position x="-3.78393e-006" y="-3.85275e-006" z="-86.5661" />
+                            <position x="86.5661" y="-7.66019e-008" z="3.34837e-015" />
+                            <position x="-86.5661" y="-6.10554e-008" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.7151e-006" z="86.5661" />
+                            <position x="86.5661" y="-7.66019e-008" z="3.34837e-015" />
+                            <position x="86.5661" y="-7.66019e-008" z="3.34837e-015" />
+                            <position x="-1.25999" y="43.9322" z="-86.5661" />
+                            <position x="85.1638" y="48.8937" z="-2.13721e-006" />
+                            <position x="-3.78393e-006" y="-3.85275e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.85275e-006" z="-86.5661" />
+                            <position x="-87.6838" y="38.9708" z="5.86438e-006" />
+                            <position x="-1.25999" y="43.9322" z="-86.5661" />
+                            <position x="-86.5661" y="-6.10554e-008" z="7.56785e-006" />
+                            <position x="-86.5661" y="-6.10554e-008" z="7.56785e-006" />
+                            <position x="-1.25999" y="43.9323" z="86.5661" />
+                            <position x="-87.6838" y="38.9708" z="5.86438e-006" />
+                            <position x="1.03229e-006" y="3.7151e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.7151e-006" z="86.5661" />
+                            <position x="85.1638" y="48.8937" z="-2.13721e-006" />
+                            <position x="-1.25999" y="43.9323" z="86.5661" />
+                            <position x="86.5661" y="-7.66019e-008" z="3.34837e-015" />
+                            <position x="-5.03582" y="87.7201" z="-86.5661" />
+                            <position x="80.9616" y="97.6266" z="-4.26739e-006" />
+                            <position x="-91.0332" y="77.8136" z="4.16651e-006" />
+                            <position x="-5.03582" y="87.7201" z="-86.5661" />
+                            <position x="-5.03582" y="87.7201" z="86.5661" />
+                            <position x="-91.0332" y="77.8136" z="4.16651e-006" />
+                            <position x="80.9616" y="97.6266" z="-4.26739e-006" />
+                            <position x="-5.03582" y="87.7201" z="86.5661" />
+                            <position x="-11.3151" y="131.219" z="-86.5661" />
+                            <position x="73.9732" y="146.039" z="-6.38355e-006" />
+                            <position x="-96.6034" y="116.4" z="2.47983e-006" />
+                            <position x="-11.3151" y="131.219" z="-86.5661" />
+                            <position x="-91.0332" y="77.8136" z="4.16651e-006" />
+                            <position x="-11.3151" y="131.219" z="86.5661" />
+                            <position x="-96.6034" y="116.4" z="2.47983e-006" />
+                            <position x="-5.03582" y="87.7201" z="86.5661" />
+                            <position x="73.9732" y="146.039" z="-6.38355e-006" />
+                            <position x="-11.3151" y="131.219" z="86.5661" />
+                            <position x="-20.0771" y="174.288" z="-86.5661" />
+                            <position x="64.2217" y="193.97" z="-8.47871e-006" />
+                            <position x="-11.3151" y="131.219" z="-86.5661" />
+                            <position x="-104.376" y="154.605" z="8.09864e-007" />
+                            <position x="-20.0771" y="174.288" z="-86.5661" />
+                            <position x="-96.6034" y="116.4" z="2.47983e-006" />
+                            <position x="-20.0771" y="174.288" z="86.5661" />
+                            <position x="-104.376" y="154.605" z="8.09864e-007" />
+                            <position x="64.2217" y="193.97" z="-8.47871e-006" />
+                            <position x="-20.0771" y="174.288" z="86.5661" />
+                            <position x="-31.2931" y="216.783" z="-86.5661" />
+                            <position x="51.739" y="241.265" z="-1.0546e-005" />
+                            <position x="-20.0771" y="174.288" z="-86.5661" />
+                            <position x="-114.325" y="192.301" z="-8.37878e-007" />
+                            <position x="-31.2931" y="216.783" z="-86.5661" />
+                            <position x="-104.376" y="154.605" z="8.09864e-007" />
+                            <position x="-104.376" y="154.605" z="8.09864e-007" />
+                            <position x="-31.2931" y="216.783" z="86.5661" />
+                            <position x="-114.325" y="192.301" z="-8.37878e-007" />
+                            <position x="-20.0771" y="174.288" z="86.5661" />
+                            <position x="51.739" y="241.265" z="-1.0546e-005" />
+                            <position x="-31.2931" y="216.783" z="86.5661" />
+                            <position x="-44.9262" y="258.565" z="-86.5661" />
+                            <position x="36.5663" y="287.766" z="-1.25786e-005" />
+                            <position x="-31.2931" y="216.783" z="-86.5661" />
+                            <position x="-126.419" y="229.364" z="-2.45799e-006" />
+                            <position x="-44.9262" y="258.565" z="-86.5661" />
+                            <position x="-114.325" y="192.301" z="-8.37878e-007" />
+                            <position x="-114.325" y="192.301" z="-8.37878e-007" />
+                            <position x="-44.9262" y="258.565" z="86.5661" />
+                            <position x="-126.419" y="229.364" z="-2.45799e-006" />
+                            <position x="-31.2931" y="216.783" z="86.5661" />
+                            <position x="36.5663" y="287.766" z="-1.25786e-005" />
+                            <position x="-44.9262" y="258.565" z="86.5661" />
+                            <position x="-60.9316" y="299.497" z="-86.5661" />
+                            <position x="18.7533" y="333.321" z="-1.45699e-005" />
+                            <position x="-44.9262" y="258.565" z="-86.5661" />
+                            <position x="-140.617" y="265.674" z="-4.04514e-006" />
+                            <position x="-60.9316" y="299.497" z="-86.5661" />
+                            <position x="-126.419" y="229.364" z="-2.45799e-006" />
+                            <position x="-60.9316" y="299.497" z="86.5661" />
+                            <position x="-140.617" y="265.674" z="-4.04514e-006" />
+                            <position x="18.7533" y="333.321" z="-1.45699e-005" />
+                            <position x="-60.9316" y="299.497" z="86.5661" />
+                            <position x="-79.2567" y="339.445" z="-86.5661" />
+                            <position x="-1.64125" y="377.78" z="-1.65133e-005" />
+                            <position x="-156.872" y="301.111" z="-5.59411e-006" />
+                            <position x="-79.2567" y="339.445" z="-86.5661" />
+                            <position x="-140.617" y="265.674" z="-4.04514e-006" />
+                            <position x="-79.2567" y="339.445" z="86.5661" />
+                            <position x="-156.872" y="301.111" z="-5.59411e-006" />
+                            <position x="-60.9316" y="299.497" z="86.5661" />
+                            <position x="-1.64125" y="377.78" z="-1.65133e-005" />
+                            <position x="-79.2567" y="339.445" z="86.5661" />
+                            <position x="-99.8411" y="378.277" z="-86.5661" />
+                            <position x="-24.5504" y="420.997" z="-1.84024e-005" />
+                            <position x="-79.2567" y="339.445" z="-86.5661" />
+                            <position x="-175.132" y="335.557" z="-7.09981e-006" />
+                            <position x="-99.8411" y="378.277" z="-86.5661" />
+                            <position x="-156.872" y="301.111" z="-5.59411e-006" />
+                            <position x="-156.872" y="301.111" z="-5.59411e-006" />
+                            <position x="-99.8411" y="378.277" z="86.5661" />
+                            <position x="-175.132" y="335.557" z="-7.09981e-006" />
+                            <position x="-79.2567" y="339.445" z="86.5661" />
+                            <position x="-24.5504" y="420.997" z="-1.84024e-005" />
+                            <position x="-99.8411" y="378.277" z="86.5661" />
+                            <position x="-122.617" y="415.865" z="-86.5661" />
+                            <position x="-49.8988" y="462.83" z="-2.02309e-005" />
+                            <position x="-99.8411" y="378.277" z="-86.5661" />
+                            <position x="-195.336" y="368.9" z="-8.55729e-006" />
+                            <position x="-122.617" y="415.865" z="-86.5661" />
+                            <position x="-175.132" y="335.557" z="-7.09981e-006" />
+                            <position x="-122.617" y="415.865" z="86.5661" />
+                            <position x="-195.336" y="368.9" z="-8.55729e-006" />
+                            <position x="-49.8988" y="462.83" z="-2.02309e-005" />
+                            <position x="-122.617" y="415.865" z="86.5661" />
+                            <position x="-147.51" y="452.086" z="-86.5662" />
+                            <position x="-77.6032" y="503.142" z="-2.1993e-005" />
+                            <position x="-217.418" y="401.031" z="-9.96176e-006" />
+                            <position x="-147.51" y="452.086" z="-86.5662" />
+                            <position x="-195.336" y="368.9" z="-8.55729e-006" />
+                            <position x="-147.51" y="452.086" z="86.5661" />
+                            <position x="-217.418" y="401.031" z="-9.96176e-006" />
+                            <position x="-122.617" y="415.865" z="86.5661" />
+                            <position x="-77.6032" y="503.142" z="-2.1993e-005" />
+                            <position x="-147.51" y="452.086" z="86.5661" />
+                            <position x="-174.439" y="486.821" z="-86.5662" />
+                            <position x="-107.572" y="541.799" z="-2.36828e-005" />
+                            <position x="-241.305" y="431.843" z="-1.13086e-005" />
+                            <position x="-174.439" y="486.821" z="-86.5662" />
+                            <position x="-217.418" y="401.031" z="-9.96176e-006" />
+                            <position x="-174.439" y="486.821" z="86.5661" />
+                            <position x="-241.305" y="431.843" z="-1.13086e-005" />
+                            <position x="-147.51" y="452.086" z="86.5661" />
+                            <position x="-107.572" y="541.799" z="-2.36828e-005" />
+                            <position x="-174.439" y="486.821" z="86.5661" />
+                            <position x="-174.439" y="486.821" z="-2.12796e-005" />
+                            <position x="-107.572" y="541.799" z="-2.36828e-005" />
+                            <position x="-174.439" y="486.821" z="-86.5662" />
+                            <position x="-241.305" y="431.843" z="-1.13086e-005" />
+                            <position x="-174.439" y="486.821" z="86.5661" />
+                            <position x="-107.572" y="541.799" z="-2.36828e-005" />
+                        </keyframe>
+                        <keyframe time="1.79979">
+                            <position x="0" y="0" z="0" />
+                            <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                            <position x="86.5661" y="0" z="0" />
+                            <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                            <position x="86.5661" y="0" z="0" />
+                            <position x="86.5661" y="0" z="0" />
+                            <position x="-3.78393e-006" y="43.9563" z="-86.5661" />
+                            <position x="86.5661" y="43.9563" z="-1.92139e-006" />
+                            <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                            <position x="-3.78393e-006" y="-3.78393e-006" z="-86.5661" />
+                            <position x="-86.5661" y="43.9563" z="5.64646e-006" />
+                            <position x="-3.78393e-006" y="43.9563" z="-86.5661" />
+                            <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                            <position x="-86.5661" y="3.30801e-013" z="7.56785e-006" />
+                            <position x="1.03229e-006" y="43.9563" z="86.5661" />
+                            <position x="-86.5661" y="43.9563" z="5.64646e-006" />
+                            <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                            <position x="1.03229e-006" y="3.78393e-006" z="86.5661" />
+                            <position x="86.5661" y="43.9563" z="-1.92139e-006" />
+                            <position x="1.03229e-006" y="43.9563" z="86.5661" />
+                            <position x="86.5661" y="0" z="0" />
+                            <position x="-3.78393e-006" y="87.9127" z="-86.5661" />
+                            <position x="86.5661" y="87.9127" z="-3.84279e-006" />
+                            <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                            <position x="-3.78393e-006" y="87.9127" z="-86.5661" />
+                            <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                            <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                            <position x="86.5661" y="87.9127" z="-3.84279e-006" />
+                            <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                            <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                            <position x="86.5661" y="131.869" z="-5.76418e-006" />
+                            <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                            <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                            <position x="-86.5661" y="87.9127" z="3.72507e-006" />
+                            <position x="1.03229e-006" y="131.869" z="86.5661" />
+                            <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                            <position x="1.03229e-006" y="87.9127" z="86.5661" />
+                            <position x="86.5661" y="131.869" z="-5.76418e-006" />
+                            <position x="1.03229e-006" y="131.869" z="86.5661" />
+                            <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                            <position x="86.5661" y="175.825" z="-7.68557e-006" />
+                            <position x="-3.78393e-006" y="131.869" z="-86.5661" />
+                            <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                            <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                            <position x="-86.5661" y="131.869" z="1.80367e-006" />
+                            <position x="1.03229e-006" y="175.825" z="86.5661" />
+                            <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                            <position x="86.5661" y="175.825" z="-7.68557e-006" />
+                            <position x="1.03229e-006" y="175.825" z="86.5661" />
+                            <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                            <position x="86.5661" y="219.782" z="-9.60696e-006" />
+                            <position x="-3.78393e-006" y="175.825" z="-86.5661" />
+                            <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                            <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                            <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                            <position x="-86.5661" y="175.825" z="-1.17719e-007" />
+                            <position x="1.03229e-006" y="219.782" z="86.5661" />
+                            <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                            <position x="1.03229e-006" y="175.825" z="86.5661" />
+                            <position x="86.5661" y="219.782" z="-9.60696e-006" />
+                            <position x="1.03229e-006" y="219.782" z="86.5661" />
+                            <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                            <position x="86.5661" y="263.738" z="-1.15284e-005" />
+                            <position x="-3.78393e-006" y="219.782" z="-86.5661" />
+                            <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                            <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                            <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                            <position x="-86.5661" y="219.782" z="-2.03911e-006" />
+                            <position x="1.03229e-006" y="263.738" z="86.5661" />
+                            <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                            <position x="1.03229e-006" y="219.782" z="86.5661" />
+                            <position x="86.5661" y="263.738" z="-1.15284e-005" />
+                            <position x="1.03229e-006" y="263.738" z="86.5661" />
+                            <position x="-3.78393e-006" y="307.694" z="-86.5661" />
+                            <position x="86.5661" y="307.694" z="-1.34497e-005" />
+                            <position x="-3.78393e-006" y="263.738" z="-86.5661" />
+                            <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                            <position x="-3.78393e-006" y="307.694" z="-86.5661" />
+                            <position x="-86.5661" y="263.738" z="-3.9605e-006" />
+                            <position x="1.03229e-006" y="307.694" z="86.5661" />
+                            <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                            <position x="86.5661" y="307.694" z="-1.34497e-005" />
+                            <position x="1.03229e-006" y="307.694" z="86.5661" />
+                            <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                            <position x="86.5661" y="351.651" z="-1.53711e-005" />
+                            <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                            <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                            <position x="-86.5661" y="307.694" z="-5.8819e-006" />
+                            <position x="1.03229e-006" y="351.651" z="86.5661" />
+                            <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                            <position x="1.03229e-006" y="307.694" z="86.5661" />
+                            <position x="86.5661" y="351.651" z="-1.53711e-005" />
+                            <position x="1.03229e-006" y="351.651" z="86.5661" />
+                            <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                            <position x="86.5661" y="395.607" z="-1.72925e-005" />
+                            <position x="-3.78393e-006" y="351.651" z="-86.5661" />
+                            <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                            <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                            <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                            <position x="-86.5661" y="351.651" z="-7.80329e-006" />
+                            <position x="1.03229e-006" y="395.607" z="86.5661" />
+                            <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                            <position x="1.03229e-006" y="351.651" z="86.5661" />
+                            <position x="86.5661" y="395.607" z="-1.72925e-005" />
+                            <position x="1.03229e-006" y="395.607" z="86.5661" />
+                            <position x="-3.78393e-006" y="439.563" z="-86.5662" />
+                            <position x="86.5661" y="439.563" z="-1.92139e-005" />
+                            <position x="-3.78393e-006" y="395.607" z="-86.5661" />
+                            <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                            <position x="-3.78393e-006" y="439.563" z="-86.5662" />
+                            <position x="-86.5661" y="395.607" z="-9.72468e-006" />
+                            <position x="1.03229e-006" y="439.563" z="86.5661" />
+                            <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                            <position x="86.5661" y="439.563" z="-1.92139e-005" />
+                            <position x="1.03229e-006" y="439.563" z="86.5661" />
+                            <position x="-3.78393e-006" y="483.52" z="-86.5662" />
+                            <position x="86.5661" y="483.52" z="-2.11353e-005" />
+                            <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                            <position x="-3.78393e-006" y="483.52" z="-86.5662" />
+                            <position x="-86.5661" y="439.563" z="-1.16461e-005" />
+                            <position x="1.03229e-006" y="483.52" z="86.5661" />
+                            <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                            <position x="1.03229e-006" y="439.563" z="86.5661" />
+                            <position x="86.5661" y="483.52" z="-2.11353e-005" />
+                            <position x="1.03229e-006" y="483.52" z="86.5661" />
+                            <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                            <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                            <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                            <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                            <position x="-86.5661" y="483.52" z="-1.35675e-005" />
+                            <position x="1.03229e-006" y="527.476" z="86.5661" />
+                            <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                            <position x="1.03229e-006" y="483.52" z="86.5661" />
+                            <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                            <position x="1.03229e-006" y="527.476" z="86.5661" />
+                            <position x="0" y="527.476" z="-2.30567e-005" />
+                            <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                            <position x="-3.78393e-006" y="527.476" z="-86.5662" />
+                            <position x="-86.5661" y="527.476" z="-1.54889e-005" />
+                            <position x="1.03229e-006" y="527.476" z="86.5661" />
+                            <position x="86.5661" y="527.476" z="-2.30567e-005" />
+                        </keyframe>
+                    </keyframes>
+                </track>
+            </tracks>
+        </animation>
+    </animations>
+</mesh>

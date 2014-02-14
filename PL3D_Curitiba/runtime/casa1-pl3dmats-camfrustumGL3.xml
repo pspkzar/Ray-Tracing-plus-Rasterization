@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<project name="teste1">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>..\ntg-bin-5</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.2" g="0.2" b="0.4" />
+			</viewport>
+			<viewport name="SmallViewport" fixed="true">
+				<geometry x="0" y="0" width="400" height="400" />
+				<bgcolor r="0.2" g="0.2" b="0.4" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="10000.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="1.0" y="0.0" z="1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="testCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="100.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="0.3" y="-0.15" z="-0.95" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="1.0" y="-1.0" z="-1.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		<materialLibs>
+			<mlib filename = "..\mlibs\PL3D_Materials2.mlib"/>
+			<mlib filename="..\mlibs\shaderGL3.mlib"/>
+		</materialLibs> 
+		
+	</assets>
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>testCamera</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>MainViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<materialMaps>
+					<map fromMaterial="Vidro" toLibrary="PL3D_Materials" toMaterial="Vidro" />
+				</materialMaps>
+				<!--map toMaterial="Grade*">
+					<state name="Grades" fromLibrary="PL3D_Materials" />
+				</map-->
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+					</map>
+				</injectionMaps>
+			</pass>
+			<pass class="default" name="pass2">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>testCamera</camera>
+				<viewport>SmallViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+				<!--materialMaps>
+					<map fromMaterial="Vidro" toLibrary="PL3D_Materials" toMaterial="Vidro" />
+				</materialMaps>
+				<map toMaterial="Grade*">
+					<state name="Grades" fromLibrary="PL3D_Materials" />
+				</map-->
+				<injectionMaps>
+					<map toMaterial="*">
+						<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+					</map>
+					<map toMaterial="Vidro">
+						<shader fromMaterial ="dirLightDifAmbPixGeom" fromLibrary="Shader GL3" />
+						<state name="Transparent" fromLibrary="PL3D_Materials" />
+					</map>	
+				</injectionMaps>
+			</pass>
+			
+		</pipeline>
+	</pipelines>
+</project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<project name="teste1">
+	<assets>
+		<scenes>
+			<scene name="MainScene">
+				<folder>..\ntg-bin-2</folder>
+			</scene>
+		</scenes>
+		<viewports>
+			<viewport name="MainViewport" fixed="false">
+				<bgcolor r="0.5" g="0.0" b="0.0" />
+			</viewport>
+			<viewport name="SmallViewport" fixed="true">
+				<geometry x="0" y="0" width="400" height="400" />
+				<bgcolor r="0.0" g="0.5" b="0.0" />
+			</viewport>
+		</viewports>
+		<cameras>
+			<camera name="MainCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="10000.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="1.0" y="0.0" z="1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+			<camera name="testCamera" type="perspective">
+				<viewport>MainViewport</viewport>
+				<perspective fov="60.0" near="0.3" far="100.0" />
+				<position x="-2.0" y="18.0" z="1.0" />
+				<view x="1.0" y="0.0" z="1.0" />
+				<up x="0.0" y="1.0" z="0.0" />
+			</camera>
+		</cameras>
+		<lights>
+			<light name="Sun" type="directional">
+				<position x="-150.0" y="150.0" z="0.0" />
+				<direction x="-1.0" y="1.0" z="0.0" />
+				<color r="0.9" g="0.9" b="0.9" />
+				<ambient r="0.5" g="0.5" b="0.5" />
+			</light>
+		</lights>
+		<materialLibs>
+			<mlib filename="..\mlibs\quadMaterials.mlib"/>
+		</materialLibs>
+	</assets>
+	<pipelines>
+		<pipeline name="fixedfunction" default="true">
+			<pass class="default" name="pass1">
+				<scenes>
+					<scene>MainScene</scene>
+					<scene>testCamera</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>MainViewport</viewport>
+				<rendertargets>
+					<size width="1024" height="1024" />
+					<colors>
+						<color name="offscreenrender" format="4" type="1" />
+					</colors>
+				</rendertargets>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass>
+			<pass class="quad" name="pass2">
+				<materialMaps>
+					<map fromMaterial="quad" toLibrary="quadMaterials" toMaterial="quadpass2" />
+				</materialMaps>
+			</pass>
+			<pass class="default" name="pass3">
+				<scenes>
+					<scene>MainScene</scene>
+				</scenes>
+				<camera>MainCamera</camera>
+				<viewport>SmallViewport</viewport>
+				<lights>
+					<light>Sun</light>
+				</lights>
+			</pass> 
+		</pipeline>
+	</pipelines>
+</project>

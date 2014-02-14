@@ -1,0 +1,53 @@
+#include <curitiba/material/materialid.h>
+#include <curitiba.h>
+#include <curitiba/material/materiallibmanager.h>
+
+using namespace curitiba::material;
+
+MaterialID::MaterialID (void):
+	m_LibName(),
+	m_MatName(),
+	m_MatPtr(0)
+{
+}
+
+MaterialID::MaterialID (std::string libName, std::string matName):
+	m_LibName (libName), 
+	m_MatName (matName)
+{
+	m_MatPtr = MATERIALLIBMANAGER->getMaterial(libName,matName);
+}
+
+
+MaterialID::~MaterialID() 
+{
+	
+}
+
+void 
+MaterialID::setMaterialID (std::string libName, std::string matName)
+{
+	m_LibName = libName;
+	m_MatName = matName;
+	m_MatPtr = MATERIALLIBMANAGER->getMaterial(libName,matName);
+
+}
+
+Material*
+MaterialID::getMaterialPtr()
+{
+	return m_MatPtr;
+}
+
+const std::string& 
+MaterialID::getLibName (void)
+{
+	return m_LibName;
+}
+
+const std::string& 
+MaterialID::getMaterialName (void)
+{
+	return m_MatName;
+}
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+<materiallib name="Shader Lights">
+	
+	<rendertargets>
+		<rendertarget name = "simple">
+				<size width="1024" height="1024" />
+				<colors>
+					<color name="colour" noreadandwrite="true"  
+										internalFormat="RGBA"
+										format="RGBA" 
+										type="UNSIGNED_BYTE"  />
+				</colors>
+		</rendertarget>
+	</rendertargets>
+	
+	<textures>
+		<texture name="Sky" filename="../Texturas/sky7a.jpg" />		
+		<texture name="Caustic" filename="../Texturas/caustic.jpg" />		
+	</textures>
+	
+	<shaders>
+		<shader name="dirLightDifAmbPix" 	ps="../shaders/dirlightdiffambpix.frag" 
+												vs="../shaders/dirlightdiffambpix.vert" />
+		<shader name="dirLightDifAmbPix2" 	ps="../shaders/dirlightdiffambpix2.frag" 
+												vs="../shaders/dirlightdiffambpix.vert" />
+		<shader name="dirLightDifAmbPix3" 	ps="../shaders/dirlightdiffambpix3.frag" 
+												vs="../shaders/dirlightdiffambpix.vert" />
+		<shader name="contour" ps="../shaders/contour.frag" 
+								vs="../shaders/contour.vert" />
+		<!--shader name="dirLightDifAmbPixGeom" 	ps="../shaders1.5/dirlightdiffambpix.frag" 
+												
+												vs="../shaders1.5/dirlightdiffambpix.vert" /-->
+		<shader name="dirLightDifAmbPixGeom" 	ps="../shaders1.5/dirlightdiffambpix.frag" 
+												gs="../shaders1.5/pass_through.geom"
+												vs="../shaders1.5/dirlightdiffambpix.vert" />
+	</shaders>
+	
+	<materials>
+		<material name="Contour">
+			<shader>
+				<name>contour</name>
+				<values>
+					<valueof uniform="PVM" type="CURRENT" context="MATRIX" 
+															component="PROJECTION_VIEW_MODEL" />
+					<valueof uniform="textureUnit" type="CURRENT" context="TEXTURE" 
+															id=0 component="UNIT" />
+					<valueof uniform="texSize2" type="TEXTURE" context="colour" 
+															component="WIDTH" />
+					<valueof uniform="texSize" type="DATA" context="IVEC4" 
+															component="1024 512 256 128" />
+					<valueof uniform="index" type="DATA" context="INT" component="0" />
+				</values>
+			</shader>
+			<textures>
+				<texture name="colour" unit="0" />
+			</textures>
+		</material>
+
+		<material name="dirLightDifAmbPix">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.9" a="1.0" />
+				<diffuse r="0.9" g="0.9" b="0.9" a="0.75" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<shader>
+				<name>dirLightDifAmbPix</name>
+			</shader>
+		</material>
+		
+		<material name="dirLightDifAmbPix2">
+			<shader>
+				<name>dirLightDifAmbPix2</name>
+				<values>
+					<valueof uniform="lightDirection" type="LIGHT" context="Sun" component="DIRECTION" /> 
+					<valueof uniform="lightColor"     type="LIGHT" context="Sun" component="DIFFUSE" />
+				</values>
+			</shader>
+		</material>
+		
+		<material name="dirLightDifAmbPix3">
+			<color>
+				<ambient r="0.0" g="0.0" b="0.9" a="1.0" />
+				<diffuse r="0.9" g="0.9" b="0.9" a="0.75" />
+				<specular r="0.5" g="0.5" b="0.5" a="1.0" />
+				<emission r="0.0" g="0.0" b="0.0" a="1.0" />
+				<shininess value="0.3" />
+			</color>
+			<textures>
+				<texture unit="0" name="Sky" />
+			</textures>
+			<shader>
+				<name>dirLightDifAmbPix3</name>
+				<values>
+					<valueof uniform="lightDirection" type="CURRENT" context="LIGHT" 
+														id=0 component="DIRECTION" /> 
+					<valueof uniform="lightColor"     type="LIGHT" context="Sun" 
+														component="DIFFUSE" />
+					<valueof uniform="floatprop"	  type="LIGHT" context="Sun" 
+														component="SPOT_EXPONENT" />
+					<valueof uniform="enumprop"		  type="LIGHT" context="Sun" component="TYPE" />
+					<valueof uniform="enabled"		  type="LIGHT" context="Sun" component="ENABLED" />
+					<valueof uniform="diffuse" 		  type="CURRENT" context="COLOR" component="DIFFUSE" />
+					<valueof uniform="ambient" 		  type="CURRENT" context="COLOR" component="AMBIENT" />
+					<valueof uniform="PVM2"            type="CAMERA" context="MainCamera" 
+														component="PROJECTION_VIEW_MATRIX" />
+					<valueof uniform="texUnit" 		  type="CURRENT" context="TEXTURE" 
+														id=0 component="UNIT" />
+					<valueof uniform="texUnit2" 	  type="TEXTURE" context="Sky" component="WIDTH" />
+					
+					<valueof uniform="PVM"          type="CURRENT" context="MATRIX" 
+																component="PROJECTION_VIEW_MODEL" />
+					<valueof uniform="NormalMatrix"   type="CURRENT" context="MATRIX" component="NORMAL" />
+																
+					<!--valueof uniform="lightColor"     type="CURRENT" context="LIGHT" id="0" component="DIFFUSE" /-->
+					<!--valueof uniform="lightDirection" type="CURRENT" context="LIGHT" id="0" component="DIRECTION/-->
+				</values>
+			</shader>
+		</material>
+		<material name="dirLightDifAmbPixGeom">
+			<shader>
+				<name>dirLightDifAmbPixGeom</name>
+				<values>
+					<valueof uniform="lightDirection" type="CURRENT" context="LIGHT" 
+														id=0 component="DIRECTION" /> 
+					<valueof uniform="lightColor"     type="LIGHT" context="Sun" 
+														component="DIFFUSE" />
+					<valueof uniform="diffuse" 		  type="CURRENT" context="COLOR" component="DIFFUSE" />
+					<valueof uniform="ambient" 		  type="CURRENT" context="COLOR" component="AMBIENT" />
+		
+					<valueof uniform="PVM"          type="CURRENT" context="MATRIX" 
+																component="PROJECTION_VIEW_MODEL" />
+					<valueof uniform="NormalMatrix"   type="CURRENT" context="MATRIX" component="NORMAL" />
+																
+					<!--valueof uniform="lightColor"     type="CURRENT" context="LIGHT" id="0" component="DIFFUSE" /-->
+					<!--valueof uniform="lightDirection" type="CURRENT" context="LIGHT" id="0" component="DIRECTION/-->
+				</values>
+			</shader>
+		</material>		
+	</materials>	
+</materiallib>

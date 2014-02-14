@@ -1,0 +1,100 @@
+<skeleton>
+    <bones>
+        <bone id="0" name="Bone01">
+            <position x="2.13177" y="437.056" z="0.812683" />
+            <rotation angle="4.18289">
+                <axis x="-0.573421" y="0.579303" z="0.579307" />
+            </rotation>
+        </bone>
+        <bone id="1" name="Bone02">
+            <position x="209.91" y="0" z="-0.000228882" />
+            <rotation angle="0.0197257">
+                <axis x="0.000384851" y="1" z="-3.83973e-006" />
+            </rotation>
+            <scale x="1" y="1" z="1" />
+        </bone>
+        <bone id="2" name="Bone03">
+            <position x="236.263" y="898.942" z="-1193.96" />
+            <rotation angle="0">
+                <axis x="0" y="1" z="-1.77636e-015" />
+            </rotation>
+            <scale x="1" y="1" z="1" />
+        </bone>
+    </bones>
+    <bonehierarchy>
+        <boneparent bone="Bone02" parent="Bone01" />
+        <boneparent bone="Bone03" parent="Bone02" />
+    </bonehierarchy>
+    <animations>
+        <animation name="ArmBend" length="0.8">
+            <tracks>
+                <track bone="Bone02">
+                    <keyframes>
+                        <keyframe time="0">
+                            <translate x="-1.52588e-005" y="-1.90735e-006" z="-1.52588e-005" />
+                            <rotate angle="0.0572205">
+                                <axis x="-1.43349e-011" y="1" z="-7.63575e-006" />
+                            </rotate>
+                        </keyframe>
+                        <keyframe time="0.2">
+                            <translate x="-1.52588e-005" y="-1.90735e-006" z="-1.52588e-005" />
+                            <rotate angle="0.60166">
+                                <axis x="-3.31708e-013" y="1" z="-7.63575e-006" />
+                            </rotate>
+                        </keyframe>
+                        <keyframe time="0.4">
+                            <translate x="-1.52588e-005" y="-1.90735e-006" z="-1.52588e-005" />
+                            <rotate angle="0.879974">
+                                <axis x="3.05451e-013" y="1" z="-7.63575e-006" />
+                            </rotate>
+                        </keyframe>
+                        <keyframe time="0.6">
+                            <translate x="-1.52588e-005" y="-1.90735e-006" z="-1.52588e-005" />
+                            <rotate angle="0.261448">
+                                <axis x="-2.73376e-012" y="1" z="-7.63574e-006" />
+                            </rotate>
+                            <scale x="1" y="1" z="1" />
+                        </keyframe>
+                        <keyframe time="0.8">
+                            <translate x="-1.52588e-005" y="-1.90735e-006" z="-1.52588e-005" />
+                            <rotate angle="0.447594">
+                                <axis x="1.44512e-013" y="-1" z="7.63575e-006" />
+                            </rotate>
+                        </keyframe>
+                    </keyframes>
+                </track>
+                <track bone="Bone03">
+                    <keyframes>
+                        <keyframe time="0">
+                            <translate x="-11.3699" y="-898.942" z="1193.96" />
+                            <rotate angle="0">
+                                <axis x="4.76837e-007" y="-1" z="-3.8147e-006" />
+                            </rotate>
+                            <scale x="1" y="1" z="1" />
+                        </keyframe>
+                        <keyframe time="0.2">
+                            <translate x="-11.3699" y="-898.942" z="1193.96" />
+                            <rotate angle="0">
+                                <axis x="-1.90735e-006" y="-1" z="-5.49047e-026" />
+                            </rotate>
+                            <scale x="1" y="1" z="1" />
+                        </keyframe>
+                        <keyframe time="0.6">
+                            <translate x="-11.3699" y="-898.942" z="1193.96" />
+                            <rotate angle="0">
+                                <axis x="4.76837e-007" y="-1" z="3.8147e-006" />
+                            </rotate>
+                        </keyframe>
+                        <keyframe time="0.8">
+                            <translate x="-11.3699" y="-898.942" z="1193.96" />
+                            <rotate angle="0">
+                                <axis x="0.242536" y="-5.15004e-006" z="0.970142" />
+                            </rotate>
+                            <scale x="1" y="1" z="1" />
+                        </keyframe>
+                    </keyframes>
+                </track>
+            </tracks>
+        </animation>
+    </animations>
+</skeleton>
